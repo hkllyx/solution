@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 /**
  * @author hkllyx
@@ -63,7 +64,8 @@ public class TestUtils {
                     long cost = System.currentTimeMillis() - start;
                     boolean equals = except(expect, result);
                     if (!equals) {
-                        errorList.add(method.getName());
+                        errorList.add(method.getName() + Arrays.stream(args).map(TestUtils::toString)
+                                .collect(Collectors.joining(", ", "(", ")")));
                     }
                     System.out.printf("[%s]-[%s::%s]-[%dms]-[%s] expect = %s, result = %s.\n",
                             DATE_TIME_FORMATTER.format(LocalDateTime.now()), clazz.getSimpleName(), method.getName(),
