@@ -11,7 +11,7 @@ import com.hkllyx.solution.util.TestUtils;
  * @author xiaoyong3
  * @date 2021/04/21
  */
-@Solution(no = 91, difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/decode-ways/")
+@Solution(no = "91", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/decode-ways/")
 @Tags({Tag.DYNAMIC_PROGRAMMING, Tag.STRING})
 public class DecodeWays {
 

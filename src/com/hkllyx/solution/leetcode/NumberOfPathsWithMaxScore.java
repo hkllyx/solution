@@ -14,7 +14,7 @@ import java.util.List;
  * @author hkllyx
  * @date 2021/03/30
  */
-@Solution(no = 1301, difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/number-of-paths-with-max-score/")
+@Solution(no = "1301", difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/number-of-paths-with-max-score/")
 public class NumberOfPathsWithMaxScore {
 
     public static void main(String[] args) {
@@ -128,6 +128,7 @@ public class NumberOfPathsWithMaxScore {
     /**
      * 暴力枚举
      */
+    @Deprecated
     public int[] pathsWithMaxScore1(List<String> board) {
         char[][] matrix = new char[board.size()][];
         int i = 0;

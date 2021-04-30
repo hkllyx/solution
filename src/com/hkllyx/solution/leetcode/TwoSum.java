@@ -14,7 +14,7 @@ import java.util.Map;
  * @author hkllyx
  * @date 2021/04/19
  */
-@Solution(no = 1, difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/two-sum/")
+@Solution(no = "1", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/two-sum/")
 @Tags({Tag.ARRAY, Tag.HASH_TABLE})
 public class TwoSum {
 

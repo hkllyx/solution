@@ -15,7 +15,7 @@ import java.util.List;
  * @date 2021/03/31
  */
 @Fail(Failure.NOT_FINISHED)
-@Solution(no = 90, difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/subsets-ii/")
+@Solution(no = "90", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/subsets-ii/")
 public class SubsetsII {
 
     @Test

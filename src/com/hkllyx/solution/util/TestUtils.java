@@ -67,7 +67,7 @@ public class TestUtils {
                         errorList.add(method.getName() + Arrays.stream(args).map(TestUtils::toString)
                                 .collect(Collectors.joining(", ", "(", ")")));
                     }
-                    System.out.printf("[%s]-[%s::%s]-[%dms]-[%s] expect = %s, result = %s.\n",
+                    System.out.printf("[%s]-[%s::%s]-[%dms]-[%s] expect = %s, result = %s\n",
                             DATE_TIME_FORMATTER.format(LocalDateTime.now()), clazz.getSimpleName(), method.getName(),
                             cost, equals, expectString, toString(result));
                 }

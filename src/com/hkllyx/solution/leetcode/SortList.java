@@ -10,7 +10,7 @@ import com.hkllyx.solution.util.TestUtils;
  * @author hkllyx
  * @date 2021/04/14
  */
-@Solution(no = 148, difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/sort-list/")
+@Solution(no = "148", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/sort-list/")
 public class SortList {
 
     public static void main(String[] args) {

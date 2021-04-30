@@ -1,5 +1,6 @@
 package com.hkllyx.solution;
 
+import com.hkllyx.solution.info.Difficulty;
 import com.hkllyx.solution.info.Fail;
 import com.hkllyx.solution.info.Solution;
 
@@ -9,10 +10,10 @@ import java.io.PrintWriter;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.stream.Collectors;
 
 /**
  * 生成 README.md
+ *
  * @author hkllyx
  * @date 2021/04/19
  */
@@ -28,17 +29,15 @@ public class ReadMeGenerator {
         Map<String, String> pkgNameMap = new HashMap<>();
         pkgNameMap.put("LeetCode", "leetcode");
         File readMe = new File("README.md");
-        PrintWriter writer = null;
-        try {
+        try (PrintWriter writer = new PrintWriter("README.md")) {
             if (!readMe.exists() && !readMe.createNewFile()) {
                 throw new IllegalStateException("创建文件失败");
             }
-            writer = new PrintWriter("README.md");
             writer.printf("# Solutions%n%n");
             for (Map.Entry<String, String> entry : pkgNameMap.entrySet()) {
                 writer.printf("## %s%n%n", entry.getKey());
                 File pkgFile = new File(pkgRoot, entry.getValue());
-                Map<Class<?>, File> clsMap = new HashMap<>();
+                List<Problem> problems = new ArrayList<>();
                 if (pkgFile.exists() && pkgFile.isDirectory()) {
                     for (File clsFile : Objects.requireNonNull(pkgFile.listFiles())) {
                         Matcher matcher = CLASS_PATTERN.matcher(clsFile.getName());
@@ -46,35 +45,75 @@ public class ReadMeGenerator {
                             String clsName = String.format("%s.%s.%s", parentPkg, entry.getValue(), matcher.group());
                             Class<?> cls = Class.forName(clsName);
                             if (cls.isAnnotationPresent(Solution.class) && !cls.isAnnotationPresent(Fail.class)) {
-                                clsMap.put(cls, clsFile);
+                                Solution solution = cls.getAnnotation(Solution.class);
+                                problems.add(Problem.of(solution.no(), cls.getSimpleName(), solution.difficulty(),
+                                        clsFile.getPath()));
                             }
                         }
                     }
                 }
-                if (!clsMap.isEmpty()) {
-                    final List<Class<?>> clss = clsMap.keySet().stream().sorted(Comparator
-                            .comparingInt(c -> c.getAnnotation(Solution.class).no())).collect(Collectors.toList());
-                    for (Class<?> cls : clss) {
-                        writer.printf("- [%d.%s](%s)%n", cls.getAnnotation(Solution.class).no(), cls.getSimpleName(),
-                                clsMap.get(cls).getPath().replaceAll("\\\\", "/"));
-                    }
-                }
-                writer.println();
+                problems.stream().sorted().forEach(writer::println);
             }
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
-        } finally {
-            if (writer != null) {
-                writer.close();
-            }
         }
     }
 
-    public static String title(String str) {
-        if (str.length() < 1) {
-            return str;
-        } else {
-            return Character.toUpperCase(str.charAt(0)) + str.substring(1);
+    public static class Problem implements Comparable<Problem> {
+        private String no;
+        private String name;
+        private Difficulty difficulty;
+        private String path;
+
+        public static Problem of(String no, String name, Difficulty difficulty, String path) {
+            Problem problem = new Problem();
+            problem.no = no;
+            problem.name = name;
+            problem.difficulty = difficulty;
+            problem.path = path.replaceAll("\\\\", "/");
+            return problem;
+        }
+
+        public String no() {
+            return no;
+        }
+
+        @Override
+        public String toString() {
+            return String.format("- [%s. %s%s%s](%s)", no, difficulty.style(), name, difficulty.style(), path);
+        }
+
+        @Override
+        public int compareTo(Problem o) {
+            int i = 0, j = 0;
+            while (i < this.no.length() && j < o.no.length()) {
+                char ic = this.no.charAt(i++);
+                char jc = o.no.charAt(j++);
+                if (Character.isDigit(ic) && Character.isDigit(jc)) {
+                    int tn = ic - '0', on = jc - '0';
+                    while (i < this.no.length() && Character.isDigit((ic = this.no.charAt(i++)))) {
+                        tn = tn * 10 + ic - '0';
+                    }
+                    while (j < o.no.length() && Character.isDigit((jc = o.no.charAt(j++)))) {
+                        on = on * 10 + jc - '0';
+                    }
+                    if (tn != on) {
+                        return Integer.compare(tn, on);
+                    }
+                    if (ic != jc) {
+                        return Character.compare(ic, jc);
+                    }
+                } else if (Character.isDigit(ic)) {
+                    return -1;
+                } else if (Character.isDigit(jc)) {
+                    return 1;
+                } else {
+                    if (ic != jc) {
+                        return Character.compare(ic, jc);
+                    }
+                }
+            }
+            return Integer.compare(this.no.length() - i, o.no.length() - j);
         }
     }
 }

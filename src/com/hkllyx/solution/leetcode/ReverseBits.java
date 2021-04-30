@@ -9,7 +9,7 @@ import com.hkllyx.solution.util.TestUtils;
  * @author hkllyx
  * @date 2021/03/29
  */
-@Solution(no = 190, difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/reverse-bits/")
+@Solution(no = "190", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/reverse-bits/")
 public class ReverseBits {
 
     public static void main(String[] args) {

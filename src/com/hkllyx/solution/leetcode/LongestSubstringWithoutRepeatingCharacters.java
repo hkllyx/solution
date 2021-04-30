@@ -13,7 +13,7 @@ import java.util.HashSet;
  * @author hkllyx
  * @date 2021/04/19
  */
-@Solution(no = 3, difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/")
+@Solution(no = "3", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/")
 @Tags({Tag.HASH_TABLE, Tag.TWO_POINTERS, Tag.STRING, Tag.SLIDING_WINDOW})
 public class LongestSubstringWithoutRepeatingCharacters {
 

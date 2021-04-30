@@ -9,7 +9,7 @@ import com.hkllyx.solution.util.TestUtils;
  * @author hkllyx
  * @date 2021/03/24
  */
-@Solution(no = 1717, difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/maximum-score-from-removing-substrings/")
+@Solution(no = "1717", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/maximum-score-from-removing-substrings/")
 public class MaximumScoreFromRemovingSubstrings {
 
     public static void main(String[] args) {
@@ -22,7 +22,7 @@ public class MaximumScoreFromRemovingSubstrings {
      * 全局最优保证：无论是怎么匹配 "ab"、"ba"，匹配的次数都是一样多的<br/>
      * 缺点：String.subString() 耗时长导致超时，后者也耗费空间
      */
-    @Test
+    @Deprecated
     public int maximumGain1(String s, int x, int y) {
         int gain = 0;
         String gs;
@@ -62,7 +62,7 @@ public class MaximumScoreFromRemovingSubstrings {
     /**
      * 基于 Solution1， 使用 System.arraycopy() 代替 subString() 减少消耗
      */
-    @Test
+    @Deprecated
     public int maximumGain2(String s, int x, int y) {
         int gain = 0;
         char leader;

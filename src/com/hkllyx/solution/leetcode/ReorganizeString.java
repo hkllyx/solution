@@ -11,7 +11,7 @@ import java.util.Arrays;
  * @author hkllyx
  * @date 2021/03/29
  */
-@Solution(no = 767, difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/reorganize-string/")
+@Solution(no = "767", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/reorganize-string/")
 public class ReorganizeString {
 
     public static void main(String[] args) {

@@ -12,9 +12,8 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
 public @interface Solution {
-    int no();
+    String no();
 
     Difficulty difficulty();
-
     String url();
 }

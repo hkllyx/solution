@@ -9,7 +9,7 @@ import com.hkllyx.solution.util.TestUtils;
  * @author hkllyx
  * @date 2021/03/29
  */
-@Solution(no = 6, difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/zigzag-conversion/")
+@Solution(no = "6", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/zigzag-conversion/")
 public class ZigZagConversion {
 
     public static void main(String[] args) {
