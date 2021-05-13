@@ -7,6 +7,8 @@
 - [3. LongestSubstringWithoutRepeatingCharacters](src/com/hkllyx/solution/leetcode/LongestSubstringWithoutRepeatingCharacters.java)
 - [6. ZigZagConversion](src/com/hkllyx/solution/leetcode/ZigZagConversion.java)
 - [8. StringToIntegerAtoi](src/com/hkllyx/solution/leetcode/StringToIntegerAtoi.java)
+- [12. IntegerToRoman](src/com/hkllyx/solution/leetcode/IntegerToRoman.java)
+- [15. ThreeSum](src/com/hkllyx/solution/leetcode/ThreeSum.java)
 - [27. *RemoveElement*](src/com/hkllyx/solution/leetcode/RemoveElement.java)
 - [28. *ImplementStrStr*](src/com/hkllyx/solution/leetcode/ImplementStrStr.java)
 - [74. SearchA2dMatrix](src/com/hkllyx/solution/leetcode/SearchA2dMatrix.java)

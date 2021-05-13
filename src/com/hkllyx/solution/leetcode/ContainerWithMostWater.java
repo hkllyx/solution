@@ -1,6 +1,9 @@
 package com.hkllyx.solution.leetcode;
 
-import com.hkllyx.solution.info.*;
+import com.hkllyx.solution.info.Difficulty;
+import com.hkllyx.solution.info.Fail;
+import com.hkllyx.solution.info.Failure;
+import com.hkllyx.solution.info.Solution;
 import com.hkllyx.solution.util.Test;
 import com.hkllyx.solution.util.TestUtils;
 
@@ -9,7 +12,6 @@ import com.hkllyx.solution.util.TestUtils;
  * @date 2021/04/28
  */
 @Solution(no = "11", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/container-with-most-water/")
-@Tags({Tag.ARRAY, Tag.TWO_POINTERS})
 @Fail(Failure.NOT_FINISHED)
 public class ContainerWithMostWater {
 
@@ -70,7 +72,7 @@ public class ContainerWithMostWater {
     }
 
     /**
-     * ??? 咋保证的
+     * 同理但粗暴，不过咋保证的，贪心算法真离谱
      */
     @Test
     public int maxArea3(int[] height) {
