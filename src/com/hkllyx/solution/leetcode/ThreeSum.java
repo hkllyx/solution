@@ -74,8 +74,8 @@ public class ThreeSum {
                             k--;
                             p1 = n1;
                         } else if (sum < 0) {
-                            j++;
                             p1 = n1;
+                            j++;
                         } else {
                             k--;
                         }

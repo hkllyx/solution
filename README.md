@@ -9,6 +9,8 @@
 - [8. StringToIntegerAtoi](src/com/hkllyx/solution/leetcode/StringToIntegerAtoi.java)
 - [12. IntegerToRoman](src/com/hkllyx/solution/leetcode/IntegerToRoman.java)
 - [15. ThreeSum](src/com/hkllyx/solution/leetcode/ThreeSum.java)
+- [16. ThreeSumClosest](src/com/hkllyx/solution/leetcode/ThreeSumClosest.java)
+- [17. LetterCombinationsOfAPhoneNumber](src/com/hkllyx/solution/leetcode/LetterCombinationsOfAPhoneNumber.java)
 - [27. *RemoveElement*](src/com/hkllyx/solution/leetcode/RemoveElement.java)
 - [28. *ImplementStrStr*](src/com/hkllyx/solution/leetcode/ImplementStrStr.java)
 - [74. SearchA2dMatrix](src/com/hkllyx/solution/leetcode/SearchA2dMatrix.java)
