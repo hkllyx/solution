@@ -3,9 +3,11 @@ package com.hkllyx.solution.util;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
-import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 /**
@@ -104,8 +106,6 @@ public class TestUtils {
     }
 
     public static <T> void assertion(Class<T> clazz, Object expect, Object... args) {
-        String expectString = toString(expect);
-        List<String> errorList = new ArrayList<>(16);
         try {
             for (Method method : clazz.getDeclaredMethods()) {
                 if (method.isAnnotationPresent(Test.class) && Modifier.isPublic(method.getModifiers())
@@ -114,20 +114,17 @@ public class TestUtils {
                     Object result = method.invoke(clazz.newInstance(), args);
                     long cost = System.currentTimeMillis() - start;
                     boolean equals = except(expect, result);
-                    if (!equals) {
-                        errorList.add(method.getName() + Arrays.stream(args).map(TestUtils::toString)
-                                .collect(Collectors.joining(", ", "(", ")")));
-                    }
-                    System.out.printf("[%s]-[%s::%s]-[%dms]-[%s] expect = %s, result = %s\n",
-                            DATE_TIME_FORMATTER.format(LocalDateTime.now()), clazz.getSimpleName(), method.getName(),
-                            cost, equals, expectString, toString(result));
+                    System.out.printf("[%s::%s] 结果%s，执行用时：%dms\n"
+                                    + "    输入: %s\n"
+                                    + "    输出: %s\n"
+                                    + "    预期: %s\n",
+                            clazz.getSimpleName(), method.getName(), equals ? "通过" : "失败", cost,
+                            Arrays.stream(args).map(TestUtils::toString).collect(Collectors.joining(", ")),
+                            toString(result), toString(expect));
                 }
             }
         } catch (InstantiationException | IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
-        }
-        if (!errorList.isEmpty()) {
-            throw new IllegalStateException(clazz.getSimpleName() + "::" + errorList);
         }
     }
 }

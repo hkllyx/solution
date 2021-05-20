@@ -23,7 +23,7 @@ public class AddTwoNumbers {
      * 利用哨兵节点
      */
     @Test
-    public ListNode addTwoNumbers2(ListNode l1, ListNode l2) {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode sentinel = new ListNode(0);
         ListNode cur = sentinel;
         int plus = 0;

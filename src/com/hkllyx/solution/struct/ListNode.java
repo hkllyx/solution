@@ -45,11 +45,11 @@ public class ListNode {
         if (o == null || getClass() != o.getClass()) {
             return false;
         }
-        ListNode listNode = (ListNode) o;
-        if (val != listNode.val) {
+        ListNode ol = (ListNode) o;
+        if (val != ol.val) {
             return false;
         }
-        return Objects.equals(next, listNode.next);
+        return Objects.equals(next, ol.next);
     }
 
     @Override
