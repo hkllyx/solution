@@ -8,8 +8,6 @@ import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.*;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
  * 生成 README.md
@@ -18,8 +16,6 @@ import java.util.regex.Pattern;
  * @date 2021/04/19
  */
 public class ReadMeGenerator {
-    public static final Pattern CLASS_PATTERN = Pattern.compile("[a-zA-Z0-9_$]+(?=\\.java)");
-
     private ReadMeGenerator() {
     }
 
@@ -40,9 +36,10 @@ public class ReadMeGenerator {
                 List<Problem> problems = new ArrayList<>();
                 if (pkgFile.exists() && pkgFile.isDirectory()) {
                     for (File clsFile : Objects.requireNonNull(pkgFile.listFiles())) {
-                        Matcher matcher = CLASS_PATTERN.matcher(clsFile.getName());
-                        if (matcher.find()) {
-                            String clsName = String.format("%s.%s.%s", parentPkg, entry.getValue(), matcher.group());
+                        String fileName = clsFile.getName();
+                        if (fileName.endsWith(".java")) {
+                            String clsName = String.format("%s.%s.%s", parentPkg, entry.getValue(),
+                                    fileName.substring(0, fileName.length() - 5));
                             Class<?> cls = Class.forName(clsName);
                             if (cls.isAnnotationPresent(Solution.class) && !cls.isAnnotationPresent(Fail.class)) {
                                 Solution solution = cls.getAnnotation(Solution.class);
@@ -80,7 +77,7 @@ public class ReadMeGenerator {
 
         @Override
         public String toString() {
-            return String.format("- [%s. %s%s%s](%s)", no, difficulty.style(), name, difficulty.style(), path);
+            return String.format("- [%s. %s [%s]](%s)", no, name, difficulty.desc(), path);
         }
 
         @Override

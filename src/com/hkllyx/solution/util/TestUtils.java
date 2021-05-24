@@ -110,21 +110,21 @@ public class TestUtils {
             for (Method method : clazz.getDeclaredMethods()) {
                 if (method.isAnnotationPresent(Test.class) && Modifier.isPublic(method.getModifiers())
                         && method.getParameters().length == args.length) {
+                    String argsString = Arrays.stream(args).map(TestUtils::toString).collect(Collectors.joining(", "));
                     long start = System.currentTimeMillis();
                     Object result = method.invoke(clazz.newInstance(), args);
                     long cost = System.currentTimeMillis() - start;
                     boolean equals = except(expect, result);
-                    System.out.printf("[%s::%s] 结果%s，执行用时：%dms\n"
+                    System.out.printf("[%s::%s][%dms] %s\n"
                                     + "    输入: %s\n"
                                     + "    输出: %s\n"
                                     + "    预期: %s\n",
-                            clazz.getSimpleName(), method.getName(), equals ? "通过" : "失败", cost,
-                            Arrays.stream(args).map(TestUtils::toString).collect(Collectors.joining(", ")),
-                            toString(result), toString(expect));
+                            clazz.getSimpleName(), method.getName(), cost, equals ? "通过。" : "失败！",
+                            argsString, toString(result), toString(expect));
                 }
             }
         } catch (InstantiationException | IllegalAccessException | InvocationTargetException e) {
-            e.printStackTrace();
+            throw new IllegalStateException(e);
         }
     }
 }

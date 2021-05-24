@@ -12,46 +12,47 @@ import com.hkllyx.solution.util.TestUtils;
  * @author xiaoyong3
  * @date 2021/05/18
  */
-@Solution(no = "", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/")
+@Solution(no = "106", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/")
 @Tags({Tag.RECURSION, Tag.TREE})
 public class ConstructBinaryTreeFromInorderAndPostorderTraversal {
 
     public static void main(String[] args) {
-        TestUtils.assertion(ConstructBinaryTreeFromInorderAndPostorderTraversal.class,
-                new TreeNode(3), new int[]{9, 3, 15, 20, 7}, new int[]{9, 15, 7, 20, 3});
-        TestUtils.assertion(ConstructBinaryTreeFromInorderAndPostorderTraversal.class,
-                new TreeNode(3), new int[]{1, 9, 2, 3, 15, 20, 7}, new int[]{1, 2, 9, 15, 7, 20, 3});
-        TestUtils.assertion(ConstructBinaryTreeFromInorderAndPostorderTraversal.class,
-                new TreeNode(3), new int[]{1, 9, 3}, new int[]{1, 9, 3});
-        TestUtils.assertion(ConstructBinaryTreeFromInorderAndPostorderTraversal.class,
-                new TreeNode(3), new int[]{3, 9, 1}, new int[]{1, 9, 3});
+        TestUtils.assertion(ConstructBinaryTreeFromInorderAndPostorderTraversal.class, new TreeNode(3),
+                new int[]{9, 3, 15, 20, 7}, new int[]{9, 15, 7, 20, 3});
+        TestUtils.assertion(ConstructBinaryTreeFromInorderAndPostorderTraversal.class, new TreeNode(3),
+                new int[]{1, 9, 2, 3, 15, 20, 7}, new int[]{1, 2, 9, 15, 7, 20, 3});
+        TestUtils.assertion(ConstructBinaryTreeFromInorderAndPostorderTraversal.class, new TreeNode(3),
+                new int[]{1, 9, 3}, new int[]{1, 9, 3});
+        TestUtils.assertion(ConstructBinaryTreeFromInorderAndPostorderTraversal.class, new TreeNode(3),
+                new int[]{3, 9, 1}, new int[]{1, 9, 3});
     }
+
     @Test
     public TreeNode buildTree(int[] inorder, int[] postorder) {
         return getNode(inorder, 0, inorder.length - 1, postorder, 0, postorder.length - 1);
     }
 
-    private TreeNode getNode(int[] inorder, int iFrom, int iTo, int[] postorder, int pFrom, int pTo) {
-        if (iFrom > iTo) {
+    private TreeNode getNode(int[] inorder, int ib, int ie, int[] postorder, int pb, int pe) {
+        if (ib > ie) {
             return null;
         }
-        if (iFrom == iTo) {
-            return new TreeNode(inorder[iFrom]);
+        if (ib == ie) {
+            return new TreeNode(inorder[ib]);
         }
-        // postorder最后出现的元素就是树的顶点
-        int val = postorder[pTo];
-        // inorder中，顶点的左边就是左子树的元素，右边则是右子树的元素
-        int i = iFrom;
-        for (; i <= iTo; i++) {
+        // postorder最后一个元素就是树的顶点
+        int val = postorder[pe];
+        // inorder中，顶点的左边是左子树元素，右边则是右子树元素
+        int i = ib;
+        for (; i <= ie; i++) {
             if (inorder[i] == val) {
                 break;
             }
         }
-        // 同inorder，postorder前(iTo - i) - 1个是左子树的元素
-        int j = pTo - (iTo - i);
+        // postorder中，顶点左侧先是右子树全部元素，而后是左子树全部元素
+        int p = pe - (ie - i);
         TreeNode node = new TreeNode(val);
-        node.left = getNode(inorder, iFrom, i - 1, postorder, pFrom, j - 1);
-        node.right = getNode(inorder, i + 1, iTo, postorder, j, pTo - 1);
+        node.left = getNode(inorder, ib, i - 1, postorder, pb, p - 1);
+        node.right = getNode(inorder, i + 1, ie, postorder, p, pe - 1);
         return node;
     }
 }

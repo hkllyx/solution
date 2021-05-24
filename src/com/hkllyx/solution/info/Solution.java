@@ -15,5 +15,8 @@ public @interface Solution {
     String no();
 
     Difficulty difficulty();
+
     String url();
+
+    String sameAs() default "";
 }
