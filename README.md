@@ -25,6 +25,7 @@
 - [154. FindMinimumInRotatedSortedArrayII [困难]](src/com/hkllyx/solution/leetcode/FindMinimumInRotatedSortedArrayII.java)
 - [190. ReverseBits [简单]](src/com/hkllyx/solution/leetcode/ReverseBits.java)
 - [240. SearchA2dMatrixII [中等]](src/com/hkllyx/solution/leetcode/SearchA2dMatrixII.java)
+- [343. IntegerBreak [中等]](src/com/hkllyx/solution/leetcode/IntegerBreak.java)
 - [692. TopKFrequentWords [中等]](src/com/hkllyx/solution/leetcode/TopKFrequentWords.java)
 - [767. ReorganizeString [中等]](src/com/hkllyx/solution/leetcode/ReorganizeString.java)
 - [1301. NumberOfPathsWithMaxScore [困难]](src/com/hkllyx/solution/leetcode/NumberOfPathsWithMaxScore.java)
@@ -40,3 +41,5 @@
 - [剑指 Offer 10-II. 青蛙跳台阶问题 [简单]](src/com/hkllyx/solution/leetcode/青蛙跳台阶问题.java)
 - [剑指 Offer 11. 旋转数组的最小数字 [简单]](src/com/hkllyx/solution/leetcode/旋转数组的最小数字.java)
 - [剑指 Offer 12. 矩阵中的路径 [中等]](src/com/hkllyx/solution/leetcode/矩阵中的路径.java)
+- [剑指 Offer 13. 机器人的运动范围 [中等]](src/com/hkllyx/solution/leetcode/机器人的运动范围.java)
+- [剑指 Offer 14-I. 剪绳子 [中等]](src/com/hkllyx/solution/leetcode/剪绳子.java)
