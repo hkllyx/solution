@@ -4,10 +4,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.time.format.DateTimeFormatter;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 /**
@@ -16,6 +13,8 @@ import java.util.stream.Collectors;
  */
 public class TestUtils {
     public static final DateTimeFormatter DATE_TIME_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS");
+    public static final Map<Class<?>, Object> OBJECT_CACHE = new HashMap<>();
+    public static final Map<Class<?>, List<Method>> METHODS_CACHE = new HashMap<>();
 
     private static String toString(Object obj) {
         if (obj instanceof Object[]) {
@@ -75,7 +74,7 @@ public class TestUtils {
         } else if (o1 instanceof boolean[] && o2 instanceof boolean[]) {
             return Arrays.equals((boolean[]) o1, (boolean[]) o2);
         } else if (o1 instanceof List && o2 instanceof List) {
-            List l1 = (List) o1, l2 = (List) o2;
+            List<?> l1 = (List<?>) o1, l2 = (List<?>) o2;
             int size = l1.size();
             if (l2.size() != size) {
                 return false;
@@ -87,7 +86,7 @@ public class TestUtils {
             }
             return true;
         } else if (o1 instanceof Set && o2 instanceof Set) {
-            Set s1 = (Set) o1, s2 = (Set) o2;
+            Set<?> s1 = (Set<?>) o1, s2 = (Set<?>) o2;
             int size = s1.size();
             if (s2.size() != size) {
                 return false;
@@ -99,20 +98,36 @@ public class TestUtils {
             }
             return true;
         } else if (o1 instanceof Map && o2 instanceof Map) {
-            return except(((Map) o1).entrySet(), ((Map) o2).entrySet());
+            return except(((Map<?, ?>) o1).entrySet(), ((Map<?, ?>) o2).entrySet());
         } else {
             return o1.equals(o2);
         }
     }
 
-    public static <T> void assertion(Class<T> clazz, Object expect, Object... args) {
+    public static void assertion(Class<?> clazz, Object expect, Object... args) {
         try {
-            for (Method method : clazz.getDeclaredMethods()) {
-                if (method.isAnnotationPresent(Test.class) && Modifier.isPublic(method.getModifiers())
-                        && method.getParameters().length == args.length) {
+            Object obj = OBJECT_CACHE.get(clazz);
+            List<Method> methods = METHODS_CACHE.get(clazz);
+            if (obj == null) {
+                synchronized (clazz) {
+                    if ((obj = OBJECT_CACHE.get(clazz)) == null) {
+                        obj = clazz.newInstance();
+                        OBJECT_CACHE.put(clazz, obj);
+                        methods = new ArrayList<>();
+                        for (Method method : clazz.getDeclaredMethods()) {
+                            if (Modifier.isPublic(method.getModifiers()) && method.isAnnotationPresent(Test.class)) {
+                                methods.add(method);
+                            }
+                        }
+                        METHODS_CACHE.put(clazz, methods);
+                    }
+                }
+            }
+            for (Method method : methods) {
+                if (method.getParameters().length == args.length) {
                     String argsString = Arrays.stream(args).map(TestUtils::toString).collect(Collectors.joining(", "));
                     long start = System.currentTimeMillis();
-                    Object result = method.invoke(clazz.newInstance(), args);
+                    Object result = method.invoke(obj, args);
                     long cost = System.currentTimeMillis() - start;
                     boolean equals = except(expect, result);
                     System.out.printf("[%s::%s][%dms] %s\n"

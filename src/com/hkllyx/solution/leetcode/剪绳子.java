@@ -7,6 +7,6 @@ import com.hkllyx.solution.info.Solution;
  * @author xiaoyong3
  * @date 2021/05/27
  */
-@Solution(no = "剑指 Offer 14-I", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/jian-sheng-zi-lcof/", sameAs = "343")
+@Solution(no = "剑指 Offer 14-I", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/jian-sheng-zi-lcof/")
 public class 剪绳子 extends IntegerBreak {
 }
