@@ -31,9 +31,9 @@ public class NumberOfOneBits {
     @Test
     public int hammingWeight1(int n) {
         int count = 0;
-        while ( n != 0) {
-            count ++;
-            n = n & ( n - 1); // 可以将最后一位清0
+        while (n != 0) {
+            count++;
+            n = n & (n - 1); // 可以将最后一位清0
         }
         return count;
     }

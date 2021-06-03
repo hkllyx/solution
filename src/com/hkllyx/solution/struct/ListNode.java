@@ -19,11 +19,6 @@ public class ListNode {
         this.val = val;
     }
 
-    public ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
-    }
-
     public static ListNode of(int... nodes) {
         if (nodes.length < 1) {
             return new ListNode();

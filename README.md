@@ -47,3 +47,6 @@
 - [剑指 Offer 14-I. 剪绳子 [中等]](src/com/hkllyx/solution/leetcode/剪绳子.java)
 - [剑指 Offer 15. 二进制中1的个数 [简单]](src/com/hkllyx/solution/leetcode/二进制中1的个数.java)
 - [剑指 Offer 16. 数值的整数次方 [中等]](src/com/hkllyx/solution/leetcode/数值的整数次方.java)
+- [剑指 Offer 17. 打印从1到最大的n位数 [简单]](src/com/hkllyx/solution/leetcode/打印从1到最大的n位数.java)
+- [剑指 Offer 18. 删除链表的节点 [简单]](src/com/hkllyx/solution/leetcode/删除链表的节点.java)
+- [剑指 Offer 19. 正则表达式匹配 [困难]](src/com/hkllyx/solution/leetcode/正则表达式匹配.java)
