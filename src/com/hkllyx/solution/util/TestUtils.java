@@ -3,7 +3,6 @@ package com.hkllyx.solution.util;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
-import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -12,7 +11,6 @@ import java.util.stream.Collectors;
  * @date 2021/03/26
  */
 public class TestUtils {
-    public static final DateTimeFormatter DATE_TIME_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS");
     public static final Map<Class<?>, Object> OBJECT_CACHE = new HashMap<>();
     public static final Map<Class<?>, List<Method>> METHODS_CACHE = new HashMap<>();
 

@@ -1,8 +1,6 @@
 package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.info.Difficulty;
-import com.hkllyx.solution.info.Fail;
-import com.hkllyx.solution.info.Failure;
 import com.hkllyx.solution.info.Solution;
 import com.hkllyx.solution.util.Test;
 import com.hkllyx.solution.util.TestUtils;
@@ -12,7 +10,6 @@ import com.hkllyx.solution.util.TestUtils;
  * @date 2021/04/28
  */
 @Solution(no = "11", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/container-with-most-water/")
-@Fail(Failure.NOT_FINISHED)
 public class ContainerWithMostWater {
 
     public static void main(String[] args) {

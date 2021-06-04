@@ -1,7 +1,6 @@
 package com.hkllyx.solution;
 
 import com.hkllyx.solution.info.Difficulty;
-import com.hkllyx.solution.info.Fail;
 import com.hkllyx.solution.info.Solution;
 
 import java.io.File;
@@ -41,10 +40,17 @@ public class ReadMeGenerator {
                             String clsName = String.format("%s.%s.%s", parentPkg, entry.getValue(),
                                     fileName.substring(0, fileName.length() - 5));
                             Class<?> cls = Class.forName(clsName);
-                            if (cls.isAnnotationPresent(Solution.class) && !cls.isAnnotationPresent(Fail.class)) {
+                            if (cls.isAnnotationPresent(Solution.class)) {
+                                boolean failed = false;
+                                Class<?> superclass = cls.getSuperclass();
+                                if (superclass.isAnnotationPresent(Solution.class)) {
+                                    Solution superSolution = superclass.getAnnotation(Solution.class);
+                                    failed = superSolution.failed();
+                                }
                                 Solution solution = cls.getAnnotation(Solution.class);
+                                failed = failed || solution.failed();
                                 problems.add(Problem.of(solution.no(), cls.getSimpleName(), solution.difficulty(),
-                                        clsFile.getPath()));
+                                        clsFile.getPath(), failed));
                             }
                         }
                     }
@@ -61,13 +67,15 @@ public class ReadMeGenerator {
         private String name;
         private Difficulty difficulty;
         private String path;
+        private boolean failed;
 
-        public static Problem of(String no, String name, Difficulty difficulty, String path) {
+        public static Problem of(String no, String name, Difficulty difficulty, String path, boolean failed) {
             Problem problem = new Problem();
             problem.no = no;
             problem.name = name;
             problem.difficulty = difficulty;
             problem.path = path.replaceAll("\\\\", "/");
+            problem.failed = failed;
             return problem;
         }
 
@@ -77,7 +85,7 @@ public class ReadMeGenerator {
 
         @Override
         public String toString() {
-            return String.format("- [%s. %s [%s]](%s)", no, name, difficulty.desc(), path);
+            return String.format("- [%s. %s [%s%s]](%s)", no, name, difficulty.desc(), failed ? " 未完成" : "", path);
         }
 
         @Override

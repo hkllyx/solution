@@ -1,8 +1,6 @@
 package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.info.Difficulty;
-import com.hkllyx.solution.info.Fail;
-import com.hkllyx.solution.info.Failure;
 import com.hkllyx.solution.info.Solution;
 import com.hkllyx.solution.util.Test;
 import com.hkllyx.solution.util.TestUtils;
@@ -14,7 +12,6 @@ import java.math.BigInteger;
  * @date 2021/05/27
  */
 @Solution(no = "剑指 Offer 14-II", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/jian-sheng-zi-ii-lcof/")
-@Fail(Failure.NOT_FINISHED)
 public class 剪绳子II extends IntegerBreak {
 
     public static void main(String[] args) {
