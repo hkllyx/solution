@@ -14,7 +14,10 @@ public class TestUtils {
     public static final Map<Class<?>, Object> OBJECT_CACHE = new HashMap<>();
     public static final Map<Class<?>, List<Method>> METHODS_CACHE = new HashMap<>();
 
-    private static String toString(Object obj) {
+    /**
+     * 将对象转换成字符串
+     */
+    public static String toString(Object obj) {
         if (obj instanceof Object[]) {
             return Arrays.deepToString((Object[]) obj);
         } else if (obj instanceof byte[]) {
@@ -38,7 +41,17 @@ public class TestUtils {
         }
     }
 
-    private static boolean except(Object o1, Object o2) {
+    /**
+     * 判断后两个对象是否相等。注意：<br/>
+     * <ul>
+     *     <li>1. 如果两个对象都是null，返回true</li>
+     *     <li>
+     *         2. 如果对象均是java.util.List、Set、Map容器对象构成，则只比较值，而忽略容器类型是否相同。
+     *         例如，一个ArrayList[1, 2]和LinkedList[1, 2]，则认为是相等的
+     *      </li>
+     * </ul>
+     */
+    public static boolean equals(Object o1, Object o2) {
         if (o1 == null) {
             return o2 == null;
         } else if (o1 == o2) {
@@ -50,7 +63,7 @@ public class TestUtils {
                 return false;
             }
             for (int i = 0; i < length; i++) {
-                if (!except(a1[i], a2[i])) {
+                if (!equals(a1[i], a2[i])) {
                     return false;
                 }
             }
@@ -78,7 +91,7 @@ public class TestUtils {
                 return false;
             }
             for (int i = 0; i < l1.size(); i++) {
-                if (!except(l1.get(i), l2.get(i))) {
+                if (!equals(l1.get(i), l2.get(i))) {
                     return false;
                 }
             }
@@ -96,51 +109,68 @@ public class TestUtils {
             }
             return true;
         } else if (o1 instanceof Map && o2 instanceof Map) {
-            return except(((Map<?, ?>) o1).entrySet(), ((Map<?, ?>) o2).entrySet());
+            return equals(((Map<?, ?>) o1).entrySet(), ((Map<?, ?>) o2).entrySet());
         } else {
             return o1.equals(o2);
         }
     }
 
     public static void assertion(Class<?> clazz, Object expect, Object... args) {
+        assert clazz != null;
         try {
-            Object obj = OBJECT_CACHE.get(clazz);
-            List<Method> methods = METHODS_CACHE.get(clazz);
-            if (obj == null) {
-                synchronized (clazz) {
-                    if ((obj = OBJECT_CACHE.get(clazz)) == null) {
-                        obj = clazz.newInstance();
-                        OBJECT_CACHE.put(clazz, obj);
-                        methods = new ArrayList<>();
-                        for (Method method : clazz.getDeclaredMethods()) {
-                            if (Modifier.isPublic(method.getModifiers()) && method.isAnnotationPresent(Test.class)) {
-                                methods.add(method);
-                            }
-                        }
-                        METHODS_CACHE.put(clazz, methods);
-                    }
-                }
-            }
-            for (Method method : methods) {
-                if (method.getParameters().length == args.length) {
-                    String argsString = Arrays.stream(args).map(TestUtils::toString).collect(Collectors.joining(", "));
-                    long start = System.currentTimeMillis();
-                    Object result = method.invoke(obj, args);
-                    long cost = System.currentTimeMillis() - start;
-                    boolean equals = except(expect, result);
-                    System.out.printf("[%s::%s][%dms] %s\n"
-                                    + "    输入: %s\n"
-                                    + "    输出: %s\n"
-                                    + "    预期: %s\n",
-                            clazz.getSimpleName(), method.getName(), cost, equals ? "通过。" : "失败！",
-                            argsString, toString(result), toString(expect));
-                    if (!equals) {
-                        throw new IllegalStateException("结果失败！");
-                    }
+            for (Method method : getTestMethods(clazz)) {
+                String argsString = args == null ? "null" :
+                        Arrays.stream(args).map(TestUtils::toString).collect(Collectors.joining(", "));
+                long start = System.currentTimeMillis();
+                Object result = method.invoke(Modifier.isStatic(method.getModifiers()) ? null :
+                        getTestObject(clazz), args);
+                long cost = System.currentTimeMillis() - start;
+                boolean equals = equals(expect, result);
+                System.out.printf("[%s::%s][%dms] %s\n"
+                                + "    输入: %s\n"
+                                + "    输出: %s\n"
+                                + "    预期: %s\n",
+                        clazz.getSimpleName(), method.getName(), cost, equals ? "通过。" : "失败！",
+                        argsString, toString(result), toString(expect));
+                if (!equals) {
+                    throw new IllegalStateException("结果失败！");
                 }
             }
         } catch (InstantiationException | IllegalAccessException | InvocationTargetException e) {
             throw new IllegalStateException(e);
         }
+    }
+
+    private static List<Method> getTestMethods(Class<?> clazz) {
+        List<Method> methods = METHODS_CACHE.get(clazz);
+        if (methods == null) {
+            synchronized (clazz) {
+                methods = METHODS_CACHE.get(clazz);
+                if (methods == null) {
+                    methods = new ArrayList<>();
+                    for (Method method : clazz.getDeclaredMethods()) {
+                        if (Modifier.isPublic(method.getModifiers()) && method.isAnnotationPresent(Test.class)) {
+                            methods.add(method);
+                        }
+                    }
+                    METHODS_CACHE.put(clazz, methods);
+                }
+            }
+        }
+        return methods;
+    }
+
+    private static Object getTestObject(Class<?> clazz) throws InstantiationException, IllegalAccessException {
+        Object obj = OBJECT_CACHE.get(clazz);
+        if (obj == null) {
+            synchronized (clazz) {
+                obj = OBJECT_CACHE.get(clazz);
+                if (obj == null) {
+                    obj = clazz.newInstance();
+                    OBJECT_CACHE.put(clazz, obj);
+                }
+            }
+        }
+        return obj;
     }
 }
