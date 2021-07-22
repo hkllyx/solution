@@ -19,20 +19,25 @@ public class ReadMeGenerator {
     }
 
     public static void main(String[] args) {
+        // 配置
         String parentPkg = "com.hkllyx.solution";
         String pkgRoot = "src/com/hkllyx/solution/";
         Map<String, String> pkgNameMap = new HashMap<>();
         pkgNameMap.put("LeetCode", "leetcode");
         File readMe = new File("README.md");
+        // 写README文件
         try (PrintWriter writer = new PrintWriter("README.md")) {
             if (!readMe.exists() && !readMe.createNewFile()) {
                 throw new IllegalStateException("创建文件失败");
             }
+            // 主标题
             writer.printf("# Solutions%n%n");
             for (Map.Entry<String, String> entry : pkgNameMap.entrySet()) {
+                // 二级标题
                 writer.printf("## %s%n%n", entry.getKey());
                 File pkgFile = new File(pkgRoot, entry.getValue());
                 List<Problem> problems = new ArrayList<>();
+                // 扫描文件
                 if (pkgFile.exists() && pkgFile.isDirectory()) {
                     for (File clsFile : Objects.requireNonNull(pkgFile.listFiles())) {
                         String fileName = clsFile.getName();

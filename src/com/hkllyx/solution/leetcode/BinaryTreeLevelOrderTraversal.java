@@ -35,11 +35,12 @@ public class BinaryTreeLevelOrderTraversal {
             for (int i = 1; i <= size; i++) {
                 TreeNode cur = queue.remove();
                 level.add(cur.val);
-                if (cur.left != null) {
-                    queue.add(cur.left);
+                TreeNode child;
+                if ((child = cur.left) != null) {
+                    queue.add(child);
                 }
-                if (cur.right != null) {
-                    queue.add(cur.right);
+                if ((child = cur.right) != null) {
+                    queue.add(child);
                 }
             }
             res.add(level);
