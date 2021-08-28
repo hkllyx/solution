@@ -1,9 +1,9 @@
 package com.hkllyx.solution.leetcode;
 
-import com.hkllyx.solution.info.Difficulty;
-import com.hkllyx.solution.info.Solution;
 import com.hkllyx.solution.util.Test;
 import com.hkllyx.solution.util.TestUtils;
+import com.hkllyx.solution.util.info.Difficulty;
+import com.hkllyx.solution.util.info.Solution;
 
 import java.util.Arrays;
 
@@ -11,7 +11,7 @@ import java.util.Arrays;
  * @author xiaoyong3
  * @date 2021/06/28
  */
-@Solution(no = "剑指 Offer 40", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/")
+@Solution(no = "剑指Offer 40", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/")
 public class 最小的k个数 {
 
     public static void main(String[] args) {

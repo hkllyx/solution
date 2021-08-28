@@ -1,4 +1,4 @@
-package com.hkllyx.solution.info;
+package com.hkllyx.solution.util.info;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

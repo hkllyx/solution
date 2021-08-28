@@ -1,14 +1,14 @@
 package com.hkllyx.solution.leetcode;
 
-import com.hkllyx.solution.info.Difficulty;
-import com.hkllyx.solution.info.Solution;
-import com.hkllyx.solution.struct.ListNode;
+import com.hkllyx.solution.util.info.Difficulty;
+import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.struct.ListNode;
 
 /**
  * @author xiaoyong3
  * @date 2021/06/01
  */
-@Solution(no = "剑指 Offer 18", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/")
+@Solution(no = "剑指Offer 18", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/")
 public class 删除链表的节点 {
 
     public ListNode deleteNode(ListNode head, int val) {

@@ -1,15 +1,15 @@
 package com.hkllyx.solution.leetcode;
 
-import com.hkllyx.solution.info.Difficulty;
-import com.hkllyx.solution.info.Solution;
 import com.hkllyx.solution.util.Test;
 import com.hkllyx.solution.util.TestUtils;
+import com.hkllyx.solution.util.info.Difficulty;
+import com.hkllyx.solution.util.info.Solution;
 
 /**
  * @author xiaoyong3
  * @date 2021/05/24
  */
-@Solution(no = "剑指 Offer 13", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/")
+@Solution(no = "剑指Offer 13", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/")
 public class 机器人的运动范围 {
 
     public static void main(String[] args) {

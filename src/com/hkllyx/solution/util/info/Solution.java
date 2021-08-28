@@ -1,4 +1,4 @@
-package com.hkllyx.solution.info;
+package com.hkllyx.solution.util.info;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -18,5 +18,5 @@ public @interface Solution {
 
     String url();
 
-    boolean failed() default false;
+    Status status() default Status.ACCEPTED;
 }

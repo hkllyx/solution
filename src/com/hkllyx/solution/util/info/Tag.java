@@ -1,4 +1,4 @@
-package com.hkllyx.solution.info;
+package com.hkllyx.solution.util.info;
 
 /**
  * @author hkllyx
@@ -50,7 +50,8 @@ public enum Tag {
         this.desc = desc;
     }
 
-    public String getDesc() {
+    @Override
+    public String toString() {
         return desc;
     }
 }

@@ -1,9 +1,9 @@
 package com.hkllyx.solution.leetcode;
 
-import com.hkllyx.solution.info.Difficulty;
-import com.hkllyx.solution.info.Solution;
-import com.hkllyx.solution.info.Tag;
-import com.hkllyx.solution.info.Tags;
+import com.hkllyx.solution.util.info.Difficulty;
+import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.info.Tag;
+import com.hkllyx.solution.util.info.Tags;
 
 import java.util.Arrays;
 import java.util.Random;

@@ -1,15 +1,15 @@
 package com.hkllyx.solution.leetcode;
 
-import com.hkllyx.solution.info.Difficulty;
-import com.hkllyx.solution.info.Solution;
 import com.hkllyx.solution.util.Test;
 import com.hkllyx.solution.util.TestUtils;
+import com.hkllyx.solution.util.info.Difficulty;
+import com.hkllyx.solution.util.info.Solution;
 
 /**
  * @author xiaoyong3
  * @date 2021/06/03
  */
-@Solution(no = "剑指 Offer 20", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/")
+@Solution(no = "剑指Offer 20", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/")
 public class 表示数值的字符串 {
 
     public static void main(String[] args) {

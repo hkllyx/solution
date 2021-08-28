@@ -1,14 +1,14 @@
 package com.hkllyx.solution.leetcode;
 
-import com.hkllyx.solution.info.Difficulty;
-import com.hkllyx.solution.info.Solution;
-import com.hkllyx.solution.struct.TreeNode;
+import com.hkllyx.solution.util.info.Difficulty;
+import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.struct.TreeNode;
 
 /**
  * @author xiaoyong3
  * @date 2021/06/07
  */
-@Solution(no = "剑指 Offer 32-I", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/")
+@Solution(no = "剑指Offer 32-I", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/")
 public class 从上到下打印二叉树 {
 
     public int[] levelOrder(TreeNode root) {

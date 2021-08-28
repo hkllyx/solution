@@ -1,12 +1,15 @@
 package com.hkllyx.solution;
 
-import com.hkllyx.solution.info.Difficulty;
-import com.hkllyx.solution.info.Solution;
+import com.hkllyx.solution.util.info.Problem;
+import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.info.Status;
 
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
 
 /**
  * 生成 README.md
@@ -20,10 +23,10 @@ public class ReadMeGenerator {
 
     public static void main(String[] args) {
         // 配置
-        String parentPkg = "com.hkllyx.solution";
-        String pkgRoot = "src/com/hkllyx/solution/";
-        Map<String, String> pkgNameMap = new HashMap<>();
-        pkgNameMap.put("LeetCode", "leetcode");
+        String rootPackage = "com.hkllyx.solution";
+        String rootPath = "src/com/hkllyx/solution/";
+        Map<String, String> libMap = new HashMap<>();
+        libMap.put("LeetCode", "leetcode");
         File readMe = new File("README.md");
         // 写README文件
         try (PrintWriter writer = new PrintWriter("README.md")) {
@@ -32,34 +35,30 @@ public class ReadMeGenerator {
             }
             // 主标题
             writer.printf("# Solutions%n%n");
-            for (Map.Entry<String, String> entry : pkgNameMap.entrySet()) {
+            for (Map.Entry<String, String> entry : libMap.entrySet()) {
                 // 二级标题
                 writer.printf("## %s%n%n", entry.getKey());
-                File pkgFile = new File(pkgRoot, entry.getValue());
-                List<Problem> problems = new ArrayList<>();
+                File libFile = new File(rootPath, entry.getValue());
                 // 扫描文件
-                if (pkgFile.exists() && pkgFile.isDirectory()) {
-                    for (File clsFile : Objects.requireNonNull(pkgFile.listFiles())) {
-                        String fileName = clsFile.getName();
+                Map<String, Node> nodeMap = new HashMap<>();
+                if (libFile.exists() && libFile.isDirectory()) {
+                    for (File classFile : Objects.requireNonNull(libFile.listFiles())) {
+                        String fileName = classFile.getName();
                         if (fileName.endsWith(".java")) {
-                            String clsName = String.format("%s.%s.%s", parentPkg, entry.getValue(),
+                            String className = String.format("%s.%s.%s", rootPackage, entry.getValue(),
                                     fileName.substring(0, fileName.length() - 5));
-                            Class<?> cls = Class.forName(clsName);
-                            if (cls.isAnnotationPresent(Solution.class)) {
-                                boolean failed = false;
-                                Class<?> superclass = cls.getSuperclass();
-                                if (superclass.isAnnotationPresent(Solution.class)) {
-                                    Solution superSolution = superclass.getAnnotation(Solution.class);
-                                    failed = superSolution.failed();
-                                }
-                                Solution solution = cls.getAnnotation(Solution.class);
-                                failed = failed || solution.failed();
-                                problems.add(Problem.of(solution.no(), cls.getSimpleName(), solution.difficulty(),
-                                        clsFile.getPath(), failed));
+                            Class<?> clazz = Class.forName(className);
+                            Solution solution = clazz.getAnnotation(Solution.class);
+                            if (solution != null) {
+                                nodeMap.put(className, new Node(classFile, clazz, solution));
                             }
                         }
                     }
                 }
+                // 转化为Problem
+                nodeMap.values()
+                Map<String, Problem> problemMap = new HashMap<>(classMap.size());
+
                 problems.stream().sorted().forEach(writer::println);
             }
         } catch (IOException | ClassNotFoundException e) {
@@ -67,63 +66,35 @@ public class ReadMeGenerator {
         }
     }
 
-    public static class Problem implements Comparable<Problem> {
-        private String no;
-        private String name;
-        private Difficulty difficulty;
-        private String path;
-        private boolean failed;
+    private static class Node {
+        private final File file;
+        private final Class<?> clazz;
+        private final Solution solution;
+        private Status status;
+        private boolean complete;
 
-        public static Problem of(String no, String name, Difficulty difficulty, String path, boolean failed) {
-            Problem problem = new Problem();
-            problem.no = no;
-            problem.name = name;
-            problem.difficulty = difficulty;
-            problem.path = path.replaceAll("\\\\", "/");
-            problem.failed = failed;
-            return problem;
+        public Node(File file, Class<?> clazz, Solution solution) {
+            this.file = file;
+            this.clazz = clazz;
+            this.solution = solution;
+            this.status = solution.status();
         }
 
-        public String no() {
-            return no;
+        public boolean isComplete() {
+            return complete;
         }
 
-        @Override
-        public String toString() {
-            return String.format("- [%s. %s [%s%s]](%s)", no, name, difficulty.desc(), failed ? " 未完成" : "", path);
+        public void setComplete(boolean complete) {
+            this.complete = complete;
         }
 
-        @Override
-        public int compareTo(Problem o) {
-            int i = 0, j = 0;
-            while (i < this.no.length() && j < o.no.length()) {
-                char ic = this.no.charAt(i++);
-                char jc = o.no.charAt(j++);
-                if (Character.isDigit(ic) && Character.isDigit(jc)) {
-                    int tn = ic - '0', on = jc - '0';
-                    while (i < this.no.length() && Character.isDigit((ic = this.no.charAt(i++)))) {
-                        tn = tn * 10 + ic - '0';
-                    }
-                    while (j < o.no.length() && Character.isDigit((jc = o.no.charAt(j++)))) {
-                        on = on * 10 + jc - '0';
-                    }
-                    if (tn != on) {
-                        return Integer.compare(tn, on);
-                    }
-                    if (ic != jc) {
-                        return Character.compare(ic, jc);
-                    }
-                } else if (Character.isDigit(ic)) {
-                    return -1;
-                } else if (Character.isDigit(jc)) {
-                    return 1;
-                } else {
-                    if (ic != jc) {
-                        return Character.compare(ic, jc);
-                    }
-                }
-            }
-            return Integer.compare(this.no.length() - i, o.no.length() - j);
+        public void setStatus(Status status) {
+            this.status = status;
+        }
+
+        public Problem toProblem() {
+            return new Problem(file.getPath(), clazz.getSimpleName(), solution.no(), solution.difficulty(),
+                    solution.url(), status);
         }
     }
 }

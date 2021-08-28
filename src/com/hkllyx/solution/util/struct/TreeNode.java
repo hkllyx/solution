@@ -1,4 +1,4 @@
-package com.hkllyx.solution.struct;
+package com.hkllyx.solution.util.struct;
 
 import java.util.LinkedList;
 import java.util.Objects;

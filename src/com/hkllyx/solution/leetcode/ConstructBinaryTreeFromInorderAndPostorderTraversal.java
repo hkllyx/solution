@@ -1,12 +1,12 @@
 package com.hkllyx.solution.leetcode;
 
-import com.hkllyx.solution.info.Difficulty;
-import com.hkllyx.solution.info.Solution;
-import com.hkllyx.solution.info.Tag;
-import com.hkllyx.solution.info.Tags;
-import com.hkllyx.solution.struct.TreeNode;
 import com.hkllyx.solution.util.Test;
 import com.hkllyx.solution.util.TestUtils;
+import com.hkllyx.solution.util.info.Difficulty;
+import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.info.Tag;
+import com.hkllyx.solution.util.info.Tags;
+import com.hkllyx.solution.util.struct.TreeNode;
 
 /**
  * @author xiaoyong3

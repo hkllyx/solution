@@ -133,7 +133,7 @@ public class TestUtils {
                         clazz.getSimpleName(), method.getName(), cost, equals ? "通过。" : "失败！",
                         argsString, toString(result), toString(expect));
                 if (!equals) {
-                    throw new IllegalStateException("结果失败！");
+                    throw new IllegalStateException("异常！");
                 }
             }
         } catch (InstantiationException | IllegalAccessException | InvocationTargetException e) {

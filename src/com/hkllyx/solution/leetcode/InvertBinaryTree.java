@@ -1,8 +1,8 @@
 package com.hkllyx.solution.leetcode;
 
-import com.hkllyx.solution.info.Difficulty;
-import com.hkllyx.solution.info.Solution;
-import com.hkllyx.solution.struct.TreeNode;
+import com.hkllyx.solution.util.info.Difficulty;
+import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.struct.TreeNode;
 
 /**
  * @author xiaoyong3

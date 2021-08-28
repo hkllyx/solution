@@ -1,10 +1,10 @@
 package com.hkllyx.solution.leetcode;
 
-import com.hkllyx.solution.info.Difficulty;
-import com.hkllyx.solution.info.Solution;
-import com.hkllyx.solution.struct.TreeNode;
 import com.hkllyx.solution.util.Test;
 import com.hkllyx.solution.util.TestUtils;
+import com.hkllyx.solution.util.info.Difficulty;
+import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.struct.TreeNode;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -15,7 +15,7 @@ import java.util.List;
  * @author xiaoyong3
  * @date 2021/06/10
  */
-@Solution(no = "剑指 Offer 32-III", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/")
+@Solution(no = "剑指Offer 32-III", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/")
 public class 从上到下打印二叉树III {
 
     public static void main(String[] args) {
