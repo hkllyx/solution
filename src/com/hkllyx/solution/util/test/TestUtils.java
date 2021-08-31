@@ -1,4 +1,4 @@
-package com.hkllyx.solution.util;
+package com.hkllyx.solution.util.test;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

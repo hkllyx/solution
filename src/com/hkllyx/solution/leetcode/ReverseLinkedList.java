@@ -1,10 +1,10 @@
 package com.hkllyx.solution.leetcode;
 
-import com.hkllyx.solution.util.Test;
-import com.hkllyx.solution.util.TestUtils;
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
 import com.hkllyx.solution.util.struct.ListNode;
+import com.hkllyx.solution.util.test.Test;
+import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author xiaoyong3
