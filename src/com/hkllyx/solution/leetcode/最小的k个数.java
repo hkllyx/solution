@@ -84,7 +84,10 @@ public class 最小的k个数 {
         return i;
     }
 
-    private void swap(int[] arr, int i, int j) {
+    protected void swap(int[] arr, int i, int j) {
+        if (i == j) {
+            return;
+        }
         int temp = arr[j];
         arr[j] = arr[i];
         arr[i] = temp;

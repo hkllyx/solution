@@ -133,12 +133,12 @@ public class ReadMeGenerator {
             while (i < tl && j < ol) {
                 char tc = tn.charAt(i++), oc = on.charAt(j++);
                 if (isDigit(tc) && isDigit(oc)) {
-                    int ts = tc, os = oc;
+                    int ts = tc - '0', os = oc - '0';
                     while (i < tl && isDigit((tc = tn.charAt(i++)))) {
-                        ts = ts * 10 + tc;
+                        ts = ts * 10 + tc - '0';
                     }
                     while (j < ol && isDigit((oc = on.charAt(j++)))) {
-                        os = os * 10 + oc;
+                        os = os * 10 + oc - '0';
                     }
                     if (ts != os) {
                         return Integer.compare(ts, os);

@@ -141,6 +141,20 @@ public class TestUtils {
         }
     }
 
+    public static void assertion(Object expect, Object... args) {
+        try {
+            StackTraceElement[] stackTrace = new RuntimeException().getStackTrace();
+            for (StackTraceElement stackTraceElement : stackTrace) {
+                if ("main".equals(stackTraceElement.getMethodName())) {
+                    Class<?> clazz = Class.forName(stackTraceElement.getClassName());
+                    assertion(clazz, expect, args);
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            // Swallow and continue
+        }
+    }
+
     private static List<Method> getTestMethods(Class<?> clazz) {
         List<Method> methods = METHODS_CACHE.get(clazz);
         if (methods == null) {
@@ -149,7 +163,9 @@ public class TestUtils {
                 if (methods == null) {
                     methods = new ArrayList<>();
                     for (Method method : clazz.getDeclaredMethods()) {
-                        if (Modifier.isPublic(method.getModifiers()) && method.isAnnotationPresent(Test.class)) {
+                        if (Modifier.isPublic(method.getModifiers())
+                                && method.isAnnotationPresent(Test.class)
+                                && method.getAnnotation(Test.class).active()) {
                             methods.add(method);
                         }
                     }
