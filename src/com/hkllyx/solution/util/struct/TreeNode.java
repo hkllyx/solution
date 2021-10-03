@@ -95,7 +95,6 @@ public class TreeNode {
         // 当前层非null节点的数量
         int count = 1;
         while (count > 0) {
-            int size = queue.size();
             int nextCount = 0;
             while (count > 0) {
                 TreeNode node = queue.remove();
