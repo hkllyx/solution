@@ -12,7 +12,31 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
 public @interface Test {
+    /**
+     * 描述
+     *
+     * @return 描述
+     */
     String value() default "";
 
+    /**
+     * 启用测试
+     *
+     * @return 启用测试
+     */
     boolean active() default true;
+
+    /**
+     * 消耗时间 ms
+     *
+     * @return 消耗时间
+     */
+    int mills() default -1;
+
+    /**
+     * 消耗内存 MB
+     *
+     * @return 消耗内存
+     */
+    double space() default -1;
 }
