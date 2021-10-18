@@ -40,8 +40,6 @@ public class ReadMeGenerator {
             // 主标题
             writer.printf("# Solutions%n%n");
             for (Map.Entry<String, String> entry : libMap.entrySet()) {
-                // 二级标题
-                writer.printf("## %s%n%n", entry.getKey());
                 File libFile = new File(rootPath, entry.getValue());
                 // 扫描文件
                 List<Node> nodes = new ArrayList<>();
@@ -59,6 +57,9 @@ public class ReadMeGenerator {
                         }
                     }
                 }
+                // 二级标题
+                writer.printf("## %s: %d%n%n", entry.getKey(), nodes.size());
+                // 题目
                 fixNodes(nodes).stream().sorted().forEach(writer::println);
             }
         } catch (IOException | ClassNotFoundException e) {
@@ -160,8 +161,11 @@ public class ReadMeGenerator {
 
         @Override
         public String toString() {
-            return String.format("- [%s. %s [%s %s]](%s)", solution.no(), clazz.getSimpleName(), solution.difficulty(),
-                    status, file.getPath());
+            return Status.ACCEPTED.equals(status)
+                    ? String.format("- [%s. %s [%s]](%s)",
+                    solution.no(), clazz.getSimpleName(), solution.difficulty(), file.getPath())
+                    : String.format("- [%s. %s [%s %s]](%s)",
+                    solution.no(), clazz.getSimpleName(), solution.difficulty(), status, file.getPath());
         }
     }
 }
