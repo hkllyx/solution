@@ -160,8 +160,11 @@ public class ReadMeGenerator {
 
         @Override
         public String toString() {
-            return String.format("- [%s. %s [%s %s]](%s)", solution.no(), clazz.getSimpleName(), solution.difficulty(),
-                    status, file.getPath());
+            return Status.ACCEPTED.equals(status)
+                    ? String.format("- [%s. %s [%s]](%s)",
+                    solution.no(), clazz.getSimpleName(), solution.difficulty(), file.getPath())
+                    : String.format("- [%s. %s [%s %s]](%s)",
+                    solution.no(), clazz.getSimpleName(), solution.difficulty(), status, file.getPath());
         }
     }
 }
