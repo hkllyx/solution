@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author xiaoyong3
@@ -13,11 +13,11 @@ import com.hkllyx.solution.util.test.TestUtils;
 public class LongestPalindromicSubstring {
 
     public static void main(String[] args) {
-        TestUtils.assertion("bab", "babad");
-        TestUtils.assertion("bb", "bb");
-        TestUtils.assertion("bb", "cbbd");
-        TestUtils.assertion("a", "a");
-        TestUtils.assertion("a", "ac");
+        Assertions.assertExpect("bab", "babad");
+        Assertions.assertExpect("bb", "bb");
+        Assertions.assertExpect("bb", "cbbd");
+        Assertions.assertExpect("a", "a");
+        Assertions.assertExpect("a", "ac");
     }
 
     @Test(value = "暴力", active = false, mills = 316, space = 38.5)

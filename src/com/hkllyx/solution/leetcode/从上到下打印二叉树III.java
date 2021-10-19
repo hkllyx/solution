@@ -3,8 +3,8 @@ package com.hkllyx.solution.leetcode;
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
 import com.hkllyx.solution.util.struct.TreeNode;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -19,10 +19,10 @@ import java.util.List;
 public class 从上到下打印二叉树III {
 
     public static void main(String[] args) {
-        TestUtils.assertion(从上到下打印二叉树III.class,
+        Assertions.assertExpect(从上到下打印二叉树III.class,
                 Arrays.asList(Arrays.asList(1), Arrays.asList(3, 2), Arrays.asList(4, 5)),
                 TreeNode.of(1, 2, 3, 4, null, null, 5));
-        TestUtils.assertion(从上到下打印二叉树III.class,
+        Assertions.assertExpect(从上到下打印二叉树III.class,
                 Arrays.asList(Arrays.asList(3), Arrays.asList(20, 9), Arrays.asList(15, 7)),
                 TreeNode.of(3, 9, 20, null, null, 15, 7));
     }

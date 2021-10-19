@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author xiaoyong3
@@ -13,10 +13,14 @@ import com.hkllyx.solution.util.test.TestUtils;
 public class SearchA2dMatrixII {
 
     public static void main(String[] args) {
-        TestUtils.assertion(SearchA2dMatrixII.class, true, new int[][]{{1, 1}}, 1);
-        TestUtils.assertion(SearchA2dMatrixII.class, true, new int[][]{{-5}}, -5);
-        TestUtils.assertion(SearchA2dMatrixII.class, false, new int[][]{{1, 4, 7, 11, 15}, {2, 5, 8, 12, 19}, {3, 6, 9, 16, 22}, {10, 13, 14, 17, 24}, {18, 21, 23, 26, 30}}, 20);
-        TestUtils.assertion(SearchA2dMatrixII.class, true, new int[][]{{1, 4, 7, 11, 15}, {2, 5, 8, 12, 19}, {3, 6, 9, 16, 22}, {10, 13, 14, 17, 24}, {18, 21, 23, 26, 30}}, 5);
+        Assertions.assertExpect(SearchA2dMatrixII.class, true, new int[][]{{1, 1}}, 1);
+        Assertions.assertExpect(SearchA2dMatrixII.class, true, new int[][]{{-5}}, -5);
+        Assertions.assertExpect(SearchA2dMatrixII.class, false,
+                new int[][]{{1, 4, 7, 11, 15}, {2, 5, 8, 12, 19}, {3, 6, 9, 16, 22}, {10, 13, 14, 17, 24},
+                        {18, 21, 23, 26, 30}}, 20);
+        Assertions.assertExpect(SearchA2dMatrixII.class, true,
+                new int[][]{{1, 4, 7, 11, 15}, {2, 5, 8, 12, 19}, {3, 6, 9, 16, 22}, {10, 13, 14, 17, 24},
+                        {18, 21, 23, 26, 30}}, 5);
     }
 
     @Test

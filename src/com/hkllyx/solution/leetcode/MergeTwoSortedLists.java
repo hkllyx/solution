@@ -3,8 +3,8 @@ package com.hkllyx.solution.leetcode;
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
 import com.hkllyx.solution.util.struct.ListNode;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author xiaoyong3
@@ -14,7 +14,7 @@ import com.hkllyx.solution.util.test.TestUtils;
 public class MergeTwoSortedLists {
 
     public static void main(String[] args) {
-        TestUtils.assertion(MergeTwoSortedLists.class, ListNode.of(1, 1, 2, 3, 4, 4),
+        Assertions.assertExpect(MergeTwoSortedLists.class, ListNode.of(1, 1, 2, 3, 4, 4),
                 ListNode.of(1, 2, 4), ListNode.of(1, 3, 4));
     }
 

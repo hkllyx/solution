@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author xiaoyong3
@@ -13,11 +13,11 @@ import com.hkllyx.solution.util.test.TestUtils;
 public class WordSearch {
 
     public static void main(String[] args) {
-        TestUtils.assertion(WordSearch.class, true,
+        Assertions.assertExpect(WordSearch.class, true,
                 new char[][]{{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}}, "ABCCED");
-        TestUtils.assertion(WordSearch.class, true,
+        Assertions.assertExpect(WordSearch.class, true,
                 new char[][]{{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}}, "SEE");
-        TestUtils.assertion(WordSearch.class, false,
+        Assertions.assertExpect(WordSearch.class, false,
                 new char[][]{{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}}, "ABCB");
     }
 

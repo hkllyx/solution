@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 import java.util.Arrays;
 
@@ -15,7 +15,7 @@ import java.util.Arrays;
 public class SmallestKLcci extends 最小的k个数 {
 
     public static void main(String[] args) {
-        TestUtils.assertion(new int[]{1, 2, 3, 4}, new int[]{1, 3, 5, 7, 2, 4, 6, 8}, 4);
+        Assertions.assertExpect(new int[]{1, 2, 3, 4}, new int[]{1, 3, 5, 7, 2, 4, 6, 8}, 4);
     }
 
     @Test

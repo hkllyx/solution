@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author xiaoyong3
@@ -13,8 +13,9 @@ import com.hkllyx.solution.util.test.TestUtils;
 public class ValidateStackSequences {
 
     public static void main(String[] args) {
-        TestUtils.assertion(ValidateStackSequences.class, true, new int[]{1, 2, 3, 4, 5}, new int[]{4, 5, 3, 2, 1});
-        TestUtils.assertion(ValidateStackSequences.class, false, new int[]{1, 2, 3, 4, 5}, new int[]{4, 3, 5, 1, 2});
+        Assertions.assertExpect(ValidateStackSequences.class, true, new int[]{1, 2, 3, 4, 5}, new int[]{4, 5, 3, 2, 1});
+        Assertions.assertExpect(ValidateStackSequences.class, false, new int[]{1, 2, 3, 4, 5},
+                new int[]{4, 3, 5, 1, 2});
     }
 
     @Test

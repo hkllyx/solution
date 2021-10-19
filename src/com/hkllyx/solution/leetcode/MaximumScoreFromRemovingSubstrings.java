@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author hkllyx
@@ -13,8 +13,8 @@ import com.hkllyx.solution.util.test.TestUtils;
 public class MaximumScoreFromRemovingSubstrings {
 
     public static void main(String[] args) {
-        TestUtils.assertion(MaximumScoreFromRemovingSubstrings.class, 19, "cdbcbbaaabab", 4, 5);
-        TestUtils.assertion(MaximumScoreFromRemovingSubstrings.class, 20, "aabbaaxybbaabb", 5, 4);
+        Assertions.assertExpect(MaximumScoreFromRemovingSubstrings.class, 19, "cdbcbbaaabab", 4, 5);
+        Assertions.assertExpect(MaximumScoreFromRemovingSubstrings.class, 20, "aabbaaxybbaabb", 5, 4);
     }
 
     /**

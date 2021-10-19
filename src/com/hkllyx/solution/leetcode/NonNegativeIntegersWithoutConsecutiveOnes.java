@@ -3,8 +3,8 @@ package com.hkllyx.solution.leetcode;
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
 import com.hkllyx.solution.util.info.Status;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author xiaoyong3
@@ -22,7 +22,7 @@ public class NonNegativeIntegersWithoutConsecutiveOnes {
     }
 
     public static void main(String[] args) {
-        TestUtils.assertion(5, 5);
+        Assertions.assertExpect(5, 5);
     }
 
     @Test(value = "暴力，超出时间限制", active = false)

@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author xiaoyong3
@@ -13,11 +13,11 @@ import com.hkllyx.solution.util.test.TestUtils;
 public class CountAndSay {
 
     public static void main(String[] args) {
-        TestUtils.assertion("1", 1);
-        TestUtils.assertion("11", 2);
-        TestUtils.assertion("21", 3);
-        TestUtils.assertion("1211", 4);
-        TestUtils.assertion("111221", 5);
+        Assertions.assertExpect("1", 1);
+        Assertions.assertExpect("11", 2);
+        Assertions.assertExpect("21", 3);
+        Assertions.assertExpect("1211", 4);
+        Assertions.assertExpect("111221", 5);
     }
 
     @Test

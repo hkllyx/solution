@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 import java.math.BigInteger;
 
@@ -15,7 +15,7 @@ import java.math.BigInteger;
 public class 剪绳子II extends IntegerBreak {
 
     public static void main(String[] args) {
-        TestUtils.assertion(剪绳子II.class, 324522920, 59);
+        Assertions.assertExpect(剪绳子II.class, 324522920, 59);
     }
 
     /**

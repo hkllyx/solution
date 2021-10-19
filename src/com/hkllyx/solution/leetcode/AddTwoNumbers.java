@@ -3,8 +3,8 @@ package com.hkllyx.solution.leetcode;
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
 import com.hkllyx.solution.util.struct.ListNode;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author hkllyx
@@ -14,8 +14,9 @@ import com.hkllyx.solution.util.test.TestUtils;
 public class AddTwoNumbers {
 
     public static void main(String[] args) {
-        TestUtils.assertion(AddTwoNumbers.class, ListNode.of(7, 0, 8), ListNode.of(2, 4, 3), ListNode.of(5, 6, 4));
-        TestUtils.assertion(AddTwoNumbers.class, ListNode.of(8, 9, 9, 9, 0, 0, 0, 1), ListNode.of(9, 9, 9, 9, 9, 9, 9),
+        Assertions.assertExpect(AddTwoNumbers.class, ListNode.of(7, 0, 8), ListNode.of(2, 4, 3), ListNode.of(5, 6, 4));
+        Assertions.assertExpect(AddTwoNumbers.class, ListNode.of(8, 9, 9, 9, 0, 0, 0, 1),
+                ListNode.of(9, 9, 9, 9, 9, 9, 9),
                 ListNode.of(9, 9, 9, 9));
     }
 

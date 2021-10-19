@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author xiaoyong3
@@ -13,7 +13,7 @@ import com.hkllyx.solution.util.test.TestUtils;
 public class 数组中重复的数字 {
 
     public static void main(String[] args) {
-        TestUtils.assertion(数组中重复的数字.class, 2, new int[]{2, 3, 1, 0, 2, 5, 3});
+        Assertions.assertExpect(数组中重复的数字.class, 2, new int[]{2, 3, 1, 0, 2, 5, 3});
     }
 
     @Test

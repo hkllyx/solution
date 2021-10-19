@@ -2,7 +2,7 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
-import com.hkllyx.solution.util.test.TestUtils;
+import com.hkllyx.solution.util.test.Assertions;
 
 /**
  * @author xiaoyong3
@@ -12,11 +12,11 @@ import com.hkllyx.solution.util.test.TestUtils;
 public class ImplementStrStr {
 
     public static void main(String[] args) {
-        TestUtils.assertion(ImplementStrStr.class, 1, "mississippi", "issi");
-        TestUtils.assertion(ImplementStrStr.class, -1, "aaa", "aaaa");
-        TestUtils.assertion(ImplementStrStr.class, 0, "", "");
-        TestUtils.assertion(ImplementStrStr.class, -1, "aaaa", "bba");
-        TestUtils.assertion(ImplementStrStr.class, 2, "hello", "ll");
+        Assertions.assertExpect(ImplementStrStr.class, 1, "mississippi", "issi");
+        Assertions.assertExpect(ImplementStrStr.class, -1, "aaa", "aaaa");
+        Assertions.assertExpect(ImplementStrStr.class, 0, "", "");
+        Assertions.assertExpect(ImplementStrStr.class, -1, "aaaa", "bba");
+        Assertions.assertExpect(ImplementStrStr.class, 2, "hello", "ll");
     }
 
     public int strStr1(String haystack, String needle) {

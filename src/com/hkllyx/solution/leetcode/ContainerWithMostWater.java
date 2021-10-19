@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author xiaoyong3
@@ -13,10 +13,10 @@ import com.hkllyx.solution.util.test.TestUtils;
 public class ContainerWithMostWater {
 
     public static void main(String[] args) {
-        TestUtils.assertion(ContainerWithMostWater.class, 2, new int[]{1, 2, 1});
-        TestUtils.assertion(ContainerWithMostWater.class, 16, new int[]{4, 3, 2, 1, 4});
-        TestUtils.assertion(ContainerWithMostWater.class, 1, new int[]{1, 1});
-        TestUtils.assertion(ContainerWithMostWater.class, 49, new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7});
+        Assertions.assertExpect(ContainerWithMostWater.class, 2, new int[]{1, 2, 1});
+        Assertions.assertExpect(ContainerWithMostWater.class, 16, new int[]{4, 3, 2, 1, 4});
+        Assertions.assertExpect(ContainerWithMostWater.class, 1, new int[]{1, 1});
+        Assertions.assertExpect(ContainerWithMostWater.class, 49, new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7});
     }
 
     /**

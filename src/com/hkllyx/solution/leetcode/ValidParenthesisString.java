@@ -3,8 +3,8 @@ package com.hkllyx.solution.leetcode;
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
 import com.hkllyx.solution.util.info.Status;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author hkllyx
@@ -14,11 +14,12 @@ import com.hkllyx.solution.util.test.TestUtils;
 public class ValidParenthesisString {
 
     public static void main(String[] args) {
-        TestUtils.assertion(true, "()");
-        TestUtils.assertion(true, "(*)");
-        TestUtils.assertion(false, ")(");
-        TestUtils.assertion(true, "(*))");
-        TestUtils.assertion(false, "(((((*(()((((*((**(((()()*)()()()*((((**)())*)*)))))))(())(()))())((*()()(((()((()*(())*(()**)()(())");
+        Assertions.assertExpect(true, "()");
+        Assertions.assertExpect(true, "(*)");
+        Assertions.assertExpect(false, ")(");
+        Assertions.assertExpect(true, "(*))");
+        Assertions.assertExpect(false,
+                "(((((*(()((((*((**(((()()*)()()()*((((**)())*)*)))))))(())(()))())((*()()(((()((()*(())*(()**)()(())");
     }
 
     @Test

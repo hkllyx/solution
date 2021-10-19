@@ -3,8 +3,8 @@ package com.hkllyx.solution.leetcode;
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
 import com.hkllyx.solution.util.struct.TreeNode;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 import java.util.*;
 
@@ -16,7 +16,7 @@ import java.util.*;
 public class BinaryTreeLevelOrderTraversal {
 
     public static void main(String[] args) {
-        TestUtils.assertion(BinaryTreeLevelOrderTraversal.class,
+        Assertions.assertExpect(BinaryTreeLevelOrderTraversal.class,
                 Arrays.asList(Arrays.asList(3), Arrays.asList(9, 20), Arrays.asList(15, 7)),
                 TreeNode.of(3, 9, 20, null, null, 15, 7));
     }

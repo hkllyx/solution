@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author xiaoyong3
@@ -13,8 +13,8 @@ import com.hkllyx.solution.util.test.TestUtils;
 public class NumberComplement {
 
     public static void main(String[] args) {
-        TestUtils.assertion(0, 0);
-        TestUtils.assertion(2, 5);
+        Assertions.assertExpect(0, 0);
+        Assertions.assertExpect(2, 5);
     }
 
     @Test

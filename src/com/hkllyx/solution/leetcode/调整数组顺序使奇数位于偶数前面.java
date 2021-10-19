@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author xiaoyong3
@@ -13,8 +13,8 @@ import com.hkllyx.solution.util.test.TestUtils;
 public class 调整数组顺序使奇数位于偶数前面 {
 
     public static void main(String[] args) {
-        TestUtils.assertion(调整数组顺序使奇数位于偶数前面.class, new int[]{1, 3, 2, 4}, new int[]{1, 2, 3, 4});
-        TestUtils.assertion(调整数组顺序使奇数位于偶数前面.class, new int[]{1, 3, 2, 4},
+        Assertions.assertExpect(调整数组顺序使奇数位于偶数前面.class, new int[]{1, 3, 2, 4}, new int[]{1, 2, 3, 4});
+        Assertions.assertExpect(调整数组顺序使奇数位于偶数前面.class, new int[]{1, 3, 2, 4},
                 new int[]{2, 16, 3, 5, 13, 1, 16, 1, 12, 18, 11, 8, 11, 11, 5, 1});
     }
 

@@ -3,8 +3,8 @@ package com.hkllyx.solution.leetcode;
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
 import com.hkllyx.solution.util.struct.ListNode;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author hkllyx
@@ -14,8 +14,8 @@ import com.hkllyx.solution.util.test.TestUtils;
 public class SortList {
 
     public static void main(String[] args) {
-        TestUtils.assertion(SortList.class, ListNode.of(1, 2, 3, 4), ListNode.of(4, 2, 1, 3));
-        TestUtils.assertion(SortList.class, ListNode.of(-1, 0, 3, 4, 5), ListNode.of(-1, 5, 3, 4, 0));
+        Assertions.assertExpect(SortList.class, ListNode.of(1, 2, 3, 4), ListNode.of(4, 2, 1, 3));
+        Assertions.assertExpect(SortList.class, ListNode.of(-1, 0, 3, 4, 5), ListNode.of(-1, 5, 3, 4, 0));
     }
 
     @Test

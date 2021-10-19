@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author xiaoyong3
@@ -14,10 +14,10 @@ public class 表示数值的字符串 {
 
     public static void main(String[] args) {
         for (String s : new String[]{"+100", "5e2", "-123", "3.1416", "-1E-16", "0123", ".1", "3.", "   1.   "}) {
-            TestUtils.assertion(表示数值的字符串.class, true, s);
+            Assertions.assertExpect(表示数值的字符串.class, true, s);
         }
         for (String s : new String[]{"12e", "1a3.14", "1.2.3", "+-5", "12e+5.4", "E9", "1 1", ".-4"}) {
-            TestUtils.assertion(表示数值的字符串.class, false, s);
+            Assertions.assertExpect(表示数值的字符串.class, false, s);
         }
     }
 

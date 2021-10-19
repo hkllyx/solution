@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author hkllyx
@@ -13,7 +13,7 @@ import com.hkllyx.solution.util.test.TestUtils;
 public class BinarySearch {
 
     public static void main(String[] args) {
-        TestUtils.assertion(4, new int[]{-1, 0, 3, 5, 9, 12}, 9);
+        Assertions.assertExpect(4, new int[]{-1, 0, 3, 5, 9, 12}, 9);
     }
 
     @Test

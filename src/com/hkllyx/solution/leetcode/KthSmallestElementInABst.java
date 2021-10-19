@@ -3,8 +3,8 @@ package com.hkllyx.solution.leetcode;
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
 import com.hkllyx.solution.util.struct.TreeNode;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 import java.util.Stack;
 
@@ -16,8 +16,8 @@ import java.util.Stack;
 public class KthSmallestElementInABst {
 
     public static void main(String[] args) {
-        TestUtils.assertion(3, TreeNode.of(5, 3, 6, 2, 4, null, null, 1), 3);
-        TestUtils.assertion(1, TreeNode.of(3, 1, 4, null, 2), 1);
+        Assertions.assertExpect(3, TreeNode.of(5, 3, 6, 2, 4, null, null, 1), 3);
+        Assertions.assertExpect(1, TreeNode.of(3, 1, 4, null, 2), 1);
     }
 
     @Test(value = "最小堆", active = false, mills = 6)

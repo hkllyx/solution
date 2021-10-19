@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author xiaoyong3
@@ -13,8 +13,8 @@ import com.hkllyx.solution.util.test.TestUtils;
 public class 机器人的运动范围 {
 
     public static void main(String[] args) {
-        TestUtils.assertion(机器人的运动范围.class, 3, 2, 3, 1);
-        TestUtils.assertion(机器人的运动范围.class, 1, 2, 3, 0);
+        Assertions.assertExpect(机器人的运动范围.class, 3, 2, 3, 1);
+        Assertions.assertExpect(机器人的运动范围.class, 1, 2, 3, 0);
     }
 
     @Test

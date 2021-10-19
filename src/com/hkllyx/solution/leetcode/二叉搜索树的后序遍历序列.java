@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author xiaoyong3
@@ -13,8 +13,8 @@ import com.hkllyx.solution.util.test.TestUtils;
 public class 二叉搜索树的后序遍历序列 {
 
     public static void main(String[] args) {
-        TestUtils.assertion(二叉搜索树的后序遍历序列.class, false, (Object) new int[]{1, 6, 3, 2, 5});
-        TestUtils.assertion(二叉搜索树的后序遍历序列.class, true, (Object) new int[]{1, 3, 2, 6, 5});
+        Assertions.assertExpect(二叉搜索树的后序遍历序列.class, false, (Object) new int[]{1, 6, 3, 2, 5});
+        Assertions.assertExpect(二叉搜索树的后序遍历序列.class, true, (Object) new int[]{1, 3, 2, 6, 5});
     }
 
     @Test

@@ -3,8 +3,8 @@ package com.hkllyx.solution.leetcode;
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
 import com.hkllyx.solution.util.struct.TreeNode;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -17,7 +17,7 @@ import java.util.Queue;
 public class SymmetricTree {
 
     public static void main(String[] args) {
-        TestUtils.assertion(SymmetricTree.class, false,
+        Assertions.assertExpect(SymmetricTree.class, false,
                 TreeNode.of(9, -42, -42, null, 76, 76, null, null, 13, null, 13));
     }
 

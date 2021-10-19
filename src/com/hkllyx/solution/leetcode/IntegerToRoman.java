@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -29,11 +29,11 @@ public class IntegerToRoman {
     }
 
     public static void main(String[] args) {
-        TestUtils.assertion(IntegerToRoman.class, "MCMXCIV", 1994);
-        TestUtils.assertion(IntegerToRoman.class, "LVIII", 58);
-        TestUtils.assertion(IntegerToRoman.class, "IX", 9);
-        TestUtils.assertion(IntegerToRoman.class, "IV", 4);
-        TestUtils.assertion(IntegerToRoman.class, "III", 3);
+        Assertions.assertExpect(IntegerToRoman.class, "MCMXCIV", 1994);
+        Assertions.assertExpect(IntegerToRoman.class, "LVIII", 58);
+        Assertions.assertExpect(IntegerToRoman.class, "IX", 9);
+        Assertions.assertExpect(IntegerToRoman.class, "IV", 4);
+        Assertions.assertExpect(IntegerToRoman.class, "III", 3);
     }
 
     public String intToRoman1(int num) {

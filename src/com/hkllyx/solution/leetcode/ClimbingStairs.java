@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author xiaoyong3
@@ -13,9 +13,9 @@ import com.hkllyx.solution.util.test.TestUtils;
 public class ClimbingStairs {
 
     public static void main(String[] args) {
-        TestUtils.assertion(ClimbingStairs.class, 1, 1);
-        TestUtils.assertion(ClimbingStairs.class, 2, 2);
-        TestUtils.assertion(ClimbingStairs.class, 21, 7);
+        Assertions.assertExpect(ClimbingStairs.class, 1, 1);
+        Assertions.assertExpect(ClimbingStairs.class, 2, 2);
+        Assertions.assertExpect(ClimbingStairs.class, 21, 7);
     }
 
     @Test

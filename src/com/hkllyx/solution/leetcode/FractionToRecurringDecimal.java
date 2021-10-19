@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 import java.util.HashMap;
 
@@ -15,20 +15,20 @@ import java.util.HashMap;
 public class FractionToRecurringDecimal {
 
     public static void main(String[] args) {
-        TestUtils.assertion("2147483648", -2147483648, -1);
-        TestUtils.assertion("0.0000000004656612873077392578125", -1, -2147483648);
-        TestUtils.assertion("-0.58(3)", 7, -12);
-        TestUtils.assertion("-6.25", -50, 8);
-        TestUtils.assertion("2", 2, 1);
-        TestUtils.assertion("0.5", 1, 2);
-        TestUtils.assertion("0.(3)", 1, 3);
-        TestUtils.assertion("0.(012)", 4, 333);
-        TestUtils.assertion("0.1(6)", 1, 6);
-        TestUtils.assertion("-2", -2, 1);
-        TestUtils.assertion("-0.5", -1, 2);
-        TestUtils.assertion("-0.(3)", -1, 3);
-        TestUtils.assertion("-0.(012)", -4, 333);
-        TestUtils.assertion("-0.1(6)", -1, 6);
+        Assertions.assertExpect("2147483648", -2147483648, -1);
+        Assertions.assertExpect("0.0000000004656612873077392578125", -1, -2147483648);
+        Assertions.assertExpect("-0.58(3)", 7, -12);
+        Assertions.assertExpect("-6.25", -50, 8);
+        Assertions.assertExpect("2", 2, 1);
+        Assertions.assertExpect("0.5", 1, 2);
+        Assertions.assertExpect("0.(3)", 1, 3);
+        Assertions.assertExpect("0.(012)", 4, 333);
+        Assertions.assertExpect("0.1(6)", 1, 6);
+        Assertions.assertExpect("-2", -2, 1);
+        Assertions.assertExpect("-0.5", -1, 2);
+        Assertions.assertExpect("-0.(3)", -1, 3);
+        Assertions.assertExpect("-0.(012)", -4, 333);
+        Assertions.assertExpect("-0.1(6)", -1, 6);
     }
 
     @Test

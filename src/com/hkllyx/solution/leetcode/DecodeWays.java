@@ -4,8 +4,8 @@ import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
 import com.hkllyx.solution.util.info.Tag;
 import com.hkllyx.solution.util.info.Tags;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author xiaoyong3
@@ -16,15 +16,15 @@ import com.hkllyx.solution.util.test.TestUtils;
 public class DecodeWays {
 
     public static void main(String[] args) {
-        TestUtils.assertion(DecodeWays.class, 1, "2101");
-        TestUtils.assertion(DecodeWays.class, 1, "120");
-        TestUtils.assertion(DecodeWays.class, 1, "101");
-        TestUtils.assertion(DecodeWays.class, 3, "1201234");
-        TestUtils.assertion(DecodeWays.class, 1, "99");
-        TestUtils.assertion(DecodeWays.class, 0, "0");
-        TestUtils.assertion(DecodeWays.class, 0, "06");
-        TestUtils.assertion(DecodeWays.class, 3, "226");
-        TestUtils.assertion(DecodeWays.class, 2, "12");
+        Assertions.assertExpect(DecodeWays.class, 1, "2101");
+        Assertions.assertExpect(DecodeWays.class, 1, "120");
+        Assertions.assertExpect(DecodeWays.class, 1, "101");
+        Assertions.assertExpect(DecodeWays.class, 3, "1201234");
+        Assertions.assertExpect(DecodeWays.class, 1, "99");
+        Assertions.assertExpect(DecodeWays.class, 0, "0");
+        Assertions.assertExpect(DecodeWays.class, 0, "06");
+        Assertions.assertExpect(DecodeWays.class, 3, "226");
+        Assertions.assertExpect(DecodeWays.class, 2, "12");
     }
 
     @Test

@@ -3,8 +3,8 @@ package com.hkllyx.solution.leetcode;
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
 import com.hkllyx.solution.util.struct.ListNode;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author hkllyx
@@ -14,7 +14,7 @@ import com.hkllyx.solution.util.test.TestUtils;
 public class RemoveDuplicatesFromSortedList {
 
     public static void main(String[] args) {
-        TestUtils.assertion(RemoveDuplicatesFromSortedList.class, ListNode.of(1), ListNode.of(1, 1, 1));
+        Assertions.assertExpect(RemoveDuplicatesFromSortedList.class, ListNode.of(1), ListNode.of(1, 1, 1));
     }
 
     @Test

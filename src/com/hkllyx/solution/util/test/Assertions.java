@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
  * @author hkllyx
  * @date 2021/03/26
  */
-public class TestUtils {
+public class Assertions {
     public static final Map<Class<?>, Object> OBJECT_CACHE = new HashMap<>();
     public static final Map<Class<?>, List<Method>> METHODS_CACHE = new HashMap<>();
 
@@ -51,7 +51,7 @@ public class TestUtils {
      *      </li>
      * </ul>
      */
-    public static boolean equals(Object o1, Object o2) {
+    private static boolean equals(Object o1, Object o2) {
         if (o1 == null) {
             return o2 == null;
         } else if (o1 == o2) {
@@ -115,12 +115,18 @@ public class TestUtils {
         }
     }
 
-    public static void assertion(Class<?> clazz, Object expect, Object... args) {
+    public static void assertEquals(Object o1, Object o2) {
+        if (!equals(o1, o2)) {
+            throw new IllegalStateException("异常！");
+        }
+    }
+
+    public static void assertExpect(Class<?> clazz, Object expect, Object... args) {
         assert clazz != null;
         try {
             for (Method method : getTestMethods(clazz)) {
                 String argsString = args == null ? "null" :
-                        Arrays.stream(args).map(TestUtils::toString).collect(Collectors.joining(", "));
+                        Arrays.stream(args).map(Assertions::toString).collect(Collectors.joining(", "));
                 long start = System.currentTimeMillis();
                 Object result = method.invoke(Modifier.isStatic(method.getModifiers()) ? null :
                         getTestObject(clazz), args);
@@ -141,18 +147,22 @@ public class TestUtils {
         }
     }
 
-    public static void assertion(Object expect, Object... args) {
+    public static void assertExpect(Object expect, Object... args) {
+        assertExpect(getMainClass(), expect, args);
+    }
+
+    private static Class<?> getMainClass() {
         try {
             StackTraceElement[] stackTrace = new RuntimeException().getStackTrace();
             for (StackTraceElement stackTraceElement : stackTrace) {
                 if ("main".equals(stackTraceElement.getMethodName())) {
-                    Class<?> clazz = Class.forName(stackTraceElement.getClassName());
-                    assertion(clazz, expect, args);
+                    return Class.forName(stackTraceElement.getClassName());
                 }
             }
         } catch (ClassNotFoundException ex) {
             // Swallow and continue
         }
+        throw new IllegalStateException("未找到main函数所在类");
     }
 
     private static List<Method> getTestMethods(Class<?> clazz) {

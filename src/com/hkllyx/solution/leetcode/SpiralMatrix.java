@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -17,9 +17,9 @@ import java.util.List;
 public class SpiralMatrix {
 
     public static void main(String[] args) {
-        TestUtils.assertion(SpiralMatrix.class, Arrays.asList(1, 2), (Object) new int[][]{{1, 2}});
-        TestUtils.assertion(SpiralMatrix.class, Arrays.asList(1, 2), (Object) new int[][]{{1}, {2}});
-        TestUtils.assertion(SpiralMatrix.class, Arrays.asList(1, 2, 3, 6, 9, 8, 7, 4, 5),
+        Assertions.assertExpect(SpiralMatrix.class, Arrays.asList(1, 2), (Object) new int[][]{{1, 2}});
+        Assertions.assertExpect(SpiralMatrix.class, Arrays.asList(1, 2), (Object) new int[][]{{1}, {2}});
+        Assertions.assertExpect(SpiralMatrix.class, Arrays.asList(1, 2, 3, 6, 9, 8, 7, 4, 5),
                 (Object) new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
     }
 

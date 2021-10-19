@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author hkllyx
@@ -13,8 +13,8 @@ import com.hkllyx.solution.util.test.TestUtils;
 public class ZigZagConversion {
 
     public static void main(String[] args) {
-        TestUtils.assertion(ZigZagConversion.class, "PAHNAPLSIIGYIR", "PAYPALISHIRING", 3);
-        TestUtils.assertion(ZigZagConversion.class, "PINALSIGYAHRPI", "PAYPALISHIRING", 4);
+        Assertions.assertExpect(ZigZagConversion.class, "PAHNAPLSIIGYIR", "PAYPALISHIRING", 3);
+        Assertions.assertExpect(ZigZagConversion.class, "PINALSIGYAHRPI", "PAYPALISHIRING", 4);
     }
 
     /**

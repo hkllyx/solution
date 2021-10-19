@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author xiaoyong3
@@ -13,7 +13,7 @@ import com.hkllyx.solution.util.test.TestUtils;
 public class TheKWeakestRowsInAMatrix {
 
     public static void main(String[] args) {
-        TestUtils.assertion(TheKWeakestRowsInAMatrix.class, new int[]{2, 0, 3},
+        Assertions.assertExpect(TheKWeakestRowsInAMatrix.class, new int[]{2, 0, 3},
                 new int[][]{{1, 1, 0, 0, 0},
                         {1, 1, 1, 1, 0},
                         {1, 0, 0, 0, 0},

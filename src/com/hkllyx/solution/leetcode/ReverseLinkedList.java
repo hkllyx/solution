@@ -3,8 +3,8 @@ package com.hkllyx.solution.leetcode;
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
 import com.hkllyx.solution.util.struct.ListNode;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author xiaoyong3
@@ -14,8 +14,8 @@ import com.hkllyx.solution.util.test.TestUtils;
 public class ReverseLinkedList {
 
     public static void main(String[] args) {
-        TestUtils.assertion(ReverseLinkedList.class, ListNode.of(1), ListNode.of(1));
-        TestUtils.assertion(ReverseLinkedList.class, ListNode.of(5, 4, 3, 2, 1), ListNode.of(1, 2, 3, 4, 5));
+        Assertions.assertExpect(ReverseLinkedList.class, ListNode.of(1), ListNode.of(1));
+        Assertions.assertExpect(ReverseLinkedList.class, ListNode.of(5, 4, 3, 2, 1), ListNode.of(1, 2, 3, 4, 5));
     }
 
     @Test

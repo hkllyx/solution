@@ -3,8 +3,8 @@ package com.hkllyx.solution.leetcode;
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
 import com.hkllyx.solution.util.struct.ListNode;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author xiaoyong3
@@ -14,7 +14,7 @@ import com.hkllyx.solution.util.test.TestUtils;
 public class 链表中倒数第k个节点 {
 
     public static void main(String[] args) {
-        TestUtils.assertion(链表中倒数第k个节点.class, ListNode.of(4, 5, 6), ListNode.of(1, 2, 3, 4, 5, 6), 3);
+        Assertions.assertExpect(链表中倒数第k个节点.class, ListNode.of(4, 5, 6), ListNode.of(1, 2, 3, 4, 5, 6), 3);
     }
 
     @Test

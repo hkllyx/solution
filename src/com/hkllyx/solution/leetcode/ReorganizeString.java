@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 import java.util.Arrays;
 
@@ -15,10 +15,10 @@ import java.util.Arrays;
 public class ReorganizeString {
 
     public static void main(String[] args) {
-        TestUtils.assertion(ReorganizeString.class, "", "bbbbbbb");
-        TestUtils.assertion(ReorganizeString.class, "babab", "baabb");
-        TestUtils.assertion(ReorganizeString.class, "vlvov", "vvvlo");
-        TestUtils.assertion(ReorganizeString.class, "", "aabbaa");
+        Assertions.assertExpect(ReorganizeString.class, "", "bbbbbbb");
+        Assertions.assertExpect(ReorganizeString.class, "babab", "baabb");
+        Assertions.assertExpect(ReorganizeString.class, "vlvov", "vvvlo");
+        Assertions.assertExpect(ReorganizeString.class, "", "aabbaa");
     }
 
     @Test

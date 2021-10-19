@@ -5,8 +5,8 @@ import com.hkllyx.solution.util.info.Solution;
 import com.hkllyx.solution.util.info.Tag;
 import com.hkllyx.solution.util.info.Tags;
 import com.hkllyx.solution.util.struct.TreeNode;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author xiaoyong3
@@ -17,13 +17,13 @@ import com.hkllyx.solution.util.test.TestUtils;
 public class ConstructBinaryTreeFromInorderAndPostorderTraversal {
 
     public static void main(String[] args) {
-        TestUtils.assertion(ConstructBinaryTreeFromInorderAndPostorderTraversal.class, new TreeNode(3),
+        Assertions.assertExpect(ConstructBinaryTreeFromInorderAndPostorderTraversal.class, new TreeNode(3),
                 new int[]{9, 3, 15, 20, 7}, new int[]{9, 15, 7, 20, 3});
-        TestUtils.assertion(ConstructBinaryTreeFromInorderAndPostorderTraversal.class, new TreeNode(3),
+        Assertions.assertExpect(ConstructBinaryTreeFromInorderAndPostorderTraversal.class, new TreeNode(3),
                 new int[]{1, 9, 2, 3, 15, 20, 7}, new int[]{1, 2, 9, 15, 7, 20, 3});
-        TestUtils.assertion(ConstructBinaryTreeFromInorderAndPostorderTraversal.class, new TreeNode(3),
+        Assertions.assertExpect(ConstructBinaryTreeFromInorderAndPostorderTraversal.class, new TreeNode(3),
                 new int[]{1, 9, 3}, new int[]{1, 9, 3});
-        TestUtils.assertion(ConstructBinaryTreeFromInorderAndPostorderTraversal.class, new TreeNode(3),
+        Assertions.assertExpect(ConstructBinaryTreeFromInorderAndPostorderTraversal.class, new TreeNode(3),
                 new int[]{3, 9, 1}, new int[]{1, 9, 3});
     }
 

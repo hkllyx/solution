@@ -4,8 +4,8 @@ import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
 import com.hkllyx.solution.util.info.Tag;
 import com.hkllyx.solution.util.info.Tags;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 import java.util.Arrays;
 import java.util.List;
@@ -18,11 +18,11 @@ import java.util.List;
 public class NumberOfPathsWithMaxScore {
 
     public static void main(String[] args) {
-        TestUtils.assertion(NumberOfPathsWithMaxScore.class, new int[]{0, 1}, Arrays.asList("EX", "XS"));
-        TestUtils.assertion(NumberOfPathsWithMaxScore.class, new int[]{0, 0}, Arrays.asList("E11", "XXX", "11S"));
-        TestUtils.assertion(NumberOfPathsWithMaxScore.class, new int[]{4, 2}, Arrays.asList("E12", "1X1", "21S"));
-        TestUtils.assertion(NumberOfPathsWithMaxScore.class, new int[]{7, 1}, Arrays.asList("E23", "2X2", "12S"));
-        TestUtils.assertion(NumberOfPathsWithMaxScore.class, new int[]{1773, 690285631}, Arrays.asList(
+        Assertions.assertExpect(NumberOfPathsWithMaxScore.class, new int[]{0, 1}, Arrays.asList("EX", "XS"));
+        Assertions.assertExpect(NumberOfPathsWithMaxScore.class, new int[]{0, 0}, Arrays.asList("E11", "XXX", "11S"));
+        Assertions.assertExpect(NumberOfPathsWithMaxScore.class, new int[]{4, 2}, Arrays.asList("E12", "1X1", "21S"));
+        Assertions.assertExpect(NumberOfPathsWithMaxScore.class, new int[]{7, 1}, Arrays.asList("E23", "2X2", "12S"));
+        Assertions.assertExpect(NumberOfPathsWithMaxScore.class, new int[]{1773, 690285631}, Arrays.asList(
                 "E999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999",
                 "9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999",
                 "9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999",

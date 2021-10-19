@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -16,7 +16,8 @@ import java.util.stream.Collectors;
 public class TopKFrequentWords {
 
     public static void main(String[] args) {
-        TestUtils.assertion(TopKFrequentWords.class, Arrays.asList("i", "love"), new String[]{"i", "love", "leetcode", "i", "love", "coding"}, 2);
+        Assertions.assertExpect(TopKFrequentWords.class, Arrays.asList("i", "love"),
+                new String[]{"i", "love", "leetcode", "i", "love", "coding"}, 2);
     }
 
     @Test

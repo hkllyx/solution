@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author xiaoyong3
@@ -12,10 +12,10 @@ import com.hkllyx.solution.util.test.TestUtils;
 @Solution(no = "165", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/compare-version-numbers/")
 public class CompareVersionNumbers {
     public static void main(String[] args) {
-        TestUtils.assertion(0, "1.01", "1.001");
-        TestUtils.assertion(0, "1.0", "1.0.0");
-        TestUtils.assertion(-1, "0.1", "1.1");
-        TestUtils.assertion(1, "1.0.1", "1");
+        Assertions.assertExpect(0, "1.01", "1.001");
+        Assertions.assertExpect(0, "1.0", "1.0.0");
+        Assertions.assertExpect(-1, "0.1", "1.1");
+        Assertions.assertExpect(1, "1.0.1", "1");
     }
 
     @Test

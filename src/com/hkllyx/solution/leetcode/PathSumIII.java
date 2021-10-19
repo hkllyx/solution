@@ -3,8 +3,8 @@ package com.hkllyx.solution.leetcode;
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
 import com.hkllyx.solution.util.struct.TreeNode;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -19,7 +19,7 @@ import java.util.Queue;
 public class PathSumIII {
 
     public static void main(String[] args) {
-        TestUtils.assertion(2, TreeNode.of(1, null, 2, null, 3, null, 4, null, 5), 3);
+        Assertions.assertExpect(2, TreeNode.of(1, null, 2, null, 3, null, 4, null, 5), 3);
     }
 
     @Test(active = false)

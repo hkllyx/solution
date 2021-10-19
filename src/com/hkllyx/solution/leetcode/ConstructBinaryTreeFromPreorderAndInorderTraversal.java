@@ -3,8 +3,8 @@ package com.hkllyx.solution.leetcode;
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
 import com.hkllyx.solution.util.struct.TreeNode;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author xiaoyong3
@@ -14,7 +14,8 @@ import com.hkllyx.solution.util.test.TestUtils;
 public class ConstructBinaryTreeFromPreorderAndInorderTraversal {
 
     public static void main(String[] args) {
-        TestUtils.assertion(ConstructBinaryTreeFromPreorderAndInorderTraversal.class, 0, new int[]{1, 2}, new int[]{2, 1});
+        Assertions.assertExpect(ConstructBinaryTreeFromPreorderAndInorderTraversal.class, 0, new int[]{1, 2},
+                new int[]{2, 1});
     }
 
     @Test

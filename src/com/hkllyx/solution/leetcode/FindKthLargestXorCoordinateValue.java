@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 import java.util.Arrays;
 
@@ -15,7 +15,7 @@ import java.util.Arrays;
 public class FindKthLargestXorCoordinateValue {
 
     public static void main(String[] args) {
-        TestUtils.assertion(FindKthLargestXorCoordinateValue.class, 7, new int[][]{{5, 2}, {1, 6}}, 1);
+        Assertions.assertExpect(FindKthLargestXorCoordinateValue.class, 7, new int[][]{{5, 2}, {1, 6}}, 1);
     }
 
     @Test

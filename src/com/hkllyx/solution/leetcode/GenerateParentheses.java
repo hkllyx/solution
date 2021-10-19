@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -18,8 +18,8 @@ import java.util.List;
 public class GenerateParentheses {
 
     public static void main(String[] args) {
-        TestUtils.assertion(Arrays.asList("((()))", "(()())", "(())()", "()(())", "()()()"), 3);
-        TestUtils.assertion(Collections.singletonList("()"), 1);
+        Assertions.assertExpect(Arrays.asList("((()))", "(()())", "(())()", "()(())", "()()()"), 3);
+        Assertions.assertExpect(Collections.singletonList("()"), 1);
     }
 
     @Test(value = "DFS", mills = 0, space = 38.7)

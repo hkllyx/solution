@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author xiaoyong3
@@ -16,7 +16,7 @@ public class PowXN {
         double base = 2.0;
         int i = -8;
         System.out.println(-i);
-        TestUtils.assertion(PowXN.class, Math.pow(base, i), base, i);
+        Assertions.assertExpect(PowXN.class, Math.pow(base, i), base, i);
     }
 
     /**

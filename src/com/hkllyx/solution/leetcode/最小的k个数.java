@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 import java.util.Arrays;
 
@@ -15,7 +15,7 @@ import java.util.Arrays;
 public class 最小的k个数 {
 
     public static void main(String[] args) {
-        TestUtils.assertion(最小的k个数.class,
+        Assertions.assertExpect(最小的k个数.class,
                 new int[]{},
                 new int[]{3, 2, 1},
                 2);

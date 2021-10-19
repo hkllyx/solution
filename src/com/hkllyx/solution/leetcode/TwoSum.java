@@ -4,8 +4,8 @@ import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
 import com.hkllyx.solution.util.info.Tag;
 import com.hkllyx.solution.util.info.Tags;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -19,9 +19,9 @@ import java.util.Map;
 public class TwoSum {
 
     public static void main(String[] args) {
-        TestUtils.assertion(TwoSum.class, new int[]{1, 0}, new int[]{2, 7, 11, 15}, 9);
-        TestUtils.assertion(TwoSum.class, new int[]{2, 1}, new int[]{3, 2, 4}, 6);
-        TestUtils.assertion(TwoSum.class, new int[]{1, 0}, new int[]{3, 3}, 6);
+        Assertions.assertExpect(TwoSum.class, new int[]{1, 0}, new int[]{2, 7, 11, 15}, 9);
+        Assertions.assertExpect(TwoSum.class, new int[]{2, 1}, new int[]{3, 2, 4}, 6);
+        Assertions.assertExpect(TwoSum.class, new int[]{1, 0}, new int[]{3, 3}, 6);
     }
 
     @Test

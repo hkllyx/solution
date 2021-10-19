@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author hkllyx
@@ -13,8 +13,8 @@ import com.hkllyx.solution.util.test.TestUtils;
 public class RemoveElement {
 
     public static void main(String[] args) {
-        TestUtils.assertion(RemoveElement.class, 2, new int[]{3, 2, 2, 3}, 3);
-        TestUtils.assertion(RemoveElement.class, 5, new int[]{0, 1, 2, 2, 3, 0, 4, 2}, 2);
+        Assertions.assertExpect(RemoveElement.class, 2, new int[]{3, 2, 2, 3}, 3);
+        Assertions.assertExpect(RemoveElement.class, 5, new int[]{0, 1, 2, 2, 3, 0, 4, 2}, 2);
     }
 
     public int removeElement1(int[] nums, int val) {

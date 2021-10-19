@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -23,8 +23,9 @@ public class LetterCombinationsOfAPhoneNumber {
     };
 
     public static void main(String[] args) {
-        TestUtils.assertion(LetterCombinationsOfAPhoneNumber.class, Arrays.asList("w","x","y","z"), "9");
-        TestUtils.assertion(LetterCombinationsOfAPhoneNumber.class, Arrays.asList("ad","ae","af","bd","be","bf","cd","ce","cf"), "23");
+        Assertions.assertExpect(LetterCombinationsOfAPhoneNumber.class, Arrays.asList("w", "x", "y", "z"), "9");
+        Assertions.assertExpect(LetterCombinationsOfAPhoneNumber.class,
+                Arrays.asList("ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"), "23");
     }
 
     public List<String> letterCombinations1(String digits) {

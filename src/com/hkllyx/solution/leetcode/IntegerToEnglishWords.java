@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 import java.util.LinkedList;
 
@@ -19,10 +19,12 @@ public class IntegerToEnglishWords {
     private static final String[] TY = {"", "", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
 
     public static void main(String[] args) {
-        TestUtils.assertion("One Hundred Twenty Three", 123);
-        TestUtils.assertion("Twelve Thousand Three Hundred Forty Five", 12345);
-        TestUtils.assertion("One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven", 1234567);
-        TestUtils.assertion("One Billion Two Hundred Thirty Four Million Five Hundred Sixty Seven Thousand Eight Hundred Ninety One", 1234567891);
+        Assertions.assertExpect("One Hundred Twenty Three", 123);
+        Assertions.assertExpect("Twelve Thousand Three Hundred Forty Five", 12345);
+        Assertions.assertExpect("One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven", 1234567);
+        Assertions.assertExpect(
+                "One Billion Two Hundred Thirty Four Million Five Hundred Sixty Seven Thousand Eight Hundred Ninety One",
+                1234567891);
     }
 
     @Test

@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author xiaoyong3
@@ -13,7 +13,7 @@ import com.hkllyx.solution.util.test.TestUtils;
 public class IntegerBreak {
 
     public static void main(String[] args) {
-        TestUtils.assertion(IntegerBreak.class, 36, 1000);
+        Assertions.assertExpect(IntegerBreak.class, 36, 1000);
     }
 
     public int integerBreak(int n) {

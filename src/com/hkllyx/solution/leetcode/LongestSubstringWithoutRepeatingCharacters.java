@@ -4,8 +4,8 @@ import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
 import com.hkllyx.solution.util.info.Tag;
 import com.hkllyx.solution.util.info.Tags;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 import java.util.HashSet;
 
@@ -18,11 +18,11 @@ import java.util.HashSet;
 public class LongestSubstringWithoutRepeatingCharacters {
 
     public static void main(String[] args) {
-        TestUtils.assertion(LongestSubstringWithoutRepeatingCharacters.class, 3, "dvdf");
-        TestUtils.assertion(LongestSubstringWithoutRepeatingCharacters.class, 3, "abcabcbb");
-        TestUtils.assertion(LongestSubstringWithoutRepeatingCharacters.class, 1, "bbbbbbb");
-        TestUtils.assertion(LongestSubstringWithoutRepeatingCharacters.class, 3, "pwwkew");
-        TestUtils.assertion(LongestSubstringWithoutRepeatingCharacters.class, 5, "abcde");
+        Assertions.assertExpect(LongestSubstringWithoutRepeatingCharacters.class, 3, "dvdf");
+        Assertions.assertExpect(LongestSubstringWithoutRepeatingCharacters.class, 3, "abcabcbb");
+        Assertions.assertExpect(LongestSubstringWithoutRepeatingCharacters.class, 1, "bbbbbbb");
+        Assertions.assertExpect(LongestSubstringWithoutRepeatingCharacters.class, 3, "pwwkew");
+        Assertions.assertExpect(LongestSubstringWithoutRepeatingCharacters.class, 5, "abcde");
     }
 
     @Test

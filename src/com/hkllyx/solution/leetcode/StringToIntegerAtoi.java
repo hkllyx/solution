@@ -4,8 +4,8 @@ import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
 import com.hkllyx.solution.util.info.Tag;
 import com.hkllyx.solution.util.info.Tags;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author xiaoyong3
@@ -15,18 +15,18 @@ import com.hkllyx.solution.util.test.TestUtils;
 @Tags({Tag.MATH, Tag.STRING})
 public class StringToIntegerAtoi {
     public static void main(String[] args) {
-        TestUtils.assertion(StringToIntegerAtoi.class, 2147483646, "2147483646");
-        TestUtils.assertion(StringToIntegerAtoi.class, 2147483647, "2147483647");
-        TestUtils.assertion(StringToIntegerAtoi.class, 2147483647, "2147483648");
-        TestUtils.assertion(StringToIntegerAtoi.class, -2147483647, "-2147483647");
-        TestUtils.assertion(StringToIntegerAtoi.class, -2147483648, "-2147483648");
-        TestUtils.assertion(StringToIntegerAtoi.class, -2147483648, "-2147483649");
-        TestUtils.assertion(StringToIntegerAtoi.class, 1234, "    1234");
-        TestUtils.assertion(StringToIntegerAtoi.class, 1234, "    1234   ");
-        TestUtils.assertion(StringToIntegerAtoi.class, -1234, "    -1234   ");
-        TestUtils.assertion(StringToIntegerAtoi.class, 0, "       ");
-        TestUtils.assertion(StringToIntegerAtoi.class, 0, "hh 1");
-        TestUtils.assertion(StringToIntegerAtoi.class, 0, "- ddd");
+        Assertions.assertExpect(StringToIntegerAtoi.class, 2147483646, "2147483646");
+        Assertions.assertExpect(StringToIntegerAtoi.class, 2147483647, "2147483647");
+        Assertions.assertExpect(StringToIntegerAtoi.class, 2147483647, "2147483648");
+        Assertions.assertExpect(StringToIntegerAtoi.class, -2147483647, "-2147483647");
+        Assertions.assertExpect(StringToIntegerAtoi.class, -2147483648, "-2147483648");
+        Assertions.assertExpect(StringToIntegerAtoi.class, -2147483648, "-2147483649");
+        Assertions.assertExpect(StringToIntegerAtoi.class, 1234, "    1234");
+        Assertions.assertExpect(StringToIntegerAtoi.class, 1234, "    1234   ");
+        Assertions.assertExpect(StringToIntegerAtoi.class, -1234, "    -1234   ");
+        Assertions.assertExpect(StringToIntegerAtoi.class, 0, "       ");
+        Assertions.assertExpect(StringToIntegerAtoi.class, 0, "hh 1");
+        Assertions.assertExpect(StringToIntegerAtoi.class, 0, "- ddd");
     }
 
     @Test

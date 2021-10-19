@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author xiaoyong3
@@ -13,10 +13,10 @@ import com.hkllyx.solution.util.test.TestUtils;
 public class FindMinimumInRotatedSortedArrayII {
 
     public static void main(String[] args) {
-        TestUtils.assertion(FindMinimumInRotatedSortedArrayII.class, 1, new int[]{10, 1, 10, 10, 10});
-        TestUtils.assertion(FindMinimumInRotatedSortedArrayII.class, 1, new int[]{3, 4, 5, 1, 2});
-        TestUtils.assertion(FindMinimumInRotatedSortedArrayII.class, 1, new int[]{3, 1, 3});
-        TestUtils.assertion(FindMinimumInRotatedSortedArrayII.class, 1, new int[]{1});
+        Assertions.assertExpect(FindMinimumInRotatedSortedArrayII.class, 1, new int[]{10, 1, 10, 10, 10});
+        Assertions.assertExpect(FindMinimumInRotatedSortedArrayII.class, 1, new int[]{3, 4, 5, 1, 2});
+        Assertions.assertExpect(FindMinimumInRotatedSortedArrayII.class, 1, new int[]{3, 1, 3});
+        Assertions.assertExpect(FindMinimumInRotatedSortedArrayII.class, 1, new int[]{1});
     }
 
     @Test

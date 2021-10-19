@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author hkllyx
@@ -13,7 +13,8 @@ import com.hkllyx.solution.util.test.TestUtils;
 public class ReverseBits {
 
     public static void main(String[] args) {
-        TestUtils.assertion(ReverseBits.class, 0b00000010100101000001111010011100, 0b00111001011110000010100101000000);
+        Assertions.assertExpect(ReverseBits.class, 0b00000010100101000001111010011100,
+                0b00111001011110000010100101000000);
     }
 
     /**

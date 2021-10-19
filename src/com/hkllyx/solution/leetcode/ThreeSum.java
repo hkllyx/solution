@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 import java.util.*;
 
@@ -15,12 +15,13 @@ import java.util.*;
 public class ThreeSum {
 
     public static void main(String[] args) {
-        TestUtils.assertion(ThreeSum.class,
+        Assertions.assertExpect(ThreeSum.class,
                 Arrays.asList(Arrays.asList(-2, -1, 3), Arrays.asList(-2, 0, 2), Arrays.asList(-1, 0, 1)),
                 new int[]{3, 0, -2, -1, 1, 2});
-        TestUtils.assertion(ThreeSum.class, Arrays.asList(Arrays.asList(-1, 0, 1), Arrays.asList(-1, -1, 2)),
+        Assertions.assertExpect(ThreeSum.class, Arrays.asList(Arrays.asList(-1, 0, 1), Arrays.asList(-1, -1, 2)),
                 new int[]{-1, 0, 1, 2, -1, -4});
-        TestUtils.assertion(ThreeSum.class, Collections.singletonList(Arrays.asList(0, 0, 0)), new int[]{0, 0, 0, 0});
+        Assertions.assertExpect(ThreeSum.class, Collections.singletonList(Arrays.asList(0, 0, 0)),
+                new int[]{0, 0, 0, 0});
     }
 
     public List<List<Integer>> threeSum1(int[] nums) {

@@ -3,8 +3,8 @@ package com.hkllyx.solution.leetcode;
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
 import com.hkllyx.solution.util.info.Status;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author xiaoyong3
@@ -14,11 +14,11 @@ import com.hkllyx.solution.util.test.TestUtils;
 public class DivideTwoIntegers {
 
     public static void main(String[] args) {
-        TestUtils.assertion(1, 1, 1);
-        TestUtils.assertion(3, 10, 3);
-        TestUtils.assertion(-2, 7, -3);
-        TestUtils.assertion(Integer.MAX_VALUE, Integer.MIN_VALUE, -1);
-        TestUtils.assertion(Integer.MIN_VALUE, Integer.MIN_VALUE, 1);
+        Assertions.assertExpect(1, 1, 1);
+        Assertions.assertExpect(3, 10, 3);
+        Assertions.assertExpect(-2, 7, -3);
+        Assertions.assertExpect(Integer.MAX_VALUE, Integer.MIN_VALUE, -1);
+        Assertions.assertExpect(Integer.MIN_VALUE, Integer.MIN_VALUE, 1);
     }
 
     @Test
