@@ -40,8 +40,6 @@ public class ReadMeGenerator {
             // 主标题
             writer.printf("# Solutions%n%n");
             for (Map.Entry<String, String> entry : libMap.entrySet()) {
-                // 二级标题
-                writer.printf("## %s%n%n", entry.getKey());
                 File libFile = new File(rootPath, entry.getValue());
                 // 扫描文件
                 List<Node> nodes = new ArrayList<>();
@@ -59,7 +57,21 @@ public class ReadMeGenerator {
                         }
                     }
                 }
+                // 二级标题
+                writer.printf("## %s%n%n", entry.getKey());
+                // 题目列表
                 fixNodes(nodes).stream().sorted().forEach(writer::println);
+                writer.println();
+                // 统计信息
+                writer.printf("共：%d", nodes.size());
+                Map<Status, Long> countingMap = nodes.stream()
+                        .collect(Collectors.groupingBy(Node::getStatus, Collectors.counting()));
+                for (Status status : Status.values()) {
+                    if (countingMap.containsKey(status)) {
+                        writer.printf("  %s：%d", status.toString(), countingMap.get(status));
+                    }
+                }
+                writer.println();
             }
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();

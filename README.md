@@ -45,10 +45,12 @@
 - [206. ReverseLinkedList [简单]](src\com\hkllyx\solution\leetcode\ReverseLinkedList.java)
 - [223. RectangleArea [中等]](src\com\hkllyx\solution\leetcode\RectangleArea.java)
 - [226. InvertBinaryTree [简单]](src\com\hkllyx\solution\leetcode\InvertBinaryTree.java)
+- [230. KthSmallestElementInABst [中等]](src\com\hkllyx\solution\leetcode\KthSmallestElementInABst.java)
 - [233. NumberOfDigitOne [困难 失败]](src\com\hkllyx\solution\leetcode\NumberOfDigitOne.java)
 - [240. SearchA2dMatrixII [中等]](src\com\hkllyx\solution\leetcode\SearchA2dMatrixII.java)
 - [257. BinaryTreePaths [简单]](src\com\hkllyx\solution\leetcode\BinaryTreePaths.java)
 - [273. IntegerToEnglishWords [困难]](src\com\hkllyx\solution\leetcode\IntegerToEnglishWords.java)
+- [282. ExpressionAddOperators [困难 失败]](src\com\hkllyx\solution\leetcode\ExpressionAddOperators.java)
 - [295. FindMedianFromDataStream [困难 失败]](src\com\hkllyx\solution\leetcode\FindMedianFromDataStream.java)
 - [343. IntegerBreak [中等]](src\com\hkllyx\solution\leetcode\IntegerBreak.java)
 - [412. FizzBuzz [简单]](src\com\hkllyx\solution\leetcode\FizzBuzz.java)
@@ -56,6 +58,7 @@
 - [437. PathSumIII [中等]](src\com\hkllyx\solution\leetcode\PathSumIII.java)
 - [476. NumberComplement [简单]](src\com\hkllyx\solution\leetcode\NumberComplement.java)
 - [600. NonNegativeIntegersWithoutConsecutiveOnes [困难 帮助]](src\com\hkllyx\solution\leetcode\NonNegativeIntegersWithoutConsecutiveOnes.java)
+- [678. ValidParenthesisString [中等 失败]](src\com\hkllyx\solution\leetcode\ValidParenthesisString.java)
 - [692. TopKFrequentWords [中等]](src\com\hkllyx\solution\leetcode\TopKFrequentWords.java)
 - [704. BinarySearch [简单]](src\com\hkllyx\solution\leetcode\BinarySearch.java)
 - [767. ReorganizeString [中等]](src\com\hkllyx\solution\leetcode\ReorganizeString.java)
@@ -105,3 +108,5 @@
 - [剑指Offer 40. 最小的k个数 [简单]](src\com\hkllyx\solution\leetcode\最小的k个数.java)
 - [剑指Offer II 069. 山峰数组的顶部 [简单]](src\com\hkllyx\solution\leetcode\山峰数组的顶部.java)
 - [面试题17.14. SmallestKLcci [中等]](src\com\hkllyx\solution\leetcode\SmallestKLcci.java)
+
+共：106  通过：96  失败：8  帮助：2
