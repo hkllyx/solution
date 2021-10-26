@@ -1,6 +1,6 @@
 # Solutions
 
-## LeetCode: 103
+## LeetCode
 
 - [1. TwoSum [简单]](src\com\hkllyx\solution\leetcode\TwoSum.java)
 - [2. AddTwoNumbers [中等]](src\com\hkllyx\solution\leetcode\AddTwoNumbers.java)
@@ -43,6 +43,7 @@
 - [190. ReverseBits [简单]](src\com\hkllyx\solution\leetcode\ReverseBits.java)
 - [191. NumberOfOneBits [简单]](src\com\hkllyx\solution\leetcode\NumberOfOneBits.java)
 - [206. ReverseLinkedList [简单]](src\com\hkllyx\solution\leetcode\ReverseLinkedList.java)
+- [211. DesignAddAndSearchWordsDataStructure [中等]](src\com\hkllyx\solution\leetcode\DesignAddAndSearchWordsDataStructure.java)
 - [223. RectangleArea [中等]](src\com\hkllyx\solution\leetcode\RectangleArea.java)
 - [226. InvertBinaryTree [简单]](src\com\hkllyx\solution\leetcode\InvertBinaryTree.java)
 - [230. KthSmallestElementInABst [中等]](src\com\hkllyx\solution\leetcode\KthSmallestElementInABst.java)
@@ -56,7 +57,9 @@
 - [412. FizzBuzz [简单]](src\com\hkllyx\solution\leetcode\FizzBuzz.java)
 - [413. ArithmeticSlices [中等 失败]](src\com\hkllyx\solution\leetcode\ArithmeticSlices.java)
 - [437. PathSumIII [中等]](src\com\hkllyx\solution\leetcode\PathSumIII.java)
+- [453. MinimumMovesToEqualArrayElements [简单]](src\com\hkllyx\solution\leetcode\MinimumMovesToEqualArrayElements.java)
 - [476. NumberComplement [简单]](src\com\hkllyx\solution\leetcode\NumberComplement.java)
+- [496. NextGreaterElementI [简单]](src\com\hkllyx\solution\leetcode\NextGreaterElementI.java)
 - [600. NonNegativeIntegersWithoutConsecutiveOnes [困难 帮助]](src\com\hkllyx\solution\leetcode\NonNegativeIntegersWithoutConsecutiveOnes.java)
 - [678. ValidParenthesisString [中等 失败]](src\com\hkllyx\solution\leetcode\ValidParenthesisString.java)
 - [692. TopKFrequentWords [中等]](src\com\hkllyx\solution\leetcode\TopKFrequentWords.java)
@@ -109,4 +112,4 @@
 - [剑指Offer II 069. 山峰数组的顶部 [简单]](src\com\hkllyx\solution\leetcode\山峰数组的顶部.java)
 - [面试题17.14. SmallestKLcci [中等]](src\com\hkllyx\solution\leetcode\SmallestKLcci.java)
 
-共：106  通过：96  失败：8  帮助：2
+共：109  通过：99  失败：8  帮助：2

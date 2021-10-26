@@ -2,8 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
-import com.hkllyx.solution.util.test.TestUtils;
 
 /**
  * @author xiaoyong3
@@ -13,9 +13,9 @@ import com.hkllyx.solution.util.test.TestUtils;
 public class MinimumMovesToEqualArrayElements {
 
     public static void main(String[] args) {
-        TestUtils.assertion(0, (Object) new int[] {1, 1, 1});
-        TestUtils.assertion(3, (Object) new int[] {1, 2, 3});
-        TestUtils.assertion(6, (Object) new int[] {1, 2, 3, 4});
+        Assertions.assertExpect(0, (Object) new int[]{1, 1, 1});
+        Assertions.assertExpect(3, (Object) new int[]{1, 2, 3});
+        Assertions.assertExpect(6, (Object) new int[]{1, 2, 3, 4});
     }
 
     @Test(value = "暴力", active = false)
