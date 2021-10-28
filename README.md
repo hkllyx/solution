@@ -2,6 +2,7 @@
 
 ## LeetCode
 
+- [. ReorderedPowerOf2 [中等]](src\com\hkllyx\solution\leetcode\ReorderedPowerOf2.java)
 - [1. TwoSum [简单]](src\com\hkllyx\solution\leetcode\TwoSum.java)
 - [2. AddTwoNumbers [中等]](src\com\hkllyx\solution\leetcode\AddTwoNumbers.java)
 - [3. LongestSubstringWithoutRepeatingCharacters [中等]](src\com\hkllyx\solution\leetcode\LongestSubstringWithoutRepeatingCharacters.java)
@@ -112,4 +113,4 @@
 - [剑指Offer II 069. 山峰数组的顶部 [简单]](src\com\hkllyx\solution\leetcode\山峰数组的顶部.java)
 - [面试题17.14. SmallestKLcci [中等]](src\com\hkllyx\solution\leetcode\SmallestKLcci.java)
 
-共：109  通过：99  失败：8  帮助：2
+共：110  通过：100  失败：8  帮助：2
