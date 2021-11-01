@@ -10,7 +10,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/10/14
  */
-@Solution(no = "32", difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/longest-valid-parentheses/", status = Status.FAILED)
+@Solution(no = "32", difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/longest-valid-parentheses/", status = Status.HELPED)
 public class LongestValidParentheses {
 
     public static void main(String[] args) {
@@ -42,47 +42,30 @@ public class LongestValidParentheses {
         return maxGap == 0 ? 0 : maxGap + 1;
     }
 
-    @Test
+    @Test(value = "DP", active = false, mills = 1, space = 38.5)
     public int longestValidParentheses1(String s) {
-        int strLen = s.length();
-        if (strLen == 0) {
-            return 0;
-        }
-        // dp[i][j]表示i~j是否为有效括号子串，dp[i][j] = false, i >= j || j - i = 2n
-        boolean[][] dp = new boolean[strLen][strLen];
-        int maxGap = 0;
-        for (int gap = 1; gap < strLen; gap += 2) {
-            for (int i = 0; i < strLen - gap; i++) {
-                int j = i + gap;
-                dp[i][j] = (s.charAt(i) == '(' && s.charAt(j) == ')' && (gap == 1 || dp[i + 1][j - 1]));
-                for (int subGap = 1; !dp[i][j] && subGap < gap; subGap += 2) {
-                    dp[i][j] = dp[i][i + subGap] && dp[i + subGap + 1][j];
-                }
-                if (dp[i][j] && gap > maxGap) {
-                    maxGap = gap;
-                }
+        int len = s.length(), max = 0;
+        // dp[i]表示第i位前的有效括号的长度，即s[i - dp[i]] ~ s [i]是i位前最长有效括号长度
+        int[] dp = new int[len];
+        for (int i = 1; i < len; i++) {
+            if (s.charAt(i) == '(') {
+                continue;
             }
+            // s[i] == ')'时，s[i - 1] == '('，则可以直接匹配到一个括号
+            // s[i - 1] == ')'，则看匹配到s[i - 1]处的最前端的前一位s[i - dp[i - 1] - 1]是否可以匹配
+            if (s.charAt(i - 1) == '(') {
+                dp[i] = (i >= 2 ? dp[i - 2] : 0) + 2;
+            } else if (i - dp[i - 1] - 1 >= 0 && s.charAt(i - dp[i - 1] - 1) == '(') {
+                dp[i] = (i - dp[i - 1] - 2 >= 0 ? dp[i - dp[i - 1] - 2] : 0) + dp[i - 1] + 2;
+            }
+            max = Math.max(dp[i], max);
         }
-        return maxGap == 0 ? 0 : maxGap + 1;
+        return max;
     }
 
-    private void print(String s, boolean[][] dp) {
-        System.out.print("  ");
-        for (int i = 0; i < s.length(); i++) {
-            System.out.print(i % 10 + " ");
-        }
-        System.out.print("\n  ");
-        for (int i = 0; i < s.length(); i++) {
-            System.out.print(s.charAt(i) + " ");
-        }
-        System.out.println();
-        int i = 0;
-        for (boolean[] row : dp) {
-            System.out.print(i++ % 10 + " ");
-            for (boolean b : row) {
-                System.out.print(b ? "o " : "- ");
-            }
-            System.out.println();
-        }
+    @Test(value = "Stack")
+    public int longestValidParentheses2(String s) {
+        int len = s.length(), max = 0;
+        return max;
     }
 }

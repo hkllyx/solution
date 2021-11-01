@@ -2,14 +2,13 @@
 
 ## LeetCode
 
-- [. ReorderedPowerOf2 [中等]](src\com\hkllyx\solution\leetcode\ReorderedPowerOf2.java)
 - [1. TwoSum [简单]](src\com\hkllyx\solution\leetcode\TwoSum.java)
 - [2. AddTwoNumbers [中等]](src\com\hkllyx\solution\leetcode\AddTwoNumbers.java)
 - [3. LongestSubstringWithoutRepeatingCharacters [中等]](src\com\hkllyx\solution\leetcode\LongestSubstringWithoutRepeatingCharacters.java)
 - [5. LongestPalindromicSubstring [中等]](src\com\hkllyx\solution\leetcode\LongestPalindromicSubstring.java)
 - [6. ZigZagConversion [中等]](src\com\hkllyx\solution\leetcode\ZigZagConversion.java)
 - [8. StringToIntegerAtoi [中等]](src\com\hkllyx\solution\leetcode\StringToIntegerAtoi.java)
-- [10. RegularExpressionMatching [困难 失败]](src\com\hkllyx\solution\leetcode\RegularExpressionMatching.java)
+- [10. RegularExpressionMatching [困难]](src\com\hkllyx\solution\leetcode\RegularExpressionMatching.java)
 - [11. ContainerWithMostWater [中等]](src\com\hkllyx\solution\leetcode\ContainerWithMostWater.java)
 - [12. IntegerToRoman [中等]](src\com\hkllyx\solution\leetcode\IntegerToRoman.java)
 - [15. ThreeSum [中等]](src\com\hkllyx\solution\leetcode\ThreeSum.java)
@@ -20,7 +19,7 @@
 - [27. RemoveElement [简单]](src\com\hkllyx\solution\leetcode\RemoveElement.java)
 - [28. ImplementStrStr [简单]](src\com\hkllyx\solution\leetcode\ImplementStrStr.java)
 - [29. DivideTwoIntegers [中等 帮助]](src\com\hkllyx\solution\leetcode\DivideTwoIntegers.java)
-- [32. LongestValidParentheses [困难 失败]](src\com\hkllyx\solution\leetcode\LongestValidParentheses.java)
+- [32. LongestValidParentheses [困难 帮助]](src\com\hkllyx\solution\leetcode\LongestValidParentheses.java)
 - [38. CountAndSay [中等]](src\com\hkllyx\solution\leetcode\CountAndSay.java)
 - [50. PowXN [简单]](src\com\hkllyx\solution\leetcode\PowXN.java)
 - [54. SpiralMatrix [中等]](src\com\hkllyx\solution\leetcode\SpiralMatrix.java)
@@ -54,6 +53,7 @@
 - [273. IntegerToEnglishWords [困难]](src\com\hkllyx\solution\leetcode\IntegerToEnglishWords.java)
 - [282. ExpressionAddOperators [困难 失败]](src\com\hkllyx\solution\leetcode\ExpressionAddOperators.java)
 - [295. FindMedianFromDataStream [困难 失败]](src\com\hkllyx\solution\leetcode\FindMedianFromDataStream.java)
+- [335. SelfCrossing [困难]](src\com\hkllyx\solution\leetcode\SelfCrossing.java)
 - [343. IntegerBreak [中等]](src\com\hkllyx\solution\leetcode\IntegerBreak.java)
 - [412. FizzBuzz [简单]](src\com\hkllyx\solution\leetcode\FizzBuzz.java)
 - [413. ArithmeticSlices [中等 失败]](src\com\hkllyx\solution\leetcode\ArithmeticSlices.java)
@@ -61,11 +61,13 @@
 - [453. MinimumMovesToEqualArrayElements [简单]](src\com\hkllyx\solution\leetcode\MinimumMovesToEqualArrayElements.java)
 - [476. NumberComplement [简单]](src\com\hkllyx\solution\leetcode\NumberComplement.java)
 - [496. NextGreaterElementI [简单]](src\com\hkllyx\solution\leetcode\NextGreaterElementI.java)
+- [575. DistributeCandies [简单]](src\com\hkllyx\solution\leetcode\DistributeCandies.java)
 - [600. NonNegativeIntegersWithoutConsecutiveOnes [困难 帮助]](src\com\hkllyx\solution\leetcode\NonNegativeIntegersWithoutConsecutiveOnes.java)
 - [678. ValidParenthesisString [中等 失败]](src\com\hkllyx\solution\leetcode\ValidParenthesisString.java)
 - [692. TopKFrequentWords [中等]](src\com\hkllyx\solution\leetcode\TopKFrequentWords.java)
 - [704. BinarySearch [简单]](src\com\hkllyx\solution\leetcode\BinarySearch.java)
 - [767. ReorganizeString [中等]](src\com\hkllyx\solution\leetcode\ReorganizeString.java)
+- [869. ReorderedPowerOf2 [中等]](src\com\hkllyx\solution\leetcode\ReorderedPowerOf2.java)
 - [946. ValidateStackSequences [中等]](src\com\hkllyx\solution\leetcode\ValidateStackSequences.java)
 - [1009. ComplementOfBase10Integer [简单]](src\com\hkllyx\solution\leetcode\ComplementOfBase10Integer.java)
 - [1109. CorporateFlightBookings [中等]](src\com\hkllyx\solution\leetcode\CorporateFlightBookings.java)
@@ -92,7 +94,7 @@
 - [剑指Offer 16. 数值的整数次方 [中等]](src\com\hkllyx\solution\leetcode\数值的整数次方.java)
 - [剑指Offer 17. 打印从1到最大的n位数 [简单]](src\com\hkllyx\solution\leetcode\打印从1到最大的n位数.java)
 - [剑指Offer 18. 删除链表的节点 [简单]](src\com\hkllyx\solution\leetcode\删除链表的节点.java)
-- [剑指Offer 19. 正则表达式匹配 [困难 失败]](src\com\hkllyx\solution\leetcode\正则表达式匹配.java)
+- [剑指Offer 19. 正则表达式匹配 [困难]](src\com\hkllyx\solution\leetcode\正则表达式匹配.java)
 - [剑指Offer 20. 表示数值的字符串 [中等]](src\com\hkllyx\solution\leetcode\表示数值的字符串.java)
 - [剑指Offer 21. 调整数组顺序使奇数位于偶数前面 [简单]](src\com\hkllyx\solution\leetcode\调整数组顺序使奇数位于偶数前面.java)
 - [剑指Offer 22. 链表中倒数第k个节点 [简单]](src\com\hkllyx\solution\leetcode\链表中倒数第k个节点.java)
@@ -113,4 +115,4 @@
 - [剑指Offer II 069. 山峰数组的顶部 [简单]](src\com\hkllyx\solution\leetcode\山峰数组的顶部.java)
 - [面试题17.14. SmallestKLcci [中等]](src\com\hkllyx\solution\leetcode\SmallestKLcci.java)
 
-共：110  通过：100  失败：8  帮助：2
+共：112  通过：104  失败：5  帮助：3

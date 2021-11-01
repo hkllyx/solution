@@ -2,7 +2,6 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
-import com.hkllyx.solution.util.info.Status;
 import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
 
@@ -10,7 +9,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/06/01
  */
-@Solution(no = "10", difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/regular-expression-matching/", status = Status.FAILED)
+@Solution(no = "10", difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/regular-expression-matching/")
 public class RegularExpressionMatching {
 
     public static void main(String[] args) {
