@@ -6,6 +6,9 @@ import com.hkllyx.solution.util.info.Status;
 import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
 
+import java.util.Deque;
+import java.util.LinkedList;
+
 /**
  * @author xiaoyong3
  * @date 2021/10/14
@@ -14,11 +17,13 @@ import com.hkllyx.solution.util.test.Test;
 public class LongestValidParentheses {
 
     public static void main(String[] args) {
+        Assertions.assertExpect(2, "(()(((()");
+        Assertions.assertExpect(2, "()(()");
         Assertions.assertExpect(22, ")(((((()())()()))()(()))(");
         Assertions.assertExpect(4, ")()())");
     }
 
-    @Test(value = "DP，超出时间限制", active = false)
+    @Test(value = "错误的DP，借鉴LongestPalindromicSubstring", active = false, mills = -1)
     public int longestValidParentheses(String s) {
         int strLen = s.length();
         if (strLen == 0) {
@@ -42,7 +47,7 @@ public class LongestValidParentheses {
         return maxGap == 0 ? 0 : maxGap + 1;
     }
 
-    @Test(value = "DP", active = false, mills = 1, space = 38.5)
+    @Test(value = "DP", mills = 1, space = 38.5)
     public int longestValidParentheses1(String s) {
         int len = s.length(), max = 0;
         // dp[i]表示第i位前的有效括号的长度，即s[i - dp[i]] ~ s [i]是i位前最长有效括号长度
@@ -63,9 +68,24 @@ public class LongestValidParentheses {
         return max;
     }
 
-    @Test(value = "Stack")
+    @Test(value = "Stack", mills = 2, space = 38.2, active = false)
     public int longestValidParentheses2(String s) {
-        int len = s.length(), max = 0;
+        int max = 0;
+        Deque<Integer> stack = new LinkedList<>();
+        stack.push(-1);
+        for (int i = 0, len = s.length(); i < len; i++) {
+            if (s.charAt(i) == '(' || stack.isEmpty()) {
+                stack.push(i);
+            } else {
+                stack.pop();
+                if (stack.isEmpty()) {
+                    stack.push(i);
+                } else {
+                    // stack.peek() ~ i（左开右闭）即是本')'匹配到的有效括号
+                    max = Math.max(max, i - stack.peek());
+                }
+            }
+        }
         return max;
     }
 }

@@ -28,6 +28,7 @@ public @interface Test {
 
     /**
      * 消耗时间 ms
+     * -1 表示超出时间限制
      *
      * @return 消耗时间
      */
