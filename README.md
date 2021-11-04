@@ -21,6 +21,7 @@
 - [29. DivideTwoIntegers [中等 帮助]](src\com\hkllyx\solution\leetcode\DivideTwoIntegers.java)
 - [32. LongestValidParentheses [困难 帮助]](src\com\hkllyx\solution\leetcode\LongestValidParentheses.java)
 - [38. CountAndSay [中等]](src\com\hkllyx\solution\leetcode\CountAndSay.java)
+- [42. TrappingRainWater [困难]](src\com\hkllyx\solution\leetcode\TrappingRainWater.java)
 - [50. PowXN [简单]](src\com\hkllyx\solution\leetcode\PowXN.java)
 - [54. SpiralMatrix [中等]](src\com\hkllyx\solution\leetcode\SpiralMatrix.java)
 - [70. ClimbingStairs [简单]](src\com\hkllyx\solution\leetcode\ClimbingStairs.java)
@@ -116,4 +117,4 @@
 - [剑指Offer II 069. 山峰数组的顶部 [简单]](src\com\hkllyx\solution\leetcode\山峰数组的顶部.java)
 - [面试题17.14. SmallestKLcci [中等]](src\com\hkllyx\solution\leetcode\SmallestKLcci.java)
 
-共：113  通过：105  失败：5  帮助：3
+共：114  通过：106  失败：5  帮助：3

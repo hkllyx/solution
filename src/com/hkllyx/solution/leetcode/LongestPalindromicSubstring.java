@@ -20,7 +20,7 @@ public class LongestPalindromicSubstring {
         Assertions.assertExpect("a", "ac");
     }
 
-    @Test(value = "暴力", active = false, mills = 316, space = 38.5)
+    @Test(value = "暴力", active = false, mills = 316, memory = 38.5)
     public String longestPalindrome(String s) {
         int longest = 1, begin = 0, end = 1;
         for (int i = 0; i < s.length() - longest; i++) {
@@ -39,7 +39,7 @@ public class LongestPalindromicSubstring {
         return s.substring(begin, end);
     }
 
-    @Test(value = "中心扩展", active = false, mills = 29, space = 38.3)
+    @Test(value = "中心扩展", active = false, mills = 29, memory = 38.3)
     public String longestPalindrome1(String s) {
         int begin = 0, end = 0;
         next:
@@ -56,7 +56,7 @@ public class LongestPalindromicSubstring {
         return s.substring(begin, end + 1);
     }
 
-    @Test(value = "DP", mills = 220, space = 42.5)
+    @Test(value = "DP", mills = 220, memory = 42.5)
     public String longestPalindrome2(String s) {
         int strLen = s.length();
         // dp[i][j]表示s的i~j位是回文字符串
