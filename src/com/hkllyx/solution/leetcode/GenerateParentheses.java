@@ -22,7 +22,7 @@ public class GenerateParentheses {
         Assertions.assertExpect(Collections.singletonList("()"), 1);
     }
 
-    @Test(value = "DFS", mills = 0, space = 38.7)
+    @Test(value = "DFS", mills = 0, memory = 38.7)
     public List<String> generateParenthesis(int n) {
         List<String> res = new LinkedList<>();
         char[] arr = new char[n << 1];

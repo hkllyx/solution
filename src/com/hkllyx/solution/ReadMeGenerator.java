@@ -63,12 +63,12 @@ public class ReadMeGenerator {
                 fixNodes(nodes).stream().sorted().forEach(writer::println);
                 writer.println();
                 // 统计信息
-                writer.printf("共：%d", nodes.size());
+                writer.printf("共 %d", nodes.size());
                 Map<Status, Long> countingMap = nodes.stream()
                         .collect(Collectors.groupingBy(Node::getStatus, Collectors.counting()));
                 for (Status status : Status.values()) {
                     if (countingMap.containsKey(status)) {
-                        writer.printf("  %s：%d", status.toString(), countingMap.get(status));
+                        writer.printf("， %s%s %d", status.getSymbol(), status, countingMap.get(status));
                     }
                 }
                 writer.println();
@@ -172,11 +172,8 @@ public class ReadMeGenerator {
 
         @Override
         public String toString() {
-            return Status.ACCEPTED.equals(status)
-                    ? String.format("- [%s. %s [%s]](%s)",
-                    solution.no(), clazz.getSimpleName(), solution.difficulty(), file.getPath())
-                    : String.format("- [%s. %s [%s %s]](%s)",
-                    solution.no(), clazz.getSimpleName(), solution.difficulty(), status, file.getPath());
+            return String.format("- %s [%s. %s [%s]](%s)", status.getSymbol(), solution.no(), clazz.getSimpleName(),
+                    solution.difficulty(), file.getPath());
         }
     }
 }

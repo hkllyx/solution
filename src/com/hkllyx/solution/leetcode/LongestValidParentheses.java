@@ -47,7 +47,7 @@ public class LongestValidParentheses {
         return maxGap == 0 ? 0 : maxGap + 1;
     }
 
-    @Test(value = "DP", mills = 1, space = 38.5)
+    @Test(value = "DP", mills = 1, memory = 38.5)
     public int longestValidParentheses1(String s) {
         int len = s.length(), max = 0;
         // dp[i]表示第i位前的有效括号的长度，即s[i - dp[i]] ~ s [i]是i位前最长有效括号长度
@@ -68,7 +68,7 @@ public class LongestValidParentheses {
         return max;
     }
 
-    @Test(value = "Stack", mills = 2, space = 38.2, active = false)
+    @Test(value = "Stack", mills = 2, memory = 38.2, active = false)
     public int longestValidParentheses2(String s) {
         int max = 0;
         Deque<Integer> stack = new LinkedList<>();

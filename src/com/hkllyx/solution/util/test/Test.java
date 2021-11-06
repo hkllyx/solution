@@ -39,5 +39,5 @@ public @interface Test {
      *
      * @return 消耗内存
      */
-    double space() default -1;
+    double memory() default -1;
 }
