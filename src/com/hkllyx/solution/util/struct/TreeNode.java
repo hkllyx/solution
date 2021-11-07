@@ -27,30 +27,71 @@ public class TreeNode {
         this.right = right;
     }
 
-    public static TreeNode of(Integer... vals) {
+    public static TreeNode of(Integer... data) {
         int size;
-        if (vals == null || (size = vals.length) <= 0) {
+        if (data == null || (size = data.length) <= 0) {
             return null;
         }
-        TreeNode root = new TreeNode(vals[0]);
+        TreeNode root = new TreeNode(data[0]);
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
-        int i = 1;
-        while (i < size) {
+        for (int i = 1; i < size; ) {
             TreeNode parent = queue.remove();
             Integer val;
-            if ((val = vals[i++]) != null) {
+            if ((val = data[i++]) != null) {
                 TreeNode child = new TreeNode(val);
                 queue.add(child);
                 parent.left = child;
             }
-            if (i < size && (val = vals[i++]) != null) {
+            if (i < size && (val = data[i++]) != null) {
                 TreeNode child = new TreeNode(val);
                 queue.add(child);
                 parent.right = child;
             }
         }
         return root;
+    }
+
+    public static TreeNode of(String data) {
+        if (data == null || data.length() <= 2) {
+            return null;
+        }
+        return of(toIntegerArray(data));
+    }
+
+    private static Integer[] toIntegerArray(String data) {
+        int len = 0, sizeLen = data.length();
+        for (int i = 1; i < sizeLen; i++) {
+            if (data.charAt(i) == ',') {
+                len++;
+            }
+        }
+        Integer[] array = new Integer[len];
+        for (int i = 0, j = 2, k = 0; j < sizeLen; j++) {
+            if (data.charAt(j) == ',' || data.charAt(j) == ']') {
+                array[k++] = toInteger(data, i + 1, j - 1);
+                i = j;
+            }
+        }
+        return array;
+    }
+
+    private static Integer toInteger(String data, int begin, int end) {
+        int num = 0;
+        boolean positive = true;
+        while (begin <= end) {
+            char c = data.charAt(begin++);
+            if (c == 'n') {
+                return null;
+            } else if (c == '+') {
+                positive = true;
+            } else if (c == '-') {
+                positive = false;
+            } else {
+                num = num * 10 + c - '0';
+            }
+        }
+        return positive ? num : -num;
     }
 
     public int height() {
@@ -89,13 +130,11 @@ public class TreeNode {
 
     @Override
     public String toString() {
-        StringJoiner sj = new StringJoiner(", ", "[", "]");
+        StringJoiner sj = new StringJoiner(",", "[", "]");
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(this);
         // 当前层非null节点的数量
-        int count = 1;
-        while (count > 0) {
-            int nextCount = 0;
+        for (int count = 1, nextCount = 0; count > 0; ) {
             while (count > 0) {
                 TreeNode node = queue.remove();
                 if (node == null) {
@@ -115,6 +154,7 @@ public class TreeNode {
                 }
             }
             count = nextCount;
+            nextCount = 0;
         }
         return sj.toString();
     }

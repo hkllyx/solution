@@ -57,8 +57,10 @@
 - ✔ [273. IntegerToEnglishWords [困难]](src\com\hkllyx\solution\leetcode\IntegerToEnglishWords.java)
 - ✘ [282. ExpressionAddOperators [困难]](src\com\hkllyx\solution\leetcode\ExpressionAddOperators.java)
 - ✘ [295. FindMedianFromDataStream [困难]](src\com\hkllyx\solution\leetcode\FindMedianFromDataStream.java)
+- ✔ [297. SerializeAndDeserializeBinaryTree [困难]](src\com\hkllyx\solution\leetcode\SerializeAndDeserializeBinaryTree.java)
 - ✔ [335. SelfCrossing [困难]](src\com\hkllyx\solution\leetcode\SelfCrossing.java)
 - ✔ [343. IntegerBreak [中等]](src\com\hkllyx\solution\leetcode\IntegerBreak.java)
+- ✔ [367. ValidPerfectSquare [简单]](src\com\hkllyx\solution\leetcode\ValidPerfectSquare.java)
 - ✔ [412. FizzBuzz [简单]](src\com\hkllyx\solution\leetcode\FizzBuzz.java)
 - ✘ [413. ArithmeticSlices [中等]](src\com\hkllyx\solution\leetcode\ArithmeticSlices.java)
 - ✔ [437. PathSumIII [中等]](src\com\hkllyx\solution\leetcode\PathSumIII.java)
@@ -66,6 +68,7 @@
 - ✔ [476. NumberComplement [简单]](src\com\hkllyx\solution\leetcode\NumberComplement.java)
 - ✔ [496. NextGreaterElementI [简单]](src\com\hkllyx\solution\leetcode\NextGreaterElementI.java)
 - ✔ [575. DistributeCandies [简单]](src\com\hkllyx\solution\leetcode\DistributeCandies.java)
+- ✔ [598. RangeAdditionII [简单]](src\com\hkllyx\solution\leetcode\RangeAdditionII.java)
 - ⚑ [600. NonNegativeIntegersWithoutConsecutiveOnes [困难]](src\com\hkllyx\solution\leetcode\NonNegativeIntegersWithoutConsecutiveOnes.java)
 - ✘ [678. ValidParenthesisString [中等]](src\com\hkllyx\solution\leetcode\ValidParenthesisString.java)
 - ✔ [692. TopKFrequentWords [中等]](src\com\hkllyx\solution\leetcode\TopKFrequentWords.java)
@@ -117,8 +120,9 @@
 - ✔ [剑指Offer 34. 二叉树中和为某一值的路径 [中等]](src\com\hkllyx\solution\leetcode\二叉树中和为某一值的路径.java)
 - ✔ [剑指Offer 35. 复杂链表的复制 [中等]](src\com\hkllyx\solution\leetcode\复杂链表的复制.java)
 - ✔ [剑指Offer 36. 二叉搜索树与双向链表 [中等]](src\com\hkllyx\solution\leetcode\二叉搜索树与双向链表.java)
+- ✔ [剑指Offer 37. 序列化二叉树 [困难]](src\com\hkllyx\solution\leetcode\序列化二叉树.java)
 - ✔ [剑指Offer 40. 最小的k个数 [简单]](src\com\hkllyx\solution\leetcode\最小的k个数.java)
 - ✔ [剑指Offer II 069. 山峰数组的顶部 [简单]](src\com\hkllyx\solution\leetcode\山峰数组的顶部.java)
 - ✔ [面试题17.14. SmallestKLcci [中等]](src\com\hkllyx\solution\leetcode\SmallestKLcci.java)
 
-共 118， ✔通过 110， ✘失败 5， ⚑帮助 3
+共 122， ✔通过 114， ✘失败 5， ⚑帮助 3

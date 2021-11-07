@@ -56,58 +56,10 @@ public class Assertions {
             return o2 == null;
         } else if (o1 == o2) {
             return true;
-        } else if (o1 instanceof Object[] && o2 instanceof Object[]) {
-            Object[] a1 = (Object[]) o1, a2 = (Object[]) o2;
-            int length = a1.length;
-            if (a2.length != length) {
-                return false;
-            }
-            for (int i = 0; i < length; i++) {
-                if (!equals(a1[i], a2[i])) {
-                    return false;
-                }
-            }
-            return true;
-        } else if (o1 instanceof byte[] && o2 instanceof byte[]) {
-            return Arrays.equals((byte[]) o1, (byte[]) o2);
-        } else if (o1 instanceof short[] && o2 instanceof short[]) {
-            return Arrays.equals((short[]) o1, (short[]) o2);
-        } else if (o1 instanceof int[] && o2 instanceof int[]) {
-            return Arrays.equals((int[]) o1, (int[]) o2);
-        } else if (o1 instanceof long[] && o2 instanceof long[]) {
-            return Arrays.equals((long[]) o1, (long[]) o2);
-        } else if (o1 instanceof char[] && o2 instanceof char[]) {
-            return Arrays.equals((char[]) o1, (char[]) o2);
-        } else if (o1 instanceof float[] && o2 instanceof float[]) {
-            return Arrays.equals((float[]) o1, (float[]) o2);
-        } else if (o1 instanceof double[] && o2 instanceof double[]) {
-            return Arrays.equals((double[]) o1, (double[]) o2);
-        } else if (o1 instanceof boolean[] && o2 instanceof boolean[]) {
-            return Arrays.equals((boolean[]) o1, (boolean[]) o2);
-        } else if (o1 instanceof List && o2 instanceof List) {
-            List<?> l1 = (List<?>) o1, l2 = (List<?>) o2;
-            int size = l1.size();
-            if (l2.size() != size) {
-                return false;
-            }
-            for (int i = 0; i < l1.size(); i++) {
-                if (!equals(l1.get(i), l2.get(i))) {
-                    return false;
-                }
-            }
-            return true;
         } else if (o1 instanceof Set && o2 instanceof Set) {
-            Set<?> s1 = (Set<?>) o1, s2 = (Set<?>) o2;
-            int size = s1.size();
-            if (s2.size() != size) {
-                return false;
-            }
-            for (Object i : s1) {
-                if (!s2.contains(i)) {
-                    return false;
-                }
-            }
-            return true;
+            String s1 = ((Set<?>) o1).stream().map(Assertions::toString).sorted().collect(Collectors.joining(","));
+            String s2 = ((Set<?>) o2).stream().map(Assertions::toString).sorted().collect(Collectors.joining(","));
+            return s1.equals(s2);
         } else if (o1 instanceof Map && o2 instanceof Map) {
             return equals(((Map<?, ?>) o1).entrySet(), ((Map<?, ?>) o2).entrySet());
         } else {
@@ -116,7 +68,12 @@ public class Assertions {
     }
 
     public static void assertEquals(Object o1, Object o2) {
-        if (!equals(o1, o2)) {
+        boolean equals = equals(o1, o2);
+        System.out.printf("[%s][%dms] %s\n"
+                        + "    输入1: %s\n"
+                        + "    输入2: %s\n",
+                getMainClass().getSimpleName(), 0, equals ? "通过" : "失败", toString(o1), toString(o2));
+        if (!equals) {
             throw new IllegalStateException("异常！");
         }
     }
