@@ -101,6 +101,7 @@ public class ReadMeGenerator {
     }
 
     private static class Node implements Comparable<Node> {
+
         private final File file;
         private final Class<?> clazz;
         private final Solution solution;
@@ -172,8 +173,9 @@ public class ReadMeGenerator {
 
         @Override
         public String toString() {
+            String filePath = file.getPath().replaceAll("\\\\{1,2}", "/");
             return String.format("- %s [%s. %s [%s]](%s)", status.getSymbol(), solution.no(), clazz.getSimpleName(),
-                    solution.difficulty(), file.getPath());
+                    solution.difficulty(), filePath);
         }
     }
 }
