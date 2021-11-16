@@ -87,21 +87,20 @@ public class ReadMeGenerator {
         return nodes;
     }
 
-    private Status fixStatus(Map<Class<?>, Node> nodeMap, Node current) {
+    private void fixStatus(Map<Class<?>, Node> nodeMap, Node current) {
         if (!current.isFixed()) {
-            Class<?> superclass = current.getClazz().getSuperclass();
-            if (superclass.isAnnotationPresent(Solution.class)) {
-                Node supNode = nodeMap.get(superclass);
-                Status status = fixStatus(nodeMap, supNode);
-                current.setStatus(status);
-            }
-            current.setFixed(true);
+            return;
         }
-        return current.getStatus();
+        Class<?> superclass = current.getClazz().getSuperclass();
+        if (superclass.isAnnotationPresent(Solution.class)) {
+            Node supNode = nodeMap.get(superclass);
+            fixStatus(nodeMap, supNode);
+            current.setStatus(supNode.getStatus());
+        }
+        current.setFixed(true);
     }
 
     private static class Node implements Comparable<Node> {
-
         private final File file;
         private final Class<?> clazz;
         private final Solution solution;

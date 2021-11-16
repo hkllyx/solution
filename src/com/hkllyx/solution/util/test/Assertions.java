@@ -63,7 +63,7 @@ public class Assertions {
         } else if (o1 instanceof Map && o2 instanceof Map) {
             return equals(((Map<?, ?>) o1).entrySet(), ((Map<?, ?>) o2).entrySet());
         } else {
-            return o1.equals(o2);
+            return toString(o1).equals(toString(o2));
         }
     }
 
