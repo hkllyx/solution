@@ -1,5 +1,6 @@
 package com.hkllyx.solution.leetcode;
 
+import com.hkllyx.solution.ops.ArrayOps;
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
 import com.hkllyx.solution.util.test.Assertions;
@@ -12,7 +13,7 @@ import java.util.Arrays;
  * @date 2021/06/28
  */
 @Solution(no = "剑指Offer 40", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/")
-public class 最小的k个数 {
+public class 最小的k个数 implements ArrayOps {
 
     public static void main(String[] args) {
         Assertions.assertExpect(最小的k个数.class,
@@ -82,14 +83,5 @@ public class 最小的k个数 {
         }
         swap(arr, i, r);
         return i;
-    }
-
-    protected void swap(int[] arr, int i, int j) {
-        if (i == j) {
-            return;
-        }
-        int temp = arr[j];
-        arr[j] = arr[i];
-        arr[i] = temp;
     }
 }

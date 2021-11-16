@@ -19,6 +19,7 @@
 - ✔ [27. RemoveElement [简单]](src/com/hkllyx/solution/leetcode/RemoveElement.java)
 - ✔ [28. ImplementStrStr [简单]](src/com/hkllyx/solution/leetcode/ImplementStrStr.java)
 - ⚑ [29. DivideTwoIntegers [中等]](src/com/hkllyx/solution/leetcode/DivideTwoIntegers.java)
+- ✔ [31. NextPermutation [中等]](src/com/hkllyx/solution/leetcode/NextPermutation.java)
 - ⚑ [32. LongestValidParentheses [困难]](src/com/hkllyx/solution/leetcode/LongestValidParentheses.java)
 - ✔ [38. CountAndSay [中等]](src/com/hkllyx/solution/leetcode/CountAndSay.java)
 - ✔ [42. TrappingRainWater [困难]](src/com/hkllyx/solution/leetcode/TrappingRainWater.java)
@@ -41,6 +42,7 @@
 - ✔ [155. MinStack [简单]](src/com/hkllyx/solution/leetcode/MinStack.java)
 - ✔ [165. CompareVersionNumbers [中等]](src/com/hkllyx/solution/leetcode/CompareVersionNumbers.java)
 - ✔ [166. FractionToRecurringDecimal [中等]](src/com/hkllyx/solution/leetcode/FractionToRecurringDecimal.java)
+- ✔ [169. MajorityElement [简单]](src/com/hkllyx/solution/leetcode/MajorityElement.java)
 - ✔ [190. ReverseBits [简单]](src/com/hkllyx/solution/leetcode/ReverseBits.java)
 - ✔ [191. NumberOfOneBits [简单]](src/com/hkllyx/solution/leetcode/NumberOfOneBits.java)
 - ✔ [206. ReverseLinkedList [简单]](src/com/hkllyx/solution/leetcode/ReverseLinkedList.java)
@@ -61,6 +63,7 @@
 - ✔ [335. SelfCrossing [困难]](src/com/hkllyx/solution/leetcode/SelfCrossing.java)
 - ✔ [343. IntegerBreak [中等]](src/com/hkllyx/solution/leetcode/IntegerBreak.java)
 - ✔ [367. ValidPerfectSquare [简单]](src/com/hkllyx/solution/leetcode/ValidPerfectSquare.java)
+- ⚑ [375. GuessNumberHigherOrLowerII [中等]](src/com/hkllyx/solution/leetcode/GuessNumberHigherOrLowerII.java)
 - ✔ [412. FizzBuzz [简单]](src/com/hkllyx/solution/leetcode/FizzBuzz.java)
 - ✘ [413. ArithmeticSlices [中等]](src/com/hkllyx/solution/leetcode/ArithmeticSlices.java)
 - ✔ [426. ConvertBinarySearchTreeToSortedDoublyLinkedList [中等]](src/com/hkllyx/solution/leetcode/ConvertBinarySearchTreeToSortedDoublyLinkedList.java)
@@ -122,8 +125,10 @@
 - ✔ [剑指Offer 35. 复杂链表的复制 [中等]](src/com/hkllyx/solution/leetcode/复杂链表的复制.java)
 - ✔ [剑指Offer 36. 二叉搜索树与双向链表 [中等]](src/com/hkllyx/solution/leetcode/二叉搜索树与双向链表.java)
 - ✔ [剑指Offer 37. 序列化二叉树 [困难]](src/com/hkllyx/solution/leetcode/序列化二叉树.java)
+- ✔ [剑指Offer 38. 字符串的排列 [中等]](src/com/hkllyx/solution/leetcode/字符串的排列.java)
+- ✔ [剑指Offer 39. 数组中出现次数超过一半的数字 [简单]](src/com/hkllyx/solution/leetcode/数组中出现次数超过一半的数字.java)
 - ✔ [剑指Offer 40. 最小的k个数 [简单]](src/com/hkllyx/solution/leetcode/最小的k个数.java)
 - ✔ [剑指Offer II 069. 山峰数组的顶部 [简单]](src/com/hkllyx/solution/leetcode/山峰数组的顶部.java)
 - ✔ [面试题17.14. SmallestKLcci [中等]](src/com/hkllyx/solution/leetcode/SmallestKLcci.java)
 
-共 123， ✔通过 115， ✘失败 5， ⚑帮助 3
+共 128， ✔通过 119， ✘失败 5， ⚑帮助 4
