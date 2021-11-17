@@ -24,6 +24,7 @@
 - ✔ [38. CountAndSay [中等]](src/com/hkllyx/solution/leetcode/CountAndSay.java)
 - ✔ [42. TrappingRainWater [困难]](src/com/hkllyx/solution/leetcode/TrappingRainWater.java)
 - ✔ [50. PowXN [简单]](src/com/hkllyx/solution/leetcode/PowXN.java)
+- ✔ [53. MaximumSubarray [简单]](src/com/hkllyx/solution/leetcode/MaximumSubarray.java)
 - ✔ [54. SpiralMatrix [中等]](src/com/hkllyx/solution/leetcode/SpiralMatrix.java)
 - ✔ [70. ClimbingStairs [简单]](src/com/hkllyx/solution/leetcode/ClimbingStairs.java)
 - ✔ [74. SearchA2dMatrix [中等]](src/com/hkllyx/solution/leetcode/SearchA2dMatrix.java)
@@ -57,7 +58,7 @@
 - ✔ [268. MissingNumber [简单]](src/com/hkllyx/solution/leetcode/MissingNumber.java)
 - ✔ [273. IntegerToEnglishWords [困难]](src/com/hkllyx/solution/leetcode/IntegerToEnglishWords.java)
 - ✘ [282. ExpressionAddOperators [困难]](src/com/hkllyx/solution/leetcode/ExpressionAddOperators.java)
-- ✘ [295. FindMedianFromDataStream [困难]](src/com/hkllyx/solution/leetcode/FindMedianFromDataStream.java)
+- ✔ [295. FindMedianFromDataStream [困难]](src/com/hkllyx/solution/leetcode/FindMedianFromDataStream.java)
 - ✔ [297. SerializeAndDeserializeBinaryTree [困难]](src/com/hkllyx/solution/leetcode/SerializeAndDeserializeBinaryTree.java)
 - ✔ [299. BullsAndCows [中等]](src/com/hkllyx/solution/leetcode/BullsAndCows.java)
 - ✔ [335. SelfCrossing [困难]](src/com/hkllyx/solution/leetcode/SelfCrossing.java)
@@ -128,7 +129,8 @@
 - ✔ [剑指Offer 38. 字符串的排列 [中等]](src/com/hkllyx/solution/leetcode/字符串的排列.java)
 - ✔ [剑指Offer 39. 数组中出现次数超过一半的数字 [简单]](src/com/hkllyx/solution/leetcode/数组中出现次数超过一半的数字.java)
 - ✔ [剑指Offer 40. 最小的k个数 [简单]](src/com/hkllyx/solution/leetcode/最小的k个数.java)
+- ✔ [剑指Offer 41. 数据流中的中位数 [困难]](src/com/hkllyx/solution/leetcode/数据流中的中位数.java)
 - ✔ [剑指Offer II 069. 山峰数组的顶部 [简单]](src/com/hkllyx/solution/leetcode/山峰数组的顶部.java)
 - ✔ [面试题17.14. SmallestKLcci [中等]](src/com/hkllyx/solution/leetcode/SmallestKLcci.java)
 
-共 128， ✔通过 119， ✘失败 5， ⚑帮助 4
+共 130， ✔通过 122， ✘失败 4， ⚑帮助 4

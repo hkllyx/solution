@@ -2,52 +2,59 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
-import com.hkllyx.solution.util.info.Status;
 
-import java.util.LinkedList;
-import java.util.Random;
+import java.util.PriorityQueue;
 
 /**
  * @author xiaoyong3
  * @date 2021/06/28
  */
-@Solution(no = "295", difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/find-median-from-data-stream/", status = Status.FAILED)
+@Solution(no = "295", difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/find-median-from-data-stream/")
 public class FindMedianFromDataStream {
-    LinkedList<Integer> list = new LinkedList<>();
-
-    public FindMedianFromDataStream() {
-    }
 
     public static void main(String[] args) {
-        Random random = new Random(47);
-        FindMedianFromDataStream stream = new FindMedianFromDataStream();
-        for (int i = 0; i < 10; i++) {
-            stream.addNum(random.nextInt(100));
-            System.out.print(stream.findMedian());
-            System.out.println(stream.list);
-        }
+        MedianFinder finder = new MedianFinder();
+        finder.addNum(1);
+        finder.addNum(2);
+        System.out.println(finder.findMedian());
+        finder.addNum(3);
+        System.out.println(finder.findMedian());
+    }
+}
+
+class MedianFinder {
+    private final PriorityQueue<Integer> left, right;
+
+    public MedianFinder() {
+        left = new PriorityQueue<>((i, j) -> Integer.compare(j, i));
+        right = new PriorityQueue<>(Integer::compare);
     }
 
     public void addNum(int num) {
-        int i = 0;
-        for (; i < list.size(); i++) {
-            if (list.get(i) >= num) {
-                break;
+        if (left.isEmpty()) {
+            left.add(num);
+        } else if (left.peek() > num) {
+            // 左侧 > 右侧，向右侧添加
+            if (left.size() > right.size()) {
+                right.add(left.poll());
+            }
+            left.add(num);
+        } else {
+            right.add(num);
+            // 两侧数量相等，右侧添加后 > 左侧，向左侧添加
+            if (left.size() < right.size()) {
+                left.add(right.poll());
             }
         }
-        list.add(i, num);
     }
 
     public double findMedian() {
-        int size = list.size();
-        if (size <= 0) {
+        if (left.isEmpty()) {
             return 0;
-        }
-        int median = size / 2;
-        if (size % 2 == 0) {
-            return (list.get(median) + list.get(median - 1)) / 2.0;
+        } else if (left.size() > right.size()) {
+            return left.peek();
         } else {
-            return list.get(median);
+            return (left.peek() + right.peek()) / 2.0;
         }
     }
 }
