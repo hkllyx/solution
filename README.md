@@ -130,7 +130,11 @@
 - ✔ [剑指Offer 39. 数组中出现次数超过一半的数字 [简单]](src/com/hkllyx/solution/leetcode/数组中出现次数超过一半的数字.java)
 - ✔ [剑指Offer 40. 最小的k个数 [简单]](src/com/hkllyx/solution/leetcode/最小的k个数.java)
 - ✔ [剑指Offer 41. 数据流中的中位数 [困难]](src/com/hkllyx/solution/leetcode/数据流中的中位数.java)
+- ✔ [剑指Offer 45. 把数组排成最小的数 [中等]](src/com/hkllyx/solution/leetcode/把数组排成最小的数.java)
+- ✔ [剑指Offer 46. 把数字翻译成字符串 [中等]](src/com/hkllyx/solution/leetcode/把数字翻译成字符串.java)
+- ✔ [剑指Offer 47. 礼物的最大价值 [中等]](src/com/hkllyx/solution/leetcode/礼物的最大价值.java)
+- ✔ [剑指Offer 48. 最长不含重复字符的子字符串 [中等]](src/com/hkllyx/solution/leetcode/最长不含重复字符的子字符串.java)
 - ✔ [剑指Offer II 069. 山峰数组的顶部 [简单]](src/com/hkllyx/solution/leetcode/山峰数组的顶部.java)
 - ✔ [面试题17.14. SmallestKLcci [中等]](src/com/hkllyx/solution/leetcode/SmallestKLcci.java)
 
-共 130， ✔通过 122， ✘失败 4， ⚑帮助 4
+共 134， ✔通过 126， ✘失败 4， ⚑帮助 4

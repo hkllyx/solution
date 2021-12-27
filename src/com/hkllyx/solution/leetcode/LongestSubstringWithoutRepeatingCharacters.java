@@ -7,7 +7,9 @@ import com.hkllyx.solution.util.info.Tags;
 import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 
 /**
  * @author hkllyx
@@ -25,7 +27,7 @@ public class LongestSubstringWithoutRepeatingCharacters {
         Assertions.assertExpect(LongestSubstringWithoutRepeatingCharacters.class, 5, "abcde");
     }
 
-    @Test
+    @Test(active = false)
     public int lengthOfLongestSubstring(String s) {
         int length = s.length();
         HashSet<Character> set = new HashSet<>(length);
@@ -48,5 +50,22 @@ public class LongestSubstringWithoutRepeatingCharacters {
             }
         }
         return Math.max(max, set.size());
+    }
+
+    @Test
+    public int lengthOfLongestSubstring1(String s) {
+        int max = 0;
+        Map<Character, Integer> map = new HashMap<>();
+        for (int i = 0, j = -1; i < s.length(); i++) {
+            int cur = i - j;
+            Integer pre = map.put(s.charAt(i), i);
+            // 有重复，移动j到重复处，并将当前长度-1
+            if (pre != null && pre > j) {
+                j = pre;
+                cur--;
+            }
+            max = Math.max(max, cur);
+        }
+        return max;
     }
 }
