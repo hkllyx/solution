@@ -55,6 +55,8 @@
 - ✔ [237. DeleteNodeInALinkedList [简单]](src/com/hkllyx/solution/leetcode/DeleteNodeInALinkedList.java)
 - ✔ [240. SearchA2dMatrixII [中等]](src/com/hkllyx/solution/leetcode/SearchA2dMatrixII.java)
 - ✔ [257. BinaryTreePaths [简单]](src/com/hkllyx/solution/leetcode/BinaryTreePaths.java)
+- ✔ [263. UglyNumber [简单]](src/com/hkllyx/solution/leetcode/UglyNumber.java)
+- ⚑ [264. UglyNumberII [中等]](src/com/hkllyx/solution/leetcode/UglyNumberII.java)
 - ✔ [268. MissingNumber [简单]](src/com/hkllyx/solution/leetcode/MissingNumber.java)
 - ✔ [273. IntegerToEnglishWords [困难]](src/com/hkllyx/solution/leetcode/IntegerToEnglishWords.java)
 - ✘ [282. ExpressionAddOperators [困难]](src/com/hkllyx/solution/leetcode/ExpressionAddOperators.java)
@@ -134,7 +136,8 @@
 - ✔ [剑指Offer 46. 把数字翻译成字符串 [中等]](src/com/hkllyx/solution/leetcode/把数字翻译成字符串.java)
 - ✔ [剑指Offer 47. 礼物的最大价值 [中等]](src/com/hkllyx/solution/leetcode/礼物的最大价值.java)
 - ✔ [剑指Offer 48. 最长不含重复字符的子字符串 [中等]](src/com/hkllyx/solution/leetcode/最长不含重复字符的子字符串.java)
+- ✔ [剑指Offer 49. 丑数 [中等]](src/com/hkllyx/solution/leetcode/丑数.java)
 - ✔ [剑指Offer II 069. 山峰数组的顶部 [简单]](src/com/hkllyx/solution/leetcode/山峰数组的顶部.java)
 - ✔ [面试题17.14. SmallestKLcci [中等]](src/com/hkllyx/solution/leetcode/SmallestKLcci.java)
 
-共 134， ✔通过 126， ✘失败 4， ⚑帮助 4
+共 137， ✔通过 128， ✘失败 4， ⚑帮助 5
