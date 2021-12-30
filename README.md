@@ -136,8 +136,8 @@
 - ✔ [剑指Offer 46. 把数字翻译成字符串 [中等]](src/com/hkllyx/solution/leetcode/把数字翻译成字符串.java)
 - ✔ [剑指Offer 47. 礼物的最大价值 [中等]](src/com/hkllyx/solution/leetcode/礼物的最大价值.java)
 - ✔ [剑指Offer 48. 最长不含重复字符的子字符串 [中等]](src/com/hkllyx/solution/leetcode/最长不含重复字符的子字符串.java)
-- ✔ [剑指Offer 49. 丑数 [中等]](src/com/hkllyx/solution/leetcode/丑数.java)
+- ⚑ [剑指Offer 49. 丑数 [中等]](src/com/hkllyx/solution/leetcode/丑数.java)
 - ✔ [剑指Offer II 069. 山峰数组的顶部 [简单]](src/com/hkllyx/solution/leetcode/山峰数组的顶部.java)
 - ✔ [面试题17.14. SmallestKLcci [中等]](src/com/hkllyx/solution/leetcode/SmallestKLcci.java)
 
-共 137， ✔通过 128， ✘失败 4， ⚑帮助 5
+共 137， ✔通过 127， ✘失败 4， ⚑帮助 6

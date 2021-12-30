@@ -88,7 +88,7 @@ public class ReadMeGenerator {
     }
 
     private void fixStatus(Map<Class<?>, Node> nodeMap, Node current) {
-        if (!current.isFixed()) {
+        if (current.isFixed()) {
             return;
         }
         Class<?> superclass = current.getClazz().getSuperclass();
