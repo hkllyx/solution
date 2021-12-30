@@ -9,7 +9,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/06/10
  */
-@Solution(no = "剑指Offer 33", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/")
+@Solution(no = "剑指 Offer 33", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/")
 public class 二叉搜索树的后序遍历序列 {
 
     public static void main(String[] args) {

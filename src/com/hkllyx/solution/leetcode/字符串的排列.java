@@ -13,7 +13,7 @@ import java.util.List;
  * @author xiaoyong3
  * @date 2021/11/16
  */
-@Solution(no = "剑指Offer 38", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/zi-fu-chuan-de-pai-lie-lcof/")
+@Solution(no = "剑指 Offer 38", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/zi-fu-chuan-de-pai-lie-lcof/")
 public class 字符串的排列 implements ArrayOps {
 
     public static void main(String[] args) {

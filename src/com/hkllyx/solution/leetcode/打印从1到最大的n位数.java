@@ -7,7 +7,7 @@ import com.hkllyx.solution.util.info.Solution;
  * @author xiaoyong3
  * @date 2021/06/01
  */
-@Solution(no = "剑指Offer 17", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/da-yin-cong-1dao-zui-da-de-nwei-shu-lcof/")
+@Solution(no = "剑指 Offer 17", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/da-yin-cong-1dao-zui-da-de-nwei-shu-lcof/")
 public class 打印从1到最大的n位数 {
 
     public int[] printNumbers(int n) {

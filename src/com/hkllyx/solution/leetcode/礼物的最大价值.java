@@ -7,7 +7,7 @@ import com.hkllyx.solution.util.info.Solution;
  * @author xiaoyong3
  * @date 2021/12/27
  */
-@Solution(no = "剑指Offer 47", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/")
+@Solution(no = "剑指 Offer 47", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/")
 public class 礼物的最大价值 {
 
     public int maxValue(int[][] grid) {

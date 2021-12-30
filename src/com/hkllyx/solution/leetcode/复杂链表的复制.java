@@ -10,7 +10,7 @@ import java.util.Map;
  * @author xiaoyong3
  * @date 2021/06/28
  */
-@Solution(no = "剑指Offer 35", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/fu-za-lian-biao-de-fu-zhi-lcof/")
+@Solution(no = "剑指 Offer 35", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/fu-za-lian-biao-de-fu-zhi-lcof/")
 public class 复杂链表的复制 {
 
     public Node copyRandomList(Node head) {

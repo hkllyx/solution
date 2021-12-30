@@ -8,7 +8,7 @@ import com.hkllyx.solution.util.struct.ListNode;
  * @author xiaoyong3
  * @date 2021/05/22
  */
-@Solution(no = "剑指Offer 06", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/")
+@Solution(no = "剑指 Offer 06", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/")
 public class 从尾到头打印链表 {
 
     public int[] reversePrint(ListNode head) {

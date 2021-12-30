@@ -7,7 +7,7 @@ import com.hkllyx.solution.util.info.Solution;
  * @author xiaoyong3
  * @date 2021/05/22
  */
-@Solution(no = "剑指Offer 09", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/")
+@Solution(no = "剑指 Offer 09", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/")
 public class 用两个栈实现队列 {
 
     public static class CQueue {

@@ -12,7 +12,7 @@ import java.util.Queue;
  * @author xiaoyong3
  * @date 2021/11/06
  */
-@Solution(no = "剑指Offer 36", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/")
+@Solution(no = "剑指 Offer 36", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/")
 public class 二叉搜索树与双向链表 {
 
     public static void main(String[] args) {

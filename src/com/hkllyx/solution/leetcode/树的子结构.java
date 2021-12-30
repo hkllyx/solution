@@ -8,7 +8,7 @@ import com.hkllyx.solution.util.struct.TreeNode;
  * @author xiaoyong3
  * @date 2021/06/04
  */
-@Solution(no = "剑指Offer 26", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/")
+@Solution(no = "剑指 Offer 26", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/")
 public class 树的子结构 {
 
     public boolean isSubStructure(TreeNode A, TreeNode B) {

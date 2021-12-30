@@ -7,7 +7,7 @@ import com.hkllyx.solution.util.info.Solution;
  * @author xiaoyong3
  * @date 2021/06/07
  */
-@Solution(no = "剑指Offer 29", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/")
+@Solution(no = "剑指 Offer 29", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/")
 public class 顺时针打印矩阵 extends SpiralMatrix {
 
     public int[] spiralOrder1(int[][] matrix) {

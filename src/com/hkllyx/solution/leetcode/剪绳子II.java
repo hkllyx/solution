@@ -11,7 +11,7 @@ import java.math.BigInteger;
  * @author xiaoyong3
  * @date 2021/05/27
  */
-@Solution(no = "剑指Offer 14-II", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/jian-sheng-zi-ii-lcof/")
+@Solution(no = "剑指 Offer 14-II", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/jian-sheng-zi-ii-lcof/")
 public class 剪绳子II extends IntegerBreak {
 
     public static void main(String[] args) {
