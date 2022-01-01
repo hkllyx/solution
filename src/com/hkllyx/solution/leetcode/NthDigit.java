@@ -58,7 +58,7 @@ public class NthDigit {
      * 0 1 2 3 4 5 6 7 8 9 1  0  1  1  1  2  1  3  1  4  1  5  1  6  1  7  1  8  ... 9   8   9   9
      * 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 ... 186 187 188 189
      */
-    @Test
+    @Test(active = false)
     public int findNthDigit(int n) {
         // 用前缀和数组确定n所在位置对应的数字的位数
         int i = 1;
@@ -78,6 +78,24 @@ public class NthDigit {
         return digit == 0 ? ans + 1 : ans;
     }
 
+
+    @Test
+    public int findNthDigit1(int n) {
+        int i = 1, j = 9;
+        long k;
+        while (n > (k = (long) i * j)) {
+            n -= k;
+            i++;
+            j *= 10;
+        }
+        n--;
+        // 确定当前数以及对应的第几位（从左到右，0开始）
+        int cur = n / i, digit = n % i;
+        int ans = reverseDigitAt(cur, i - digit);
+        // 对于i > 1，因为减去了前缀和，最大位应该+1
+        return digit == 0 ? ans + 1 : ans;
+    }
+
     /** 获取数字的倒数第几位数，从1开始 */
     private int reverseDigitAt(int num, int rd) {
         while (--rd > 0 && num != 0) {
@@ -90,7 +108,7 @@ public class NthDigit {
      * n(i)表示位数为 = i的所有数字的个数
      * n(i) = 9 * 10^(i - 1), i > 0
      *
-     * f(i)表示位数 <= i的所有数字序列的长度
+     * f(i)表示位数 <= i的所有数字序列的长度，0是特殊值
      * f(i) = 10, i = 1
      *      = f(i - 1) + (i * n(i)), i > 1
      */

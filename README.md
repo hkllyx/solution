@@ -67,6 +67,7 @@
 - ✔ [343. IntegerBreak [中等]](src/com/hkllyx/solution/leetcode/IntegerBreak.java)
 - ✔ [367. ValidPerfectSquare [简单]](src/com/hkllyx/solution/leetcode/ValidPerfectSquare.java)
 - ⚑ [375. GuessNumberHigherOrLowerII [中等]](src/com/hkllyx/solution/leetcode/GuessNumberHigherOrLowerII.java)
+- ✔ [400. NthDigit [中等]](src/com/hkllyx/solution/leetcode/NthDigit.java)
 - ✔ [412. FizzBuzz [简单]](src/com/hkllyx/solution/leetcode/FizzBuzz.java)
 - ✘ [413. ArithmeticSlices [中等]](src/com/hkllyx/solution/leetcode/ArithmeticSlices.java)
 - ✔ [426. ConvertBinarySearchTreeToSortedDoublyLinkedList [中等]](src/com/hkllyx/solution/leetcode/ConvertBinarySearchTreeToSortedDoublyLinkedList.java)
@@ -132,6 +133,7 @@
 - ✔ [剑指 Offer 39. 数组中出现次数超过一半的数字 [简单]](src/com/hkllyx/solution/leetcode/数组中出现次数超过一半的数字.java)
 - ✔ [剑指 Offer 40. 最小的k个数 [简单]](src/com/hkllyx/solution/leetcode/最小的k个数.java)
 - ✔ [剑指 Offer 41. 数据流中的中位数 [困难]](src/com/hkllyx/solution/leetcode/数据流中的中位数.java)
+- ✔ [剑指 Offer 44. 数字序列中某一位的数字 [中等]](src/com/hkllyx/solution/leetcode/数字序列中某一位的数字.java)
 - ✔ [剑指 Offer 45. 把数组排成最小的数 [中等]](src/com/hkllyx/solution/leetcode/把数组排成最小的数.java)
 - ✔ [剑指 Offer 46. 把数字翻译成字符串 [中等]](src/com/hkllyx/solution/leetcode/把数字翻译成字符串.java)
 - ✔ [剑指 Offer 47. 礼物的最大价值 [中等]](src/com/hkllyx/solution/leetcode/礼物的最大价值.java)
@@ -140,4 +142,4 @@
 - ✔ [剑指 Offer II 069. 山峰数组的顶部 [简单]](src/com/hkllyx/solution/leetcode/山峰数组的顶部.java)
 - ✔ [面试题17.14. SmallestKLcci [中等]](src/com/hkllyx/solution/leetcode/SmallestKLcci.java)
 
-共 137， ✔通过 127， ✘失败 4， ⚑帮助 6
+共 139， ✔通过 129， ✘失败 4， ⚑帮助 6
