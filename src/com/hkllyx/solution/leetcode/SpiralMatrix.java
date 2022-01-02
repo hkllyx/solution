@@ -48,4 +48,29 @@ public class SpiralMatrix {
         }
         return res;
     }
+
+    public int[] spiralOrder1(int[][] matrix) {
+        int wt, ht;
+        if ((ht = matrix.length) <= 0 || (wt = matrix[0].length) <= 0) {
+            return new int[0];
+        }
+        int[] res = new int[wt-- * ht--];
+        int p = 0, wf = 0, hf = 0, step = 1;
+        while ((wf - wt) * step <= 0 && (hf - ht) * step <= 0) {
+            for (int w = wf; (wt - w) * step > 0; w = w + step) {
+                res[p++] = matrix[hf][w];
+            }
+            for (int h = hf; (ht - h) * step >= 0; h = h + step) {
+                res[p++] = matrix[h][wt];
+            }
+            int tmp = wf;
+            wf = wt - step;
+            wt = tmp;
+            tmp = hf;
+            hf = ht;
+            ht = tmp + step;
+            step = -step;
+        }
+        return res;
+    }
 }

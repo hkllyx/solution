@@ -15,6 +15,10 @@ public class InvertBinaryTree {
         return dfs(root);
     }
 
+    public TreeNode mirrorTree(TreeNode root) {
+        return invertTree(root);
+    }
+
     private TreeNode dfs(TreeNode node) {
         if (node != null) {
             TreeNode tmp = dfs(node.left);

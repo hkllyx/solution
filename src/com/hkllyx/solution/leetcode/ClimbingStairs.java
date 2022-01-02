@@ -28,4 +28,18 @@ public class ClimbingStairs {
         }
         return a;
     }
+
+    @Test
+    public int numWays(int n) {
+        if (n <= 1) {
+            return 1;
+        }
+        int a = 1, b = 2;
+        for (int i = 2; i <= n; i++) {
+            int c = b;
+            b = (a + b) % 1000000007;
+            a = c;
+        }
+        return a;
+    }
 }

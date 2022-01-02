@@ -66,4 +66,8 @@ public class MinStack {
     public int getMin() {
         return mins[point];
     }
+
+    public int min() {
+        return getMin();
+    }
 }
