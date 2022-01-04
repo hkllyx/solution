@@ -8,6 +8,45 @@ import com.hkllyx.solution.util.test.Test;
 import java.util.HashMap;
 
 /**
+ * <p>Given two integers representing the <code>numerator</code> and <code>denominator</code> of a fraction, return <em>the fraction in string format</em>.</p>
+ *
+ * <p>If the fractional part is repeating, enclose the repeating part in parentheses.</p>
+ *
+ * <p>If multiple answers are possible, return <strong>any of them</strong>.</p>
+ *
+ * <p>It is <strong>guaranteed</strong> that the length of the answer string is less than <code>10<sup>4</sup></code> for all the given inputs.</p>
+ *
+ * <p>&nbsp;</p>
+ * <p><strong>Example 1:</strong></p>
+ *
+ * <pre>
+ * <strong>Input:</strong> numerator = 1, denominator = 2
+ * <strong>Output:</strong> &quot;0.5&quot;
+ * </pre>
+ *
+ * <p><strong>Example 2:</strong></p>
+ *
+ * <pre>
+ * <strong>Input:</strong> numerator = 2, denominator = 1
+ * <strong>Output:</strong> &quot;2&quot;
+ * </pre>
+ *
+ * <p><strong>Example 3:</strong></p>
+ *
+ * <pre>
+ * <strong>Input:</strong> numerator = 4, denominator = 333
+ * <strong>Output:</strong> &quot;0.(012)&quot;
+ * </pre>
+ *
+ * <p>&nbsp;</p>
+ * <p><strong>Constraints:</strong></p>
+ *
+ * <ul>
+ * 	<li><code>-2<sup>31</sup> &lt;=&nbsp;numerator, denominator &lt;= 2<sup>31</sup> - 1</code></li>
+ * 	<li><code>denominator != 0</code></li>
+ * </ul>
+ * <div><div>Related Topics</div><div><li>哈希表</li><li>数学</li><li>字符串</li></div></div><br><div><li>👍 347</li><li>👎 0</li></div>
+ *
  * @author xiaoyong3
  * @date 2021/10/03
  */

@@ -6,6 +6,40 @@ import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
 
 /**
+ * <p>You are given an integer array <code>height</code> of length <code>n</code>. There are <code>n</code> vertical lines drawn such that the two endpoints of the <code>i<sup>th</sup></code> line are <code>(i, 0)</code> and <code>(i, height[i])</code>.</p>
+ *
+ * <p>Find two lines that together with the x-axis form a container, such that the container contains the most water.</p>
+ *
+ * <p>Return <em>the maximum amount of water a container can store</em>.</p>
+ *
+ * <p><strong>Notice</strong> that you may not slant the container.</p>
+ *
+ * <p>&nbsp;</p>
+ * <p><strong>Example 1:</strong></p>
+ * <img alt="" src="https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg" style="width: 600px; height: 287px;" />
+ * <pre>
+ * <strong>Input:</strong> height = [1,8,6,2,5,4,8,3,7]
+ * <strong>Output:</strong> 49
+ * <strong>Explanation:</strong> The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water (blue section) the container can contain is 49.
+ * </pre>
+ *
+ * <p><strong>Example 2:</strong></p>
+ *
+ * <pre>
+ * <strong>Input:</strong> height = [1,1]
+ * <strong>Output:</strong> 1
+ * </pre>
+ *
+ * <p>&nbsp;</p>
+ * <p><strong>Constraints:</strong></p>
+ *
+ * <ul>
+ * 	<li><code>n == height.length</code></li>
+ * 	<li><code>2 &lt;= n &lt;= 10<sup>5</sup></code></li>
+ * 	<li><code>0 &lt;= height[i] &lt;= 10<sup>4</sup></code></li>
+ * </ul>
+ * <div><div>Related Topics</div><div><li>贪心</li><li>数组</li><li>双指针</li></div></div><br><div><li>👍 3073</li><li>👎 0</li></div>
+ *
  * @author xiaoyong3
  * @date 2021/04/28
  */
@@ -13,10 +47,10 @@ import com.hkllyx.solution.util.test.Test;
 public class ContainerWithMostWater {
 
     public static void main(String[] args) {
-        Assertions.assertExpect(ContainerWithMostWater.class, 2, new int[]{1, 2, 1});
-        Assertions.assertExpect(ContainerWithMostWater.class, 16, new int[]{4, 3, 2, 1, 4});
-        Assertions.assertExpect(ContainerWithMostWater.class, 1, new int[]{1, 1});
-        Assertions.assertExpect(ContainerWithMostWater.class, 49, new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7});
+        Assertions.assertExpect(ContainerWithMostWater.class, 2, (Object) new int[]{1, 2, 1});
+        Assertions.assertExpect(ContainerWithMostWater.class, 16, (Object) new int[]{4, 3, 2, 1, 4});
+        Assertions.assertExpect(ContainerWithMostWater.class, 1, (Object) new int[]{1, 1});
+        Assertions.assertExpect(ContainerWithMostWater.class, 49, (Object) new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7});
     }
 
     /**

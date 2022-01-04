@@ -12,8 +12,8 @@ import java.util.Queue;
  * @author xiaoyong3
  * @date 2021/11/06
  */
-@Solution(no = "426", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/")
-public class ConvertBinarySearchTreeToSortedDoublyLinkedList {
+@Solution(no = "剑指 Offer 36", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/")
+public class 二叉搜索树与双向链表 {
 
     public static void main(String[] args) {
         Assertions.assertExpect(true, Node.of(4, 2, 5, 1, 3));

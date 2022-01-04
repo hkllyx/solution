@@ -8,6 +8,27 @@ import com.hkllyx.solution.util.test.Test;
 import java.util.Arrays;
 
 /**
+ * <p>Given a string <code>s</code>, rearrange the characters of <code>s</code> so that any two adjacent characters are not the same.</p>
+ *
+ * <p>Return <em>any possible rearrangement of</em> <code>s</code> <em>or return</em> <code>&quot;&quot;</code> <em>if not possible</em>.</p>
+ *
+ * <p>&nbsp;</p>
+ * <p><strong>Example 1:</strong></p>
+ * <pre><strong>Input:</strong> s = "aab"
+ * <strong>Output:</strong> "aba"
+ * </pre><p><strong>Example 2:</strong></p>
+ * <pre><strong>Input:</strong> s = "aaab"
+ * <strong>Output:</strong> ""
+ * </pre>
+ * <p>&nbsp;</p>
+ * <p><strong>Constraints:</strong></p>
+ *
+ * <ul>
+ * 	<li><code>1 &lt;= s.length &lt;= 500</code></li>
+ * 	<li><code>s</code> consists of lowercase English letters.</li>
+ * </ul>
+ * <div><div>Related Topics</div><div><li>贪心</li><li>哈希表</li><li>字符串</li><li>计数</li><li>排序</li><li>堆（优先队列）</li></div></div><br><div><li>👍 379</li><li>👎 0</li></div>
+ *
  * @author hkllyx
  * @date 2021/03/29
  */
