@@ -105,6 +105,7 @@ public class ReadMeGenerator {
         private final Class<?> clazz;
         private final Solution solution;
         private Status status;
+        private String title;
         private boolean fixed;
 
         public Node(File file, Class<?> clazz, Solution solution) {
@@ -112,6 +113,10 @@ public class ReadMeGenerator {
             this.clazz = clazz;
             this.solution = solution;
             this.status = solution.status();
+            this.title = solution.title();
+            if (title.isEmpty()) {
+                title = clazz.getSimpleName();
+            }
         }
 
         public Class<?> getClazz() {
@@ -173,7 +178,7 @@ public class ReadMeGenerator {
         @Override
         public String toString() {
             String filePath = file.getPath().replaceAll("\\\\{1,2}", "/");
-            return String.format("- %s [%s. %s [%s]](%s)", status.getSymbol(), solution.no(), clazz.getSimpleName(),
+            return String.format("- %s [%s. %s [%s]](%s)", status.getSymbol(), solution.no(), title,
                     solution.difficulty(), filePath);
         }
     }

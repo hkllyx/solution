@@ -14,6 +14,8 @@ import java.lang.annotation.Target;
 public @interface Solution {
     String no();
 
+    String title() default "";
+
     Difficulty difficulty();
 
     String url();
