@@ -23,7 +23,7 @@ import com.hkllyx.solution.util.info.Solution;
  * @author xiaoyong3
  * @date 2021/05/22
  */
-@Solution(no = "剑指 Offer 05", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/")
+@Solution(no = "剑指 Offer 05", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/")
 public class 替换空格 {
 
     public String replaceSpace(String s) {

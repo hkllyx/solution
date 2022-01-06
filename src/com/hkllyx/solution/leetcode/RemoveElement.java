@@ -68,7 +68,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author hkllyx
  * @date 2021/04/19
  */
-@Solution(no = "27", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/remove-element/")
+@Solution(no = "27", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/remove-element/")
 public class RemoveElement {
 
     public static void main(String[] args) {

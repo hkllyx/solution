@@ -46,7 +46,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/06/04
  */
-@Solution(no = "206", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/reverse-linked-list/")
+@Solution(no = "206", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/reverse-linked-list/")
 public class ReverseLinkedList {
 
     public static void main(String[] args) {

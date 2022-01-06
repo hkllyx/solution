@@ -44,7 +44,7 @@ import com.hkllyx.solution.util.info.Solution;
  * @author xiaoyong3
  * @date 2021/12/28
  */
-@Solution(no = "263", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/ugly-number/")
+@Solution(no = "263", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/ugly-number/")
 public class UglyNumber {
 
     public boolean isUgly(int n) {

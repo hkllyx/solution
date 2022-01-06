@@ -50,7 +50,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/11/06
  */
-@Solution(no = "268", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/missing-number/")
+@Solution(no = "268", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/missing-number/")
 public class MissingNumber {
 
     public static void main(String[] args) {

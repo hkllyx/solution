@@ -47,7 +47,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/11/17
  */
-@Solution(no = "53", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/maximum-subarray/")
+@Solution(no = "53", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/maximum-subarray/")
 public class MaximumSubarray {
 
     @Test(value = "DP", mills = 2, memory = 48.6)

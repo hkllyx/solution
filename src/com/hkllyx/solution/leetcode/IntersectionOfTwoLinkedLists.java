@@ -78,7 +78,7 @@ import java.util.HashSet;
  * @author xiaoyong3
  * @date 2022/01/02
  */
-@Solution(no = "160", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/intersection-of-two-linked-lists/")
+@Solution(no = "160", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/intersection-of-two-linked-lists/")
 public class IntersectionOfTwoLinkedLists {
 
     @Test(active = false)

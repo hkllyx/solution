@@ -41,7 +41,7 @@ import com.hkllyx.solution.util.struct.TreeNode;
  * @author xiaoyong3
  * @date 2021/06/05
  */
-@Solution(no = "226", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/invert-binary-tree/")
+@Solution(no = "226", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/invert-binary-tree/")
 public class InvertBinaryTree {
 
     public TreeNode invertTree(TreeNode root) {

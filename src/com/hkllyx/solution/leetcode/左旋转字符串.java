@@ -33,7 +33,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2022/01/05
  */
-@Solution(no = "剑指 Offer 58 - II", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/")
+@Solution(no = "剑指 Offer 58 - II", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/")
 public class 左旋转字符串 {
 
     @Test(active = false)

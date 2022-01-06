@@ -41,7 +41,7 @@ import java.util.Queue;
  * @author xiaoyong3
  * @date 2021/06/05
  */
-@Solution(no = "101", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/symmetric-tree/")
+@Solution(no = "101", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/symmetric-tree/")
 public class SymmetricTree {
 
     public static void main(String[] args) {

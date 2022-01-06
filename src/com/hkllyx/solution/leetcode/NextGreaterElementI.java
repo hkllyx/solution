@@ -57,7 +57,7 @@ import java.util.Map;
  * @author hkllyx
  * @date 2021-10-26
  */
-@Solution(no = "496", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/next-greater-element-i/")
+@Solution(no = "496", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/next-greater-element-i/")
 public class NextGreaterElementI {
 
     public static void main(String[] args) {

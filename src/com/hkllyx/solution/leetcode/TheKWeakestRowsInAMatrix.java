@@ -73,7 +73,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/08/09
  */
-@Solution(no = "1337", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/the-k-weakest-rows-in-a-matrix/")
+@Solution(no = "1337", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/the-k-weakest-rows-in-a-matrix/")
 public class TheKWeakestRowsInAMatrix {
 
     public static void main(String[] args) {

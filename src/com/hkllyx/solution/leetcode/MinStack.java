@@ -56,7 +56,7 @@ import java.util.Random;
  * @author xiaoyong3
  * @date 2021/06/07
  */
-@Solution(no = "155", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/min-stack/")
+@Solution(no = "155", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/min-stack/")
 @Tags(Tag.DESIGN)
 public class MinStack {
     private int[] elements;

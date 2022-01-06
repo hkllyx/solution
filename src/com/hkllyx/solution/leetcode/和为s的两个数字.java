@@ -33,7 +33,7 @@ import com.hkllyx.solution.util.info.Solution;
  * @author xiaoyong3
  * @date 2022/01/04
  */
-@Solution(no = "剑指 Offer 57", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/")
+@Solution(no = "剑指 Offer 57", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/")
 public class 和为s的两个数字 {
 
     public int[] twoSum(int[] nums, int target) {

@@ -53,7 +53,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/05/31
  */
-@Solution(no = "191", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/number-of-1-bits/")
+@Solution(no = "191", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/number-of-1-bits/")
 public class NumberOfOneBits {
 
     public static void main(String[] args) {

@@ -5,7 +5,7 @@ package com.hkllyx.solution.util.info;
  * @date 2021/04/19
  */
 public enum Difficulty {
-    SIMPLE("简单"), MEDIUM("中等"), HARD("困难");
+    EASY("简单"), MEDIUM("中等"), HARD("困难");
 
     private final String desc;
 

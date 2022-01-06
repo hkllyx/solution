@@ -30,7 +30,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2022/01/05
  */
-@Solution(no = "剑指 Offer 53 - II", title = "0～n-1中缺失的数字", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/")
+@Solution(no = "剑指 Offer 53 - II", title = "0～n-1中缺失的数字", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/")
 public class 零到n减1中缺失的数字 {
 
     @Test(value = "等差数列")

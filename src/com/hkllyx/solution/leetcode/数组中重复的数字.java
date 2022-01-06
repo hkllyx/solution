@@ -28,7 +28,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/05/22
  */
-@Solution(no = "剑指 Offer 03", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/")
+@Solution(no = "剑指 Offer 03", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/")
 public class 数组中重复的数字 {
 
     public static void main(String[] args) {

@@ -37,7 +37,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2022/01/05
  */
-@Solution(no = "34", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/")
+@Solution(no = "34", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/")
 public class FindFirstAndLastPositionOfElementInSortedArray {
 
     public static void main(String[] args) {

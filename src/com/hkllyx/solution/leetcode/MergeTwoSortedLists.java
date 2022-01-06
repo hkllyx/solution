@@ -48,7 +48,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/06/04
  */
-@Solution(no = "21", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/merge-two-sorted-lists/")
+@Solution(no = "21", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/merge-two-sorted-lists/")
 public class MergeTwoSortedLists {
 
     public static void main(String[] args) {

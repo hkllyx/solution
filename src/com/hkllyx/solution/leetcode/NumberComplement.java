@@ -45,7 +45,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/10/18
  */
-@Solution(no = "476", difficulty = Difficulty.SIMPLE, url = "https://leetcode-cn.com/problems/number-complement/")
+@Solution(no = "476", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/number-complement/")
 public class NumberComplement {
 
     public static void main(String[] args) {
