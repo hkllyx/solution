@@ -60,7 +60,7 @@ public class TreeNode {
     }
 
     private static Integer[] toIntegerArray(String data) {
-        int len = 0, sizeLen = data.length();
+        int len = 1, sizeLen = data.length();
         for (int i = 1; i < sizeLen; i++) {
             if (data.charAt(i) == ',') {
                 len++;
