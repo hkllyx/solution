@@ -2,7 +2,6 @@
 
 ## LeetCode
 
-- ✘ [. ValidParenthesisString [中等]](src/com/hkllyx/solution/leetcode/ValidParenthesisString.java)
 - ✔ [1. TwoSum [简单]](src/com/hkllyx/solution/leetcode/TwoSum.java)
 - ✔ [2. AddTwoNumbers [中等]](src/com/hkllyx/solution/leetcode/AddTwoNumbers.java)
 - ✔ [3. LongestSubstringWithoutRepeatingCharacters [中等]](src/com/hkllyx/solution/leetcode/LongestSubstringWithoutRepeatingCharacters.java)
@@ -58,6 +57,7 @@
 - ✔ [230. KthSmallestElementInABst [中等]](src/com/hkllyx/solution/leetcode/KthSmallestElementInABst.java)
 - ✘ [233. NumberOfDigitOne [困难]](src/com/hkllyx/solution/leetcode/NumberOfDigitOne.java)
 - ✔ [237. DeleteNodeInALinkedList [简单]](src/com/hkllyx/solution/leetcode/DeleteNodeInALinkedList.java)
+- ✔ [239. SlidingWindowMaximum [困难]](src/com/hkllyx/solution/leetcode/SlidingWindowMaximum.java)
 - ✔ [240. SearchA2dMatrixII [中等]](src/com/hkllyx/solution/leetcode/SearchA2dMatrixII.java)
 - ✔ [257. BinaryTreePaths [简单]](src/com/hkllyx/solution/leetcode/BinaryTreePaths.java)
 - ✔ [263. UglyNumber [简单]](src/com/hkllyx/solution/leetcode/UglyNumber.java)
@@ -82,6 +82,7 @@
 - ✔ [575. DistributeCandies [简单]](src/com/hkllyx/solution/leetcode/DistributeCandies.java)
 - ✔ [598. RangeAdditionII [简单]](src/com/hkllyx/solution/leetcode/RangeAdditionII.java)
 - ⚑ [600. NonNegativeIntegersWithoutConsecutiveOnes [困难]](src/com/hkllyx/solution/leetcode/NonNegativeIntegersWithoutConsecutiveOnes.java)
+- ✘ [678. ValidParenthesisString [中等]](src/com/hkllyx/solution/leetcode/ValidParenthesisString.java)
 - ✔ [692. TopKFrequentWords [中等]](src/com/hkllyx/solution/leetcode/TopKFrequentWords.java)
 - ✔ [704. BinarySearch [简单]](src/com/hkllyx/solution/leetcode/BinarySearch.java)
 - ✔ [767. ReorganizeString [中等]](src/com/hkllyx/solution/leetcode/ReorganizeString.java)
@@ -119,11 +120,13 @@
 - ✔ [剑指 Offer 47. 礼物的最大价值 [中等]](src/com/hkllyx/solution/leetcode/礼物的最大价值.java)
 - ✔ [剑指 Offer 51. 数组中的逆序对 [困难]](src/com/hkllyx/solution/leetcode/数组中的逆序对.java)
 - ✔ [剑指 Offer 53 - II. 0～n-1中缺失的数字 [简单]](src/com/hkllyx/solution/leetcode/零到n减1中缺失的数字.java)
+- ✔ [剑指 Offer 54. 二叉搜索树的第k大节点 [简单]](src/com/hkllyx/solution/leetcode/二叉搜索树的第k大节点.java)
 - ⚑ [剑指 Offer 56 - I. 数组中数字出现的次数 [中等]](src/com/hkllyx/solution/leetcode/数组中数字出现的次数.java)
 - ⚑ [剑指 Offer 56 - II. 数组中数字出现的次数II [中等]](src/com/hkllyx/solution/leetcode/数组中数字出现的次数II.java)
 - ✔ [剑指 Offer 57. 和为s的两个数字 [简单]](src/com/hkllyx/solution/leetcode/和为s的两个数字.java)
 - ✔ [剑指 Offer 57 - II. 和为s的连续正数序列 [中等]](src/com/hkllyx/solution/leetcode/和为s的连续正数序列.java)
 - ✔ [剑指 Offer 58 - II. 左旋转字符串 [简单]](src/com/hkllyx/solution/leetcode/左旋转字符串.java)
+- ✘ [剑指 Offer 59 - II. 队列的最大值 [中等]](src/com/hkllyx/solution/leetcode/队列的最大值.java)
 - ✔ [剑指 Offer II 069. 山峰数组的顶部 [简单]](src/com/hkllyx/solution/leetcode/山峰数组的顶部.java)
 
-共 123， ✔通过 112， ✘失败 4， ⚑帮助 7
+共 126， ✔通过 114， ✘失败 5， ⚑帮助 7
