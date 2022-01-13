@@ -1,5 +1,6 @@
 package com.hkllyx.solution;
 
+import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
 import com.hkllyx.solution.util.info.Status;
 
@@ -37,6 +38,7 @@ public class ReadMeGenerator {
             if (!readMe.exists() && !readMe.createNewFile()) {
                 throw new IllegalStateException("创建文件失败");
             }
+
             // 主标题
             writer.printf("# Solutions%n%n");
             for (Map.Entry<String, String> entry : libMap.entrySet()) {
@@ -57,21 +59,17 @@ public class ReadMeGenerator {
                         }
                     }
                 }
+
                 // 二级标题
                 writer.printf("## %s%n%n", entry.getKey());
+
+                // 统计信息
+                printStatistic(writer, nodes);
+
                 // 题目列表
                 fixNodes(nodes).stream().sorted().forEach(writer::println);
                 writer.println();
-                // 统计信息
-                writer.printf("共 %d", nodes.size());
-                Map<Status, Long> countingMap = nodes.stream()
-                        .collect(Collectors.groupingBy(Node::getStatus, Collectors.counting()));
-                for (Status status : Status.values()) {
-                    if (countingMap.containsKey(status)) {
-                        writer.printf("， %s%s %d", status.getSymbol(), status, countingMap.get(status));
-                    }
-                }
-                writer.println();
+
             }
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
@@ -98,6 +96,52 @@ public class ReadMeGenerator {
             current.setStatus(supNode.getStatus());
         }
         current.setFixed(true);
+    }
+
+    private static void printStatistic(PrintWriter writer, List<Node> nodes) {
+        // 计算单元格长度、列数
+        int cellLen = Integer.toString(nodes.size()).length();
+        for (Status value : Status.values()) {
+            cellLen = Math.max(cellLen, value.toString().length());
+        }
+        for (Difficulty value : Difficulty.values()) {
+            cellLen = Math.max(cellLen, value.toString().length());
+        }
+        cellLen += 2;
+        int columns = Status.values().length + 2;
+
+        // 头、分隔符、合计一行合计信息
+        RowBuilder header = new RowBuilder(cellLen, columns).add();
+        RowBuilder separator = new RowBuilder(cellLen, columns, '-');
+        RowBuilder sumRow = new RowBuilder(cellLen, columns).add("合计");
+        Map<Status, Integer> statusCount = nodes.stream()
+                .collect(Collectors.groupingBy(Node::getStatus, Collectors.summingInt(e -> 1)));
+        for (Status status : Status.values()) {
+            header.add(status.toString());
+            sumRow.add(Integer.toString(statusCount.getOrDefault(status, 0)));
+        }
+        header.add("合计");
+        sumRow.add(Integer.toString(nodes.size()));
+        writer.println(header);
+        writer.println(separator);
+        // 分组计数
+        Map<Difficulty, Map<Status, Integer>> tableCount = nodes.stream().collect(
+                Collectors.groupingBy(n -> n.getSolution().difficulty(),
+                        Collectors.groupingBy(Node::getStatus, Collectors.summingInt(e -> 1))));
+        for (Difficulty difficulty : Difficulty.values()) {
+            RowBuilder row = new RowBuilder(cellLen, columns).add(difficulty.toString());
+            int sum = 0;
+            Map<Status, Integer> statusMap = tableCount.getOrDefault(difficulty, Collections.emptyMap());
+            for (Status status : Status.values()) {
+                int num = statusMap.getOrDefault(status, 0);
+                row.add(Integer.toString(num));
+                sum += num;
+            }
+            row.add(Integer.toString(sum));
+            writer.println(row);
+        }
+        writer.println(sumRow);
+        writer.println();
     }
 
     private static class Node implements Comparable<Node> {
@@ -180,6 +224,113 @@ public class ReadMeGenerator {
             String filePath = file.getPath().replaceAll("\\\\{1,2}", "/");
             return String.format("- %s [%s. %s [%s]](%s)", status.getSymbol(), solution.no(), title,
                     solution.difficulty(), filePath);
+        }
+    }
+
+    private static class RowBuilder {
+        private final String delimiter;
+        private final String prefix;
+        private final String suffix;
+        private final char padding;
+        private final int cellLen;
+        private final int columns;
+
+        private char[] value;
+        private int bound;
+        private int index;
+
+        public RowBuilder(String delimiter, String prefix, String suffix, char padding, int cellLen, int columns) {
+            if (prefix == null || suffix == null || delimiter == null) {
+                throw new IllegalArgumentException("delimiter, suffix and prefix must not be null!");
+            }
+            if (cellLen < 0 || columns < 0) {
+                throw new IllegalArgumentException("column and cellLen must greater than 0!");
+            }
+            this.delimiter = delimiter;
+            this.prefix = prefix;
+            this.suffix = suffix;
+            this.padding = padding;
+            this.cellLen = cellLen;
+            this.columns = columns;
+        }
+
+        public RowBuilder(int cellLen, int columns, char padding) {
+            this("|", "|", "|", padding, cellLen, columns);
+        }
+
+        public RowBuilder(int cellLen, int columns) {
+            this("|", "|", "|", ' ', cellLen, columns);
+        }
+
+        private void appendPrefix() {
+            // 初始数组
+            int preLen = prefix.length();
+            bound = preLen + delimiter.length() * (columns - 1) + cellLen * columns;
+            value = new char[bound + suffix.length()];
+            // 添加前缀
+            if (preLen > 0) {
+                prefix.getChars(0, preLen, value, 0);
+                index = preLen;
+            }
+        }
+
+        private void appendDelimiter() {
+            if (index >= bound) {
+                throw new IllegalStateException("overflow!");
+            }
+            int delLen = delimiter.length();
+            if (delLen > 0) {
+                // 添加分隔符
+                delimiter.getChars(0, delLen, value, index);
+                index += delLen;
+            }
+        }
+
+        private void appendSuffix() {
+            int sufLen = suffix.length();
+            if (sufLen > 0) {
+                // 添加分隔符
+                suffix.getChars(0, sufLen, value, index);
+                index += sufLen;
+            }
+        }
+
+        public RowBuilder add(CharSequence cs) {
+            if (value == null) {
+                appendPrefix();
+            } else {
+                appendDelimiter();
+            }
+            // 目标字符串两侧留有一个填充
+            value[index++] = padding;
+            int i = 0, len = cellLen - 2;
+            // 添加目标字符串
+            if (cs != null) {
+                int min = Math.min(cs.length(), len);
+                while (i < min) {
+                    value[index++] = cs.charAt(i++);
+                }
+            }
+            // 填充剩余单元格空间
+            while (i++ <= len) {
+                value[index++] = padding;
+            }
+            return this;
+        }
+
+        public RowBuilder add() {
+            return add(null);
+        }
+
+        @Override
+        public String toString() {
+            int initIndex = index;
+            while (value == null || index < bound) {
+                add();
+            }
+            appendSuffix();
+            index = initIndex;
+            return new String(value);
         }
     }
 }

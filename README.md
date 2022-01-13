@@ -2,6 +2,13 @@
 
 ## LeetCode
 
+|     | 通过  | 失败  | 帮助  | 合计  |
+|-----|-----|-----|-----|-----|
+| 简单  | 50  | 0   | 0   | 50  |
+| 中等  | 54  | 3   | 5   | 62  |
+| 困难  | 10  | 2   | 2   | 14  |
+| 合计  | 114 | 5   | 7   | 126 |
+
 - ✔ [1. TwoSum [简单]](src/com/hkllyx/solution/leetcode/TwoSum.java)
 - ✔ [2. AddTwoNumbers [中等]](src/com/hkllyx/solution/leetcode/AddTwoNumbers.java)
 - ✔ [3. LongestSubstringWithoutRepeatingCharacters [中等]](src/com/hkllyx/solution/leetcode/LongestSubstringWithoutRepeatingCharacters.java)
@@ -129,4 +136,3 @@
 - ✘ [剑指 Offer 59 - II. 队列的最大值 [中等]](src/com/hkllyx/solution/leetcode/队列的最大值.java)
 - ✔ [剑指 Offer II 069. 山峰数组的顶部 [简单]](src/com/hkllyx/solution/leetcode/山峰数组的顶部.java)
 
-共 126， ✔通过 114， ✘失败 5， ⚑帮助 7
