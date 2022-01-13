@@ -36,7 +36,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2022/01/04
  */
-@Solution(no = "剑指 Offer 56 - II", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-ii-lcof/", status = Status.HELPED)
+@Solution(no = "剑指 Offer 56 - II", title = "数组中数字出现的次数 II", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-ii-lcof/", status = Status.HELPED)
 public class 数组中数字出现的次数II {
 
     @Test(value = "bit位统计")

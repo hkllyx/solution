@@ -51,7 +51,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/10/15
  */
-@Solution(no = "38", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/count-and-say/")
+@Solution(no = "38", title = "Count and Say", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/count-and-say/")
 public class CountAndSay {
 
     public static void main(String[] args) {

@@ -42,6 +42,16 @@ import com.hkllyx.solution.util.info.Solution;
  * @author xiaoyong3
  * @date 2021/05/24
  */
-@Solution(no = "剑指 Offer 10 - I", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/")
+@Solution(no = "剑指 Offer 10 - I", title = "斐波那契数列", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/")
 public class 斐波那契数列 {
+
+    public int fib(int n) {
+        int a = 0, b = 1;
+        for (int i = 0; i < n; i++) {
+            int c = b;
+            b = (a + b) % 1000000007;
+            a = c;
+        }
+        return a;
+    }
 }

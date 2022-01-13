@@ -34,7 +34,7 @@ import com.hkllyx.solution.util.info.Status;
  * @author xiaoyong3
  * @date 2022/01/04
  */
-@Solution(no = "剑指 Offer 56 - I", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/", status = Status.HELPED)
+@Solution(no = "剑指 Offer 56 - I", title = "数组中数字出现的次数", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/", status = Status.HELPED)
 public class 数组中数字出现的次数 {
 
     public int[] singleNumbers(int[] nums) {

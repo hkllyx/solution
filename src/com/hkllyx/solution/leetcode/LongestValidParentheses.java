@@ -48,7 +48,7 @@ import java.util.LinkedList;
  * @author xiaoyong3
  * @date 2021/10/14
  */
-@Solution(no = "32", difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/longest-valid-parentheses/", status = Status.HELPED)
+@Solution(no = "32", title = "Longest Valid Parentheses", difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/longest-valid-parentheses/", status = Status.HELPED)
 public class LongestValidParentheses {
 
     public static void main(String[] args) {

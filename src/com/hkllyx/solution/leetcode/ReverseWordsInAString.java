@@ -54,7 +54,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2022/01/05
  */
-@Solution(no = "151", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/reverse-words-in-a-string/")
+@Solution(no = "151", title = "Reverse Words in a String", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/reverse-words-in-a-string/")
 public class ReverseWordsInAString {
 
     public static void main(String[] args) {

@@ -53,7 +53,7 @@ import java.util.Arrays;
  * @author xiaoyong3
  * @date 2021/05/20
  */
-@Solution(no = "1738", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/find-kth-largest-xor-coordinate-value/")
+@Solution(no = "1738", title = "Find Kth Largest XOR Coordinate Value", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/find-kth-largest-xor-coordinate-value/")
 public class FindKthLargestXorCoordinateValue {
 
     public static void main(String[] args) {

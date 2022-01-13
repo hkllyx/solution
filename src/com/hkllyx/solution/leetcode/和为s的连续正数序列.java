@@ -41,7 +41,7 @@ import java.util.List;
  * @author xiaoyong3
  * @date 2022/01/04
  */
-@Solution(no = "剑指 Offer 57 - II", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/")
+@Solution(no = "剑指 Offer 57 - II", title = "和为s的连续正数序列", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/")
 public class 和为s的连续正数序列 {
 
     @Test(value = "数学方法 + 枚举")

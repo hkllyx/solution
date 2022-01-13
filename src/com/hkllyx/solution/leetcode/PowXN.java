@@ -44,7 +44,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/06/01
  */
-@Solution(no = "50", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/powx-n/")
+@Solution(no = "50", title = "Pow(x, n)", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/powx-n/")
 public class PowXN {
 
     public static void main(String[] args) {

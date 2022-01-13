@@ -51,7 +51,7 @@ import java.util.stream.Collectors;
  * @author xiaoyong3
  * @date 2021/05/15
  */
-@Solution(no = "17", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/")
+@Solution(no = "17", title = "Letter Combinations of a Phone Number", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/")
 public class LetterCombinationsOfAPhoneNumber {
     public static final char[][] PANEL = new char[][]{
             {'a', 'b', 'c'}, {'d', 'e', 'f'},

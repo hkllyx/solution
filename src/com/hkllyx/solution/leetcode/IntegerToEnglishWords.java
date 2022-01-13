@@ -43,7 +43,7 @@ import java.util.LinkedList;
  * @author xiaoyong3
  * @date 2021/10/11
  */
-@Solution(no = "273", difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/integer-to-english-words/")
+@Solution(no = "273", title = "Integer to English Words", difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/integer-to-english-words/")
 public class IntegerToEnglishWords {
     private static final String[] SEPARATOR = {"Hundred", "Thousand", "Million", "Billion"};
     private static final String[] SINGLE = {"Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"};

@@ -41,7 +41,7 @@ import java.util.List;
  * @author xiaoyong3
  * @date 2021/06/05
  */
-@Solution(no = "54", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/spiral-matrix/")
+@Solution(no = "54", title = "Spiral Matrix", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/spiral-matrix/")
 public class SpiralMatrix {
 
     public static void main(String[] args) {

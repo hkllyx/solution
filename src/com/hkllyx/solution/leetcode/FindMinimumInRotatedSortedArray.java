@@ -59,7 +59,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/05/24
  */
-@Solution(no = "153", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/")
+@Solution(no = "153", title = "Find Minimum in Rotated Sorted Array", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/")
 public class FindMinimumInRotatedSortedArray {
 
     public static void main(String[] args) {

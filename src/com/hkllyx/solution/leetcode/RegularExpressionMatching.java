@@ -55,7 +55,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/06/01
  */
-@Solution(no = "10", difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/regular-expression-matching/")
+@Solution(no = "10", title = "Regular Expression Matching", difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/regular-expression-matching/")
 public class RegularExpressionMatching {
 
     public static void main(String[] args) {

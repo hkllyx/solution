@@ -38,7 +38,7 @@ import com.hkllyx.solution.util.struct.ListNode;
  * @author xiaoyong3
  * @date 2021/06/01
  */
-@Solution(no = "剑指 Offer 18", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/")
+@Solution(no = "剑指 Offer 18", title = "删除链表的节点", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/")
 public class 删除链表的节点 {
 
     public ListNode deleteNode(ListNode head, int val) {

@@ -43,7 +43,7 @@ import java.util.Arrays;
  * @author xiaoyong3
  * @date 2021/05/13
  */
-@Solution(no = "16", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/3sum-closest/")
+@Solution(no = "16", title = "3Sum Closest", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/3sum-closest/")
 public class ThreeSumClosest {
 
     public static void main(String[] args) {

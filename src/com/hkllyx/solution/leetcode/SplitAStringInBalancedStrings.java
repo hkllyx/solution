@@ -49,7 +49,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author hkllyx
  * @date 2021-09-07
  */
-@Solution(no = "1221", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/split-a-string-in-balanced-strings/")
+@Solution(no = "1221", title = "Split a String in Balanced Strings", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/split-a-string-in-balanced-strings/")
 public class SplitAStringInBalancedStrings {
 
     @Test

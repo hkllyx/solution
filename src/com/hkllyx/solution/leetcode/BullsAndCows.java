@@ -56,7 +56,7 @@ import java.util.Map;
  * @author xiaoyong3
  * @date 2021/11/08
  */
-@Solution(no = "299", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/bulls-and-cows/")
+@Solution(no = "299", title = "Bulls and Cows", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/bulls-and-cows/")
 public class BullsAndCows {
 
     public String getHint(String secret, String guess) {

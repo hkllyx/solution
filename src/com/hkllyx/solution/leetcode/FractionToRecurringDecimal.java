@@ -50,7 +50,7 @@ import java.util.HashMap;
  * @author xiaoyong3
  * @date 2021/10/03
  */
-@Solution(no = "166", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/fraction-to-recurring-decimal/")
+@Solution(no = "166", title = "Fraction to Recurring Decimal", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/fraction-to-recurring-decimal/")
 public class FractionToRecurringDecimal {
 
     public static void main(String[] args) {

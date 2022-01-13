@@ -50,7 +50,7 @@ import com.hkllyx.solution.util.test.Assertions;
  * @author hkllyx
  * @date 2021-10-19
  */
-@Solution(no = "211", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/design-add-and-search-words-data-structure/")
+@Solution(no = "211", title = "Design Add and Search Words Data Structure", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/design-add-and-search-words-data-structure/")
 public class DesignAddAndSearchWordsDataStructure {
 
     public static void main(String[] args) {

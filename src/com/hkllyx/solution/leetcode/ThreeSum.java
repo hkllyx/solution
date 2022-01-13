@@ -35,7 +35,7 @@ import java.util.*;
  * @author xiaoyong3
  * @date 2021/05/10
  */
-@Solution(no = "15", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/3sum/")
+@Solution(no = "15", title = "3Sum", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/3sum/")
 public class ThreeSum {
 
     public static void main(String[] args) {

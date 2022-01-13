@@ -40,7 +40,7 @@ import java.util.LinkedList;
  * @author xiaoyong3
  * @date 2021/11/03
  */
-@Solution(no = "42", difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/trapping-rain-water/")
+@Solution(no = "42", title = "Trapping Rain Water", difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/trapping-rain-water/")
 public class TrappingRainWater {
 
     public static void main(String[] args) {

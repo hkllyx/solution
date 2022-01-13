@@ -42,7 +42,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author hkllyx
  * @date 2021/03/30
  */
-@Solution(no = "74", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/search-a-2d-matrix/")
+@Solution(no = "74", title = "Search a 2D Matrix", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/search-a-2d-matrix/")
 public class SearchA2dMatrix {
 
     public static void main(String[] args) {

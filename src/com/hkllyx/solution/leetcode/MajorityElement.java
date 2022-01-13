@@ -34,7 +34,7 @@ import java.util.Arrays;
  * @author xiaoyong3
  * @date 2021/11/16
  */
-@Solution(no = "169", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/majority-element/")
+@Solution(no = "169", title = "Majority Element", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/majority-element/")
 public class MajorityElement {
 
     @Test(value = "排序", active = false)

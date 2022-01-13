@@ -32,7 +32,7 @@ import java.util.Arrays;
  * @author hkllyx
  * @date 2021/03/29
  */
-@Solution(no = "767", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/reorganize-string/")
+@Solution(no = "767", title = "Reorganize String", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/reorganize-string/")
 public class ReorganizeString {
 
     public static void main(String[] args) {
@@ -44,7 +44,7 @@ public class ReorganizeString {
 
     @Test
     public String reorganizeString(String s) {
-        if (s.length() < 3) {
+        if (s.length() < 2) {
             return s;
         }
         char[] src = s.toCharArray();
@@ -56,11 +56,11 @@ public class ReorganizeString {
             if (src[i] == src[i - 1]) {
                 count++;
                 // 超过一半 (3 << 1) > (4 + 1), (4 << 1) > (5 + 1)
-                if (count << 1 > src.length + 1) {
+                if ((count << 1) > src.length + 1) {
                     return "";
                 }
                 // 一半 (2 << 1) = 4, (3 << 1) > 5
-                if (count << 1 >= src.length) {
+                if ((count << 1) >= src.length) {
                     half = true;
                     hc = src[i];
                 }

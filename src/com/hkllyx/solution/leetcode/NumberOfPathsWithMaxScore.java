@@ -2,8 +2,6 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
-import com.hkllyx.solution.util.info.Tag;
-import com.hkllyx.solution.util.info.Tags;
 import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
 
@@ -40,7 +38,7 @@ import java.util.List;
  * @author hkllyx
  * @date 2021/03/30
  */
-@Solution(no = "1301", difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/number-of-paths-with-max-score/")
+@Solution(no = "1301", title = "Number of Paths with Max Score", difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/number-of-paths-with-max-score/")
 public class NumberOfPathsWithMaxScore {
 
     public static void main(String[] args) {
@@ -197,8 +195,7 @@ public class NumberOfPathsWithMaxScore {
     /**
      * DP，[i][j] 的前一步是 [i - 1][j], [i][j - 1], [i - 1][j - 1]
      */
-    @Test
-    @Tags(Tag.DYNAMIC_PROGRAMMING)
+    @Test(value = "DP")
     public int[] pathsWithMaxScore2(List<String> board) {
         int row = board.size();
         int col = board.get(0).length();

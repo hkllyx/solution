@@ -50,7 +50,7 @@ import java.util.List;
  * @author xiaoyong3
  * @date 2021/09/28
  */
-@Solution(no = "113", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/path-sum-ii/")
+@Solution(no = "113", title = "Path Sum II", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/path-sum-ii/")
 public class PathSumII {
 
     public List<List<Integer>> pathSum(TreeNode root, int targetSum) {

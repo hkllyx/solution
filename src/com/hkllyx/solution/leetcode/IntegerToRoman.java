@@ -69,7 +69,7 @@ import java.util.Map;
  * @author xiaoyong3
  * @date 2021/04/30
  */
-@Solution(no = "12", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/integer-to-roman/")
+@Solution(no = "12", title = "Integer to Roman", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/integer-to-roman/")
 public class IntegerToRoman {
     private static final Map<Integer, Character> MAP = new HashMap<>(7);
     private static final int[] INTEGERS = new int[]{1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};

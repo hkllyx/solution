@@ -2,8 +2,6 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
-import com.hkllyx.solution.util.info.Tag;
-import com.hkllyx.solution.util.info.Tags;
 import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
 
@@ -52,8 +50,7 @@ import java.util.Map;
  * @author hkllyx
  * @date 2021/04/19
  */
-@Solution(no = "3", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/")
-@Tags({Tag.HASH_TABLE, Tag.TWO_POINTERS, Tag.STRING, Tag.SLIDING_WINDOW})
+@Solution(no = "3", title = "Longest Substring Without Repeating Characters", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/")
 public class LongestSubstringWithoutRepeatingCharacters {
 
     public static void main(String[] args) {

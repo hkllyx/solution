@@ -1,5 +1,8 @@
 package com.hkllyx.solution.leetcode;
 
+import com.hkllyx.solution.util.info.Difficulty;
+import com.hkllyx.solution.util.info.Solution;
+
 import java.util.HashMap;
 
 /**
@@ -29,6 +32,7 @@ import java.util.HashMap;
  * @author xiaoyong3
  * @date 2022/01/01
  */
+@Solution(no = "剑指 Offer 50", title = "第一个只出现一次的字符", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/")
 public class 第一个只出现一次的字符 {
 
 

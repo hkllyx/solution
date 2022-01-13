@@ -49,7 +49,7 @@ import java.util.*;
  * @author xiaoyong3
  * @date 2022/01/10
  */
-@Solution(no = "239", difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/sliding-window-maximum/")
+@Solution(no = "239", title = "Sliding Window Maximum", difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/sliding-window-maximum/")
 public class SlidingWindowMaximum {
 
     public static void main(String[] args) {

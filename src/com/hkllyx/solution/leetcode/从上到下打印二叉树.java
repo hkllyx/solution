@@ -36,7 +36,7 @@ import com.hkllyx.solution.util.struct.TreeNode;
  * @author xiaoyong3
  * @date 2021/06/07
  */
-@Solution(no = "剑指 Offer 32 - I", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/")
+@Solution(no = "剑指 Offer 32 - I", title = "从上到下打印二叉树", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/")
 public class 从上到下打印二叉树 {
 
     public int[] levelOrder(TreeNode root) {

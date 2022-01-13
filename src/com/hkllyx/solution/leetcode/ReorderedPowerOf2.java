@@ -40,7 +40,7 @@ import java.util.Set;
  * @author hkllyx
  * @date 2021-10-28
  */
-@Solution(no = "869", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/reordered-power-of-2/")
+@Solution(no = "869", title = "Reordered Power of 2", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/reordered-power-of-2/")
 public class ReorderedPowerOf2 {
     private final Set<String> sortedPowerOf2 = new HashSet<>(32);
     private final char[] tmp = new char[10];

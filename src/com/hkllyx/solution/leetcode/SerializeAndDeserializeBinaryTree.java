@@ -43,7 +43,7 @@ import java.util.StringJoiner;
  * @author hkllyx
  * @date 2021-11-07
  */
-@Solution(no = "297", difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/")
+@Solution(no = "297", title = "Serialize and Deserialize Binary Tree", difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/")
 public class SerializeAndDeserializeBinaryTree {
 
     public static void main(String[] args) {

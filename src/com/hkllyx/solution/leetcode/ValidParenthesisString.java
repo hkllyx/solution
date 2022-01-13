@@ -41,7 +41,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author hkllyx
  * @date 2021-09-12
  */
-@Solution(no = "678", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/valid-parenthesis-string/", status = Status.FAILED)
+@Solution(no = "678", title = "Valid Parenthesis String", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/valid-parenthesis-string/", status = Status.FAILED)
 public class ValidParenthesisString {
 
     public static void main(String[] args) {

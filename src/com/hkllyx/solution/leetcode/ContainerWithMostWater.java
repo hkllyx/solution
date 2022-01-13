@@ -43,7 +43,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/04/28
  */
-@Solution(no = "11", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/container-with-most-water/")
+@Solution(no = "11", title = "Container With Most Water", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/container-with-most-water/")
 public class ContainerWithMostWater {
 
     public static void main(String[] args) {

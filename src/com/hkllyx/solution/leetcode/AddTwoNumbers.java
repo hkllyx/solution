@@ -47,7 +47,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author hkllyx
  * @date 2021/03/26
  */
-@Solution(no = "2", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/add-two-numbers/")
+@Solution(no = "2", title = "Add Two Numbers", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/add-two-numbers/")
 public class AddTwoNumbers {
 
     public static void main(String[] args) {

@@ -2,8 +2,6 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
-import com.hkllyx.solution.util.info.Tag;
-import com.hkllyx.solution.util.info.Tags;
 import com.hkllyx.solution.util.struct.TreeNode;
 import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
@@ -43,8 +41,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/05/18
  */
-@Solution(no = "106", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/")
-@Tags({Tag.RECURSION, Tag.TREE})
+@Solution(no = "106", title = "Construct Binary Tree from Inorder and Postorder Traversal", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/")
 public class ConstructBinaryTreeFromInorderAndPostorderTraversal {
 
     public static void main(String[] args) {

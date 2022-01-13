@@ -57,7 +57,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author hkllyx
  * @date 2021/03/24
  */
-@Solution(no = "1717", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/maximum-score-from-removing-substrings/")
+@Solution(no = "1717", title = "Maximum Score from Removing Substrings", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/maximum-score-from-removing-substrings/")
 public class MaximumScoreFromRemovingSubstrings {
 
     public static void main(String[] args) {

@@ -2,8 +2,6 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
-import com.hkllyx.solution.util.info.Tag;
-import com.hkllyx.solution.util.info.Tags;
 import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
 
@@ -56,8 +54,7 @@ import java.util.Map;
  * @author hkllyx
  * @date 2021/04/19
  */
-@Solution(no = "1", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/two-sum/")
-@Tags({Tag.ARRAY, Tag.HASH_TABLE})
+@Solution(no = "1", title = "Two Sum", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/two-sum/")
 public class TwoSum {
 
     public static void main(String[] args) {

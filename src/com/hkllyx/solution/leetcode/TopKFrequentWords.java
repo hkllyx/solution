@@ -48,7 +48,7 @@ import java.util.stream.Collectors;
  * @author xiaoyong3
  * @date 2021/05/20
  */
-@Solution(no = "692", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/top-k-frequent-words/")
+@Solution(no = "692", title = "Top K Frequent Words", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/top-k-frequent-words/")
 public class TopKFrequentWords {
 
     public static void main(String[] args) {

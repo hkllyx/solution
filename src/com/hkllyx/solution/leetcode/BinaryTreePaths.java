@@ -39,7 +39,7 @@ import java.util.List;
  * @author xiaoyong3
  * @date 2021/09/29
  */
-@Solution(no = "257", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/binary-tree-paths/")
+@Solution(no = "257", title = "Binary Tree Paths", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/binary-tree-paths/")
 public class BinaryTreePaths {
 
     public List<String> binaryTreePaths(TreeNode root) {

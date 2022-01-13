@@ -47,7 +47,7 @@ import com.hkllyx.solution.util.info.Status;
  * @author hkllyx
  * @date 2021-10-16
  */
-@Solution(no = "282", difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/expression-add-operators/", status = Status.FAILED)
+@Solution(no = "282", title = "Expression Add Operators", difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/expression-add-operators/", status = Status.FAILED)
 public class ExpressionAddOperators {
 
     // public List<String> addOperators(String num, int target) {

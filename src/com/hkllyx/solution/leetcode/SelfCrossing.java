@@ -46,7 +46,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/10/29
  */
-@Solution(no = "335", difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/self-crossing/")
+@Solution(no = "335", title = "Self Crossing", difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/self-crossing/")
 public class SelfCrossing {
 
     public static void main(String[] args) {

@@ -45,7 +45,7 @@ import java.util.Queue;
  * @author xiaoyong3
  * @date 2021/09/29
  */
-@Solution(no = "437", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/path-sum-iii/")
+@Solution(no = "437", title = "Path Sum III", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/path-sum-iii/")
 public class PathSumIII {
 
     public static void main(String[] args) {

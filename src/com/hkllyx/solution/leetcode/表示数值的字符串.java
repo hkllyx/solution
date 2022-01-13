@@ -91,7 +91,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/06/03
  */
-@Solution(no = "剑指 Offer 20", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/")
+@Solution(no = "剑指 Offer 20", title = "表示数值的字符串", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/")
 public class 表示数值的字符串 {
 
     public static void main(String[] args) {

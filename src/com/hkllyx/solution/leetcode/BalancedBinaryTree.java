@@ -1,5 +1,7 @@
 package com.hkllyx.solution.leetcode;
 
+import com.hkllyx.solution.util.info.Difficulty;
+import com.hkllyx.solution.util.info.Solution;
 import com.hkllyx.solution.util.struct.TreeNode;
 import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
@@ -47,6 +49,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2022/01/06
  */
+@Solution(no = "110", title = "Balanced Binary Tree", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/balanced-binary-tree/")
 public class BalancedBinaryTree {
 
     public static void main(String[] args) {

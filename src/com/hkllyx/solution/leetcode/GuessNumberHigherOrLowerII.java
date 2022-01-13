@@ -74,7 +74,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/11/12
  */
-@Solution(no = "375", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/guess-number-higher-or-lower-ii/", status = Status.HELPED)
+@Solution(no = "375", title = "Guess Number Higher or Lower II", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/guess-number-higher-or-lower-ii/", status = Status.HELPED)
 public class GuessNumberHigherOrLowerII {
 
     @Test(value = "区间DP", mills = 22, memory = 36.8)

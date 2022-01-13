@@ -36,7 +36,7 @@ import com.hkllyx.solution.util.info.Solution;
  * @author xiaoyong3
  * @date 2021/09/30
  */
-@Solution(no = "223", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/rectangle-area/")
+@Solution(no = "223", title = "Rectangle Area", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/rectangle-area/")
 public class RectangleArea {
 
     public int computeArea(int ax1, int ay1, int ax2, int ay2, int bx1, int by1, int bx2, int by2) {

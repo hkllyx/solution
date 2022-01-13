@@ -45,7 +45,7 @@ import java.util.*;
  * @author xiaoyong3
  * @date 2021/06/08
  */
-@Solution(no = "102", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/binary-tree-level-order-traversal/")
+@Solution(no = "102", title = "Binary Tree Level Order Traversal", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/binary-tree-level-order-traversal/")
 public class BinaryTreeLevelOrderTraversal {
 
     public static void main(String[] args) {

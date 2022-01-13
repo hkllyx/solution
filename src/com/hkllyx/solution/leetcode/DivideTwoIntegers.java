@@ -44,7 +44,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/10/12
  */
-@Solution(no = "29", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/divide-two-integers/", status = Status.HELPED)
+@Solution(no = "29", title = "Divide Two Integers", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/divide-two-integers/", status = Status.HELPED)
 public class DivideTwoIntegers {
 
     public static void main(String[] args) {

@@ -42,7 +42,7 @@ import java.util.Queue;
  * @author xiaoyong3
  * @date 2022/01/07
  */
-@Solution(no = "剑指 Offer 59 - II", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/", status = Status.FAILED)
+@Solution(no = "剑指 Offer 59 - II", title = "队列的最大值", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/", status = Status.FAILED)
 public class 队列的最大值 {
 }
 

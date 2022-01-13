@@ -44,7 +44,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/06/07
  */
-@Solution(no = "946", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/validate-stack-sequences/")
+@Solution(no = "946", title = "Validate Stack Sequences", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/validate-stack-sequences/")
 public class ValidateStackSequences {
 
     public static void main(String[] args) {

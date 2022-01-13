@@ -46,7 +46,7 @@ import com.hkllyx.solution.util.info.Solution;
  * @author hkllyx
  * @date 2021-11-07
  */
-@Solution(no = "598", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/range-addition-ii/")
+@Solution(no = "598", title = "Range Addition II", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/range-addition-ii/")
 public class RangeAdditionII {
 
     public int maxCount(int m, int n, int[][] ops) {

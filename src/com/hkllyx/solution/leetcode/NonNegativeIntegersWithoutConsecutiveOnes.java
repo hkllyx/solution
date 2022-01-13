@@ -51,7 +51,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/09/11
  */
-@Solution(no = "600", difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/non-negative-integers-without-consecutive-ones/", status = Status.HELPED)
+@Solution(no = "600", title = "Non-negative Integers without Consecutive Ones", difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/non-negative-integers-without-consecutive-ones/", status = Status.HELPED)
 public class NonNegativeIntegersWithoutConsecutiveOnes {
     private static final int[] CONSECUTIVE_ONES = new int[26];
 

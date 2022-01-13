@@ -36,7 +36,7 @@ import com.hkllyx.solution.util.struct.TreeNode;
  * @author xiaoyong3
  * @date 2022/01/04
  */
-@Solution(no = "104", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/")
+@Solution(no = "104", title = "Maximum Depth of Binary Tree", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/")
 public class MaximumDepthOfBinaryTree {
 
     public int maxDepth(TreeNode root) {

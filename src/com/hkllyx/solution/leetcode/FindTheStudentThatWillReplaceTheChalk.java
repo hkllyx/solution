@@ -59,7 +59,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/09/11
  */
-@Solution(no = "1894", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/find-the-student-that-will-replace-the-chalk/")
+@Solution(no = "1894", title = "Find the Student that Will Replace the Chalk", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/find-the-student-that-will-replace-the-chalk/")
 public class FindTheStudentThatWillReplaceTheChalk {
 
     public static void main(String[] args) {

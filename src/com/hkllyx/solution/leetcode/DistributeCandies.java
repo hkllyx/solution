@@ -52,7 +52,7 @@ import java.util.Set;
  * @author xiaoyong3
  * @date 2021/11/01
  */
-@Solution(no = "575", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/distribute-candies/")
+@Solution(no = "575", title = "Distribute Candies", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/distribute-candies/")
 public class DistributeCandies {
 
     public int distributeCandies(int[] candyType) {

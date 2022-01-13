@@ -2,8 +2,6 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
-import com.hkllyx.solution.util.info.Tag;
-import com.hkllyx.solution.util.info.Tags;
 import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
 
@@ -89,8 +87,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/04/28
  */
-@Solution(no = "8", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/string-to-integer-atoi/")
-@Tags({Tag.MATH, Tag.STRING})
+@Solution(no = "8", title = "String to Integer (atoi)", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/string-to-integer-atoi/")
 public class StringToIntegerAtoi {
     public static void main(String[] args) {
         Assertions.assertExpect(StringToIntegerAtoi.class, 2147483646, "2147483646");
@@ -130,6 +127,7 @@ public class StringToIntegerAtoi {
                 flag = 1;
                 res = cur - '0';
             } else if (cur == ' ') {
+                // ignore
             } else if (cur == '+') {
                 flag = 1;
             } else if (cur == '-') {

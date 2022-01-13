@@ -24,7 +24,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/06/04
  */
-@Solution(no = "剑指 Offer 22", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/")
+@Solution(no = "剑指 Offer 22", title = "链表中倒数第k个节点", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/")
 public class 链表中倒数第k个节点 {
 
     public static void main(String[] args) {

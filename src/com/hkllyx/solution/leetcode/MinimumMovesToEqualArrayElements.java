@@ -41,7 +41,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/10/20
  */
-@Solution(no = "453", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/minimum-moves-to-equal-array-elements/")
+@Solution(no = "453", title = "Minimum Moves to Equal Array Elements", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/minimum-moves-to-equal-array-elements/")
 public class MinimumMovesToEqualArrayElements {
 
     public static void main(String[] args) {

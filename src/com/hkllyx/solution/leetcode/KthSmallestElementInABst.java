@@ -42,7 +42,7 @@ import java.util.Stack;
  * @author hkllyx
  * @date 2021-10-17
  */
-@Solution(no = "230", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/kth-smallest-element-in-a-bst/")
+@Solution(no = "230", title = "Kth Smallest Element in a BST", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/kth-smallest-element-in-a-bst/")
 public class KthSmallestElementInABst {
 
     public static void main(String[] args) {

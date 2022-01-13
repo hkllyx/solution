@@ -29,7 +29,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author hkllyx
  * @date 2021-11-04
  */
-@Solution(no = "367", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/valid-perfect-square/")
+@Solution(no = "367", title = "Valid Perfect Square", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/valid-perfect-square/")
 public class ValidPerfectSquare {
 
     public static void main(String[] args) {

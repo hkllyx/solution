@@ -38,7 +38,7 @@ import com.hkllyx.solution.util.test.Assertions;
  * @author xiaoyong3
  * @date 2021/04/20
  */
-@Solution(no = "28", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/implement-strstr/")
+@Solution(no = "28", title = "Implement strStr()", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/implement-strstr/")
 public class ImplementStrStr {
 
     public static void main(String[] args) {

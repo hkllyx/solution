@@ -28,7 +28,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/12/27
  */
-@Solution(no = "剑指 Offer 46", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/")
+@Solution(no = "剑指 Offer 46", title = "把数字翻译成字符串", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/")
 public class 把数字翻译成字符串 {
 
     public static void main(String[] args) {

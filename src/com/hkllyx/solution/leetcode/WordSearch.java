@@ -50,7 +50,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/05/24
  */
-@Solution(no = "79", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/word-search/")
+@Solution(no = "79", title = "Word Search", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/word-search/")
 public class WordSearch {
 
     public static void main(String[] args) {

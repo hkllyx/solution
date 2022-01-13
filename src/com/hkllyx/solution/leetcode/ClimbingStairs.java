@@ -43,7 +43,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/05/24
  */
-@Solution(no = "70", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/climbing-stairs/")
+@Solution(no = "70", title = "Climbing Stairs", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/climbing-stairs/")
 public class ClimbingStairs {
 
     public static void main(String[] args) {

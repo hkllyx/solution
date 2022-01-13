@@ -37,7 +37,7 @@ import java.util.Arrays;
  * @author xiaoyong3
  * @date 2021/12/31
  */
-@Solution(no = "400", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/nth-digit/")
+@Solution(no = "400", title = "Nth Digit", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/nth-digit/")
 public class NthDigit {
 
     public static void main(String[] args) {

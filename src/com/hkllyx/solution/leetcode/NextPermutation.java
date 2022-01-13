@@ -47,7 +47,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/11/16
  */
-@Solution(no = "31", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/next-permutation/")
+@Solution(no = "31", title = "Next Permutation", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/next-permutation/")
 public class NextPermutation implements ArrayOps {
 
     public static void main(String[] args) {

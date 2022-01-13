@@ -36,7 +36,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/10/13
  */
-@Solution(no = "5", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/longest-palindromic-substring/")
+@Solution(no = "5", title = "Longest Palindromic Substring", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/longest-palindromic-substring/")
 public class LongestPalindromicSubstring {
 
     public static void main(String[] args) {

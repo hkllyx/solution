@@ -62,7 +62,7 @@ import java.util.PriorityQueue;
  * @author xiaoyong3
  * @date 2021/06/28
  */
-@Solution(no = "295", difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/find-median-from-data-stream/")
+@Solution(no = "295", title = "Find Median from Data Stream", difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/find-median-from-data-stream/")
 public class FindMedianFromDataStream {
 
     public static void main(String[] args) {

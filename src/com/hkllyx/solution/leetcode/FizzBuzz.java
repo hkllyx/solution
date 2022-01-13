@@ -38,7 +38,7 @@ import java.util.List;
  * @author xiaoyong3
  * @date 2021/10/13
  */
-@Solution(no = "412", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/fizz-buzz/")
+@Solution(no = "412", title = "Fizz Buzz", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/fizz-buzz/")
 public class FizzBuzz {
 
     public List<String> fizzBuzz(int n) {

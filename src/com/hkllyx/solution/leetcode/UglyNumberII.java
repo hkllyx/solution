@@ -5,7 +5,8 @@ import com.hkllyx.solution.util.info.Solution;
 import com.hkllyx.solution.util.info.Status;
 import com.hkllyx.solution.util.test.Test;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.PriorityQueue;
 
 /**
  * <p>An <strong>ugly number</strong> is a positive integer whose prime factors are limited to <code>2</code>, <code>3</code>, and <code>5</code>.</p>
@@ -40,7 +41,7 @@ import java.util.*;
  * @author xiaoyong3
  * @date 2021/12/27
  */
-@Solution(no = "264", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/ugly-number-ii/", status = Status.HELPED)
+@Solution(no = "264", title = "Ugly Number II", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/ugly-number-ii/", status = Status.HELPED)
 public class UglyNumberII {
 
     @Test(value = "最小堆 + hash", active = false)

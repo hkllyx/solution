@@ -28,7 +28,7 @@ import java.util.Map;
  * @author xiaoyong3
  * @date 2022/01/01
  */
-@Solution(no = "剑指 Offer 51", difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/shu-zu-zhong-de-ni-xu-dui-lcof/")
+@Solution(no = "剑指 Offer 51", title = "数组中的逆序对", difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/shu-zu-zhong-de-ni-xu-dui-lcof/")
 public class 数组中的逆序对 {
 
     public static void main(String[] args) {

@@ -41,7 +41,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/05/24
  */
-@Solution(no = "105", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/")
+@Solution(no = "105", title = "Construct Binary Tree from Preorder and Inorder Traversal", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/")
 public class ConstructBinaryTreeFromPreorderAndInorderTraversal {
 
     public static void main(String[] args) {

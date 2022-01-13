@@ -41,7 +41,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author hkllyx
  * @date 2021-09-06
  */
-@Solution(no = "704", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/binary-search/")
+@Solution(no = "704", title = "Binary Search", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/binary-search/")
 public class BinarySearch {
 
     public static void main(String[] args) {

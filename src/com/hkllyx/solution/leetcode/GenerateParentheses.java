@@ -32,7 +32,7 @@ import java.util.List;
  * @author xiaoyong3
  * @date 2021/10/13
  */
-@Solution(no = "22", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/generate-parentheses/")
+@Solution(no = "22", title = "Generate Parentheses", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/generate-parentheses/")
 public class GenerateParentheses {
 
     public static void main(String[] args) {

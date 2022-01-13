@@ -33,7 +33,7 @@ import com.hkllyx.solution.util.info.Status;
  * @author xiaoyong3
  * @date 2021/08/13
  */
-@Solution(no = "233", difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/number-of-digit-one/", status = Status.FAILED)
+@Solution(no = "233", title = "Number of Digit One", difficulty = Difficulty.HARD, url = "https://leetcode-cn.com/problems/number-of-digit-one/", status = Status.FAILED)
 public class NumberOfDigitOne {
 
     public int countDigitOne(int n) {

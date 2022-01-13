@@ -2,8 +2,6 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
-import com.hkllyx.solution.util.info.Tag;
-import com.hkllyx.solution.util.info.Tags;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -56,8 +54,7 @@ import java.util.Random;
  * @author xiaoyong3
  * @date 2021/06/07
  */
-@Solution(no = "155", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/min-stack/")
-@Tags(Tag.DESIGN)
+@Solution(no = "155", title = "Min Stack", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/min-stack/")
 public class MinStack {
     private int[] elements;
     private int[] mins;

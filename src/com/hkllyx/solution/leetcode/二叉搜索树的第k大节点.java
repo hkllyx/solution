@@ -52,7 +52,7 @@ import java.util.Set;
  * @author xiaoyong3
  * @date 2022/01/06
  */
-@Solution(no = "剑指 Offer 54", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/")
+@Solution(no = "剑指 Offer 54", title = "二叉搜索树的第k大节点", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/")
 public class 二叉搜索树的第k大节点 {
 
     public static void main(String[] args) {

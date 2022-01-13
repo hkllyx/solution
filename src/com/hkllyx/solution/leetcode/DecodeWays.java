@@ -2,8 +2,6 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
-import com.hkllyx.solution.util.info.Tag;
-import com.hkllyx.solution.util.info.Tags;
 import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
 
@@ -67,8 +65,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/04/21
  */
-@Solution(no = "91", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/decode-ways/")
-@Tags({Tag.DYNAMIC_PROGRAMMING, Tag.STRING})
+@Solution(no = "91", title = "Decode Ways", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/decode-ways/")
 public class DecodeWays {
 
     public static void main(String[] args) {

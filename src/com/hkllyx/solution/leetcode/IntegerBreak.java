@@ -38,7 +38,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/05/27
  */
-@Solution(no = "343", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/integer-break/")
+@Solution(no = "343", title = "Integer Break", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/integer-break/")
 public class IntegerBreak {
 
     public static void main(String[] args) {

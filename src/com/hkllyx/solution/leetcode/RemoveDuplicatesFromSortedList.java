@@ -37,7 +37,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author hkllyx
  * @date 2021/03/26
  */
-@Solution(no = "83", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list")
+@Solution(no = "83", title = "Remove Duplicates from Sorted List", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list")
 public class RemoveDuplicatesFromSortedList {
 
     public static void main(String[] args) {

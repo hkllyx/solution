@@ -56,8 +56,9 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/08/31
  */
-@Solution(no = "1109", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/corporate-flight-bookings/")
+@Solution(no = "1109", title = "Corporate Flight Bookings", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/corporate-flight-bookings/")
 public class CorporateFlightBookings {
+
     public static void main(String[] args) {
         Assertions.assertExpect(new int[]{10, 55, 45, 25, 25}, (Object) new int[][]{{1, 2, 10}, {2, 3, 20}, {2, 5, 25}},
                 5);

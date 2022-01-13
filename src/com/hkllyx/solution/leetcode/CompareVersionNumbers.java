@@ -62,7 +62,7 @@ import com.hkllyx.solution.util.test.Test;
  * @author xiaoyong3
  * @date 2021/09/01
  */
-@Solution(no = "165", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/compare-version-numbers/")
+@Solution(no = "165", title = "Compare Version Numbers", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/compare-version-numbers/")
 public class CompareVersionNumbers {
     public static void main(String[] args) {
         Assertions.assertExpect(0, "1.01", "1.001");

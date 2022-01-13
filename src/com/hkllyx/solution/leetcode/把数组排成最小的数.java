@@ -40,7 +40,7 @@ import java.util.stream.Collectors;
  * @author xiaoyong3
  * @date 2021/12/27
  */
-@Solution(no = "剑指 Offer 45", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/")
+@Solution(no = "剑指 Offer 45", title = "把数组排成最小的数", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/")
 public class 把数组排成最小的数 {
 
     public String minNumber(int[] nums) {

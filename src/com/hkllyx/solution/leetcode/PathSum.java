@@ -50,7 +50,7 @@ import com.hkllyx.solution.util.struct.TreeNode;
  * @author xiaoyong3
  * @date 2021/09/28
  */
-@Solution(no = "112", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/path-sum/")
+@Solution(no = "112", title = "Path Sum", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/path-sum/")
 public class PathSum {
 
     public boolean hasPathSum(TreeNode root, int targetSum) {
