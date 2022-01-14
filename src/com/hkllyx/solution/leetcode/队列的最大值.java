@@ -2,7 +2,6 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
-import com.hkllyx.solution.util.info.Status;
 
 import java.util.Deque;
 import java.util.LinkedList;
@@ -42,7 +41,7 @@ import java.util.Queue;
  * @author xiaoyong3
  * @date 2022/01/07
  */
-@Solution(no = "剑指 Offer 59 - II", title = "队列的最大值", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/", status = Status.FAILED)
+@Solution(no = "剑指 Offer 59 - II", title = "队列的最大值", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/")
 public class 队列的最大值 {
 }
 

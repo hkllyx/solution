@@ -4,10 +4,10 @@
 
 |     | 通过  | 失败  | 帮助  | 合计  |
 |-----|-----|-----|-----|-----|
-| 简单  | 51  | 0   | 0   | 51  |
-| 中等  | 55  | 3   | 5   | 63  |
-| 困难  | 10  | 2   | 2   | 14  |
-| 合计  | 116 | 5   | 7   | 128 |
+| 简单  | 55  | 0   | 0   | 55  |
+| 中等  | 57  | 2   | 5   | 64  |
+| 困难  | 10  | 1   | 3   | 14  |
+| 合计  | 122 | 3   | 8   | 133 |
 
 - ✔ [1. Two Sum [简单]](src/com/hkllyx/solution/leetcode/TwoSum.java)
 - ✔ [2. Add Two Numbers [中等]](src/com/hkllyx/solution/leetcode/AddTwoNumbers.java)
@@ -47,6 +47,7 @@
 - ✔ [110. Balanced Binary Tree [简单]](src/com/hkllyx/solution/leetcode/BalancedBinaryTree.java)
 - ✔ [112. Path Sum [简单]](src/com/hkllyx/solution/leetcode/PathSum.java)
 - ✔ [113. Path Sum II [中等]](src/com/hkllyx/solution/leetcode/PathSumII.java)
+- ✔ [121. Best Time to Buy and Sell Stock [简单]](src/com/hkllyx/solution/leetcode/BestTimeToBuyAndSellStock.java)
 - ✔ [148. Sort List [中等]](src/com/hkllyx/solution/leetcode/SortList.java)
 - ✔ [151. Reverse Words in a String [中等]](src/com/hkllyx/solution/leetcode/ReverseWordsInAString.java)
 - ✔ [153. Find Minimum in Rotated Sorted Array [中等]](src/com/hkllyx/solution/leetcode/FindMinimumInRotatedSortedArray.java)
@@ -63,7 +64,9 @@
 - ✔ [223. Rectangle Area [中等]](src/com/hkllyx/solution/leetcode/RectangleArea.java)
 - ✔ [226. Invert Binary Tree [简单]](src/com/hkllyx/solution/leetcode/InvertBinaryTree.java)
 - ✔ [230. Kth Smallest Element in a BST [中等]](src/com/hkllyx/solution/leetcode/KthSmallestElementInABst.java)
-- ✘ [233. Number of Digit One [困难]](src/com/hkllyx/solution/leetcode/NumberOfDigitOne.java)
+- ⚑ [233. Number of Digit One [困难]](src/com/hkllyx/solution/leetcode/NumberOfDigitOne.java)
+- ✔ [235. Lowest Common Ancestor of a Binary Search Tree [简单]](src/com/hkllyx/solution/leetcode/LowestCommonAncestorOfABinarySearchTree.java)
+- ✔ [236. Lowest Common Ancestor of a Binary Tree [中等]](src/com/hkllyx/solution/leetcode/LowestCommonAncestorOfABinaryTree.java)
 - ✔ [237. Delete Node in a Linked List [简单]](src/com/hkllyx/solution/leetcode/DeleteNodeInALinkedList.java)
 - ✔ [239. Sliding Window Maximum [困难]](src/com/hkllyx/solution/leetcode/SlidingWindowMaximum.java)
 - ✔ [240. Search a 2D Matrix II [中等]](src/com/hkllyx/solution/leetcode/SearchA2dMatrixII.java)
@@ -134,7 +137,9 @@
 - ✔ [剑指 Offer 57. 和为s的两个数字 [简单]](src/com/hkllyx/solution/leetcode/和为s的两个数字.java)
 - ✔ [剑指 Offer 57 - II. 和为s的连续正数序列 [中等]](src/com/hkllyx/solution/leetcode/和为s的连续正数序列.java)
 - ✔ [剑指 Offer 58 - II. 左旋转字符串 [简单]](src/com/hkllyx/solution/leetcode/左旋转字符串.java)
-- ✘ [剑指 Offer 59 - II. 队列的最大值 [中等]](src/com/hkllyx/solution/leetcode/队列的最大值.java)
-- ✔ [剑指 Offer 60. n个骰子的点数 [中等]](src/com/hkllyx/solution/leetcode/N个骰子的点数.java)
+- ✔ [剑指 Offer 59 - II. 队列的最大值 [中等]](src/com/hkllyx/solution/leetcode/队列的最大值.java)
+- ✔ [剑指 Offer 60. n个骰子的点数 [中等]](src/com/hkllyx/solution/leetcode/n个骰子的点数.java)
+- ✔ [剑指 Offer 61. 扑克牌中的顺子 [简单]](src/com/hkllyx/solution/leetcode/扑克牌中的顺子.java)
+- ✔ [剑指 Offer 65. 不用加减乘除做加法 [简单]](src/com/hkllyx/solution/leetcode/不用加减乘除做加法.java)
 - ✔ [剑指 Offer II 069. 山峰数组的顶部 [简单]](src/com/hkllyx/solution/leetcode/山峰数组的顶部.java)
 
