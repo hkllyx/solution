@@ -4,10 +4,10 @@
 
 |     | 通过  | 失败  | 帮助  | 合计  |
 |-----|-----|-----|-----|-----|
-| 简单  | 55  | 0   | 0   | 55  |
-| 中等  | 57  | 2   | 5   | 64  |
+| 简单  | 56  | 0   | 1   | 57  |
+| 中等  | 57  | 2   | 7   | 66  |
 | 困难  | 10  | 1   | 3   | 14  |
-| 合计  | 122 | 3   | 8   | 133 |
+| 合计  | 123 | 3   | 11  | 137 |
 
 - ✔ [1. Two Sum [简单]](src/com/hkllyx/solution/leetcode/TwoSum.java)
 - ✔ [2. Add Two Numbers [中等]](src/com/hkllyx/solution/leetcode/AddTwoNumbers.java)
@@ -61,6 +61,7 @@
 - ✔ [191. Number of 1 Bits [简单]](src/com/hkllyx/solution/leetcode/NumberOfOneBits.java)
 - ✔ [206. Reverse Linked List [简单]](src/com/hkllyx/solution/leetcode/ReverseLinkedList.java)
 - ✔ [211. Design Add and Search Words Data Structure [中等]](src/com/hkllyx/solution/leetcode/DesignAddAndSearchWordsDataStructure.java)
+- ✔ [219. Contains Duplicate II [简单]](src/com/hkllyx/solution/leetcode/ContainsDuplicateII.java)
 - ✔ [223. Rectangle Area [中等]](src/com/hkllyx/solution/leetcode/RectangleArea.java)
 - ✔ [226. Invert Binary Tree [简单]](src/com/hkllyx/solution/leetcode/InvertBinaryTree.java)
 - ✔ [230. Kth Smallest Element in a BST [中等]](src/com/hkllyx/solution/leetcode/KthSmallestElementInABst.java)
@@ -140,6 +141,9 @@
 - ✔ [剑指 Offer 59 - II. 队列的最大值 [中等]](src/com/hkllyx/solution/leetcode/队列的最大值.java)
 - ✔ [剑指 Offer 60. n个骰子的点数 [中等]](src/com/hkllyx/solution/leetcode/n个骰子的点数.java)
 - ✔ [剑指 Offer 61. 扑克牌中的顺子 [简单]](src/com/hkllyx/solution/leetcode/扑克牌中的顺子.java)
+- ⚑ [剑指 Offer 62. 圆圈中最后剩下的数字 [简单]](src/com/hkllyx/solution/leetcode/圆圈中最后剩下的数字.java)
+- ⚑ [剑指 Offer 64. 求1+2+…+n [中等]](src/com/hkllyx/solution/leetcode/求1加2加到n的和.java)
 - ✔ [剑指 Offer 65. 不用加减乘除做加法 [简单]](src/com/hkllyx/solution/leetcode/不用加减乘除做加法.java)
+- ⚑ [剑指 Offer 66. 构建乘积数组 [中等]](src/com/hkllyx/solution/leetcode/构建乘积数组.java)
 - ✔ [剑指 Offer II 069. 山峰数组的顶部 [简单]](src/com/hkllyx/solution/leetcode/山峰数组的顶部.java)
 
