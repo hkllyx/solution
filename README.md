@@ -4,23 +4,30 @@
 
 |     | 通过  | 失败  | 帮助  | 合计  |
 |-----|-----|-----|-----|-----|
-| 简单  | 56  | 0   | 1   | 57  |
-| 中等  | 57  | 2   | 7   | 66  |
-| 困难  | 10  | 1   | 3   | 14  |
-| 合计  | 123 | 3   | 11  | 137 |
+| 简单  | 61  | 0   | 1   | 62  |
+| 中等  | 60  | 2   | 7   | 69  |
+| 困难  | 11  | 1   | 3   | 15  |
+| 合计  | 132 | 3   | 11  | 146 |
 
 - ✔ [1. Two Sum [简单]](src/com/hkllyx/solution/leetcode/TwoSum.java)
 - ✔ [2. Add Two Numbers [中等]](src/com/hkllyx/solution/leetcode/AddTwoNumbers.java)
 - ✔ [3. Longest Substring Without Repeating Characters [中等]](src/com/hkllyx/solution/leetcode/LongestSubstringWithoutRepeatingCharacters.java)
+- ✔ [4. Median of Two Sorted Arrays [困难]](src/com/hkllyx/solution/leetcode/MedianOfTwoSortedArrays.java)
 - ✔ [5. Longest Palindromic Substring [中等]](src/com/hkllyx/solution/leetcode/LongestPalindromicSubstring.java)
 - ✔ [6. ZigZag Conversion [中等]](src/com/hkllyx/solution/leetcode/ZigZagConversion.java)
+- ✔ [7. Reverse Integer [中等]](src/com/hkllyx/solution/leetcode/ReverseInteger.java)
 - ✔ [8. String to Integer (atoi) [中等]](src/com/hkllyx/solution/leetcode/StringToIntegerAtoi.java)
+- ✔ [9. Palindrome Number [简单]](src/com/hkllyx/solution/leetcode/PalindromeNumber.java)
 - ✔ [10. Regular Expression Matching [困难]](src/com/hkllyx/solution/leetcode/RegularExpressionMatching.java)
 - ✔ [11. Container With Most Water [中等]](src/com/hkllyx/solution/leetcode/ContainerWithMostWater.java)
 - ✔ [12. Integer to Roman [中等]](src/com/hkllyx/solution/leetcode/IntegerToRoman.java)
+- ✔ [13. Roman to Integer [简单]](src/com/hkllyx/solution/leetcode/RomanToInteger.java)
+- ✔ [14. Longest Common Prefix [简单]](src/com/hkllyx/solution/leetcode/LongestCommonPrefix.java)
 - ✔ [15. 3Sum [中等]](src/com/hkllyx/solution/leetcode/ThreeSum.java)
 - ✔ [16. 3Sum Closest [中等]](src/com/hkllyx/solution/leetcode/ThreeSumClosest.java)
 - ✔ [17. Letter Combinations of a Phone Number [中等]](src/com/hkllyx/solution/leetcode/LetterCombinationsOfAPhoneNumber.java)
+- ✔ [19. Remove Nth Node From End of List [中等]](src/com/hkllyx/solution/leetcode/RemoveNthNodeFromEndOfList.java)
+- ✔ [20. Valid Parentheses [简单]](src/com/hkllyx/solution/leetcode/ValidParentheses.java)
 - ✔ [21. Merge Two Sorted Lists [简单]](src/com/hkllyx/solution/leetcode/MergeTwoSortedLists.java)
 - ✔ [22. Generate Parentheses [中等]](src/com/hkllyx/solution/leetcode/GenerateParentheses.java)
 - ✔ [27. Remove Element [简单]](src/com/hkllyx/solution/leetcode/RemoveElement.java)
@@ -30,6 +37,7 @@
 - ⚑ [32. Longest Valid Parentheses [困难]](src/com/hkllyx/solution/leetcode/LongestValidParentheses.java)
 - ✔ [34. Find First and Last Position of Element in Sorted Array [简单]](src/com/hkllyx/solution/leetcode/FindFirstAndLastPositionOfElementInSortedArray.java)
 - ✔ [38. Count and Say [中等]](src/com/hkllyx/solution/leetcode/CountAndSay.java)
+- ✔ [39. Combination Sum [中等]](src/com/hkllyx/solution/leetcode/CombinationSum.java)
 - ✔ [42. Trapping Rain Water [困难]](src/com/hkllyx/solution/leetcode/TrappingRainWater.java)
 - ✔ [50. Pow(x, n) [简单]](src/com/hkllyx/solution/leetcode/PowXN.java)
 - ✔ [53. Maximum Subarray [简单]](src/com/hkllyx/solution/leetcode/MaximumSubarray.java)
@@ -103,6 +111,7 @@
 - ✔ [1109. Corporate Flight Bookings [中等]](src/com/hkllyx/solution/leetcode/CorporateFlightBookings.java)
 - ✔ [1221. Split a String in Balanced Strings [简单]](src/com/hkllyx/solution/leetcode/SplitAStringInBalancedStrings.java)
 - ✔ [1301. Number of Paths with Max Score [困难]](src/com/hkllyx/solution/leetcode/NumberOfPathsWithMaxScore.java)
+- ✔ [1332. Remove Palindromic Subsequences [简单]](src/com/hkllyx/solution/leetcode/RemovePalindromicSubsequences.java)
 - ✔ [1337. The K Weakest Rows in a Matrix [简单]](src/com/hkllyx/solution/leetcode/TheKWeakestRowsInAMatrix.java)
 - ✔ [1717. Maximum Score from Removing Substrings [中等]](src/com/hkllyx/solution/leetcode/MaximumScoreFromRemovingSubstrings.java)
 - ✔ [1738. Find Kth Largest XOR Coordinate Value [中等]](src/com/hkllyx/solution/leetcode/FindKthLargestXorCoordinateValue.java)
