@@ -4,10 +4,10 @@
 
 |     | 通过  | 失败  | 帮助  | 合计  |
 |-----|-----|-----|-----|-----|
-| 简单  | 61  | 0   | 1   | 62  |
-| 中等  | 60  | 2   | 7   | 69  |
-| 困难  | 11  | 1   | 3   | 15  |
-| 合计  | 132 | 3   | 11  | 146 |
+| 简单  | 62  | 0   | 1   | 63  |
+| 中等  | 62  | 2   | 7   | 71  |
+| 困难  | 13  | 1   | 3   | 17  |
+| 合计  | 137 | 3   | 11  | 151 |
 
 - ✔ [1. Two Sum [简单]](src/com/hkllyx/solution/leetcode/TwoSum.java)
 - ✔ [2. Add Two Numbers [中等]](src/com/hkllyx/solution/leetcode/AddTwoNumbers.java)
@@ -26,10 +26,15 @@
 - ✔ [15. 3Sum [中等]](src/com/hkllyx/solution/leetcode/ThreeSum.java)
 - ✔ [16. 3Sum Closest [中等]](src/com/hkllyx/solution/leetcode/ThreeSumClosest.java)
 - ✔ [17. Letter Combinations of a Phone Number [中等]](src/com/hkllyx/solution/leetcode/LetterCombinationsOfAPhoneNumber.java)
+- ✔ [18. 4Sum [中等]](src/com/hkllyx/solution/leetcode/FourSum.java)
 - ✔ [19. Remove Nth Node From End of List [中等]](src/com/hkllyx/solution/leetcode/RemoveNthNodeFromEndOfList.java)
 - ✔ [20. Valid Parentheses [简单]](src/com/hkllyx/solution/leetcode/ValidParentheses.java)
 - ✔ [21. Merge Two Sorted Lists [简单]](src/com/hkllyx/solution/leetcode/MergeTwoSortedLists.java)
 - ✔ [22. Generate Parentheses [中等]](src/com/hkllyx/solution/leetcode/GenerateParentheses.java)
+- ✔ [23. Merge k Sorted Lists [困难]](src/com/hkllyx/solution/leetcode/MergeKSortedLists.java)
+- ✔ [24. Swap Nodes in Pairs [中等]](src/com/hkllyx/solution/leetcode/SwapNodesInPairs.java)
+- ✔ [25. Reverse Nodes in k-Group [困难]](src/com/hkllyx/solution/leetcode/ReverseNodesInKGroup.java)
+- ✔ [26. Remove Duplicates from Sorted Array [简单]](src/com/hkllyx/solution/leetcode/RemoveDuplicatesFromSortedArray.java)
 - ✔ [27. Remove Element [简单]](src/com/hkllyx/solution/leetcode/RemoveElement.java)
 - ✔ [28. Implement strStr() [简单]](src/com/hkllyx/solution/leetcode/ImplementStrStr.java)
 - ⚑ [29. Divide Two Integers [中等]](src/com/hkllyx/solution/leetcode/DivideTwoIntegers.java)
