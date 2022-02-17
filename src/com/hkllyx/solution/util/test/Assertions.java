@@ -11,8 +11,8 @@ import java.util.stream.Collectors;
  * @date 2021/03/26
  */
 public class Assertions {
-    public static final Map<Class<?>, Object> OBJECT_CACHE = new HashMap<>();
-    public static final Map<Class<?>, List<Method>> METHODS_CACHE = new HashMap<>();
+    private static final Map<Class<?>, Object> OBJECT_CACHE = new HashMap<>();
+    private static final Map<Class<?>, List<Method>> METHODS_CACHE = new HashMap<>();
 
     /**
      * 将对象转换成字符串
