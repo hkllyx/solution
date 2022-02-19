@@ -4,10 +4,10 @@
 
 |     | 通过  | 失败  | 帮助  | 合计  |
 |-----|-----|-----|-----|-----|
-| 简单  | 62  | 0   | 1   | 63  |
-| 中等  | 62  | 2   | 7   | 71  |
-| 困难  | 13  | 1   | 3   | 17  |
-| 合计  | 137 | 3   | 11  | 151 |
+| 简单  | 63  | 0   | 1   | 64  |
+| 中等  | 64  | 2   | 7   | 73  |
+| 困难  | 15  | 1   | 3   | 19  |
+| 合计  | 142 | 3   | 11  | 156 |
 
 - ✔ [1. Two Sum [简单]](src/com/hkllyx/solution/leetcode/TwoSum.java)
 - ✔ [2. Add Two Numbers [中等]](src/com/hkllyx/solution/leetcode/AddTwoNumbers.java)
@@ -38,9 +38,14 @@
 - ✔ [27. Remove Element [简单]](src/com/hkllyx/solution/leetcode/RemoveElement.java)
 - ✔ [28. Implement strStr() [简单]](src/com/hkllyx/solution/leetcode/ImplementStrStr.java)
 - ⚑ [29. Divide Two Integers [中等]](src/com/hkllyx/solution/leetcode/DivideTwoIntegers.java)
+- ✔ [30. Substring with Concatenation of All Words [困难]](src/com/hkllyx/solution/leetcode/SubstringWithConcatenationOfAllWords.java)
 - ✔ [31. Next Permutation [中等]](src/com/hkllyx/solution/leetcode/NextPermutation.java)
 - ⚑ [32. Longest Valid Parentheses [困难]](src/com/hkllyx/solution/leetcode/LongestValidParentheses.java)
+- ✔ [33. Search in Rotated Sorted Array [中等]](src/com/hkllyx/solution/leetcode/SearchInRotatedSortedArray.java)
 - ✔ [34. Find First and Last Position of Element in Sorted Array [简单]](src/com/hkllyx/solution/leetcode/FindFirstAndLastPositionOfElementInSortedArray.java)
+- ✔ [35. Search Insert Position [简单]](src/com/hkllyx/solution/leetcode/SearchInsertPosition.java)
+- ✔ [36. Valid Sudoku [中等]](src/com/hkllyx/solution/leetcode/ValidSudoku.java)
+- ✔ [37. Sudoku Solver [困难]](src/com/hkllyx/solution/leetcode/SudokuSolver.java)
 - ✔ [38. Count and Say [中等]](src/com/hkllyx/solution/leetcode/CountAndSay.java)
 - ✔ [39. Combination Sum [中等]](src/com/hkllyx/solution/leetcode/CombinationSum.java)
 - ✔ [42. Trapping Rain Water [困难]](src/com/hkllyx/solution/leetcode/TrappingRainWater.java)
