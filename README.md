@@ -5,9 +5,9 @@
 |     | 通过  | 失败  | 帮助  | 合计  |
 |-----|-----|-----|-----|-----|
 | 简单  | 63  | 0   | 1   | 64  |
-| 中等  | 64  | 2   | 7   | 73  |
-| 困难  | 15  | 1   | 3   | 19  |
-| 合计  | 142 | 3   | 11  | 156 |
+| 中等  | 66  | 2   | 7   | 75  |
+| 困难  | 17  | 1   | 3   | 21  |
+| 合计  | 146 | 3   | 11  | 160 |
 
 - ✔ [1. Two Sum [简单]](src/com/hkllyx/solution/leetcode/TwoSum.java)
 - ✔ [2. Add Two Numbers [中等]](src/com/hkllyx/solution/leetcode/AddTwoNumbers.java)
@@ -48,7 +48,11 @@
 - ✔ [37. Sudoku Solver [困难]](src/com/hkllyx/solution/leetcode/SudokuSolver.java)
 - ✔ [38. Count and Say [中等]](src/com/hkllyx/solution/leetcode/CountAndSay.java)
 - ✔ [39. Combination Sum [中等]](src/com/hkllyx/solution/leetcode/CombinationSum.java)
+- ✔ [40. Combination Sum II [中等]](src/com/hkllyx/solution/leetcode/CombinationSumII.java)
+- ✔ [41. First Missing Positive [困难]](src/com/hkllyx/solution/leetcode/FirstMissingPositive.java)
 - ✔ [42. Trapping Rain Water [困难]](src/com/hkllyx/solution/leetcode/TrappingRainWater.java)
+- ✔ [43. Multiply Strings [中等]](src/com/hkllyx/solution/leetcode/MultiplyStrings.java)
+- ✔ [44. Wildcard Matching [困难]](src/com/hkllyx/solution/leetcode/WildcardMatching.java)
 - ✔ [50. Pow(x, n) [简单]](src/com/hkllyx/solution/leetcode/PowXN.java)
 - ✔ [53. Maximum Subarray [简单]](src/com/hkllyx/solution/leetcode/MaximumSubarray.java)
 - ✔ [54. Spiral Matrix [中等]](src/com/hkllyx/solution/leetcode/SpiralMatrix.java)
