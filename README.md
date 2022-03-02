@@ -5,9 +5,9 @@
 |     | 通过  | 失败  | 帮助  | 合计  |
 |-----|-----|-----|-----|-----|
 | 简单  | 63  | 0   | 1   | 64  |
-| 中等  | 66  | 2   | 7   | 75  |
+| 中等  | 67  | 2   | 7   | 76  |
 | 困难  | 17  | 1   | 3   | 21  |
-| 合计  | 146 | 3   | 11  | 160 |
+| 合计  | 147 | 3   | 11  | 161 |
 
 - ✔ [1. Two Sum [简单]](src/com/hkllyx/solution/leetcode/TwoSum.java)
 - ✔ [2. Add Two Numbers [中等]](src/com/hkllyx/solution/leetcode/AddTwoNumbers.java)
@@ -56,6 +56,7 @@
 - ✔ [50. Pow(x, n) [简单]](src/com/hkllyx/solution/leetcode/PowXN.java)
 - ✔ [53. Maximum Subarray [简单]](src/com/hkllyx/solution/leetcode/MaximumSubarray.java)
 - ✔ [54. Spiral Matrix [中等]](src/com/hkllyx/solution/leetcode/SpiralMatrix.java)
+- ✔ [55. Jump Game [中等]](src/com/hkllyx/solution/leetcode/JumpGame.java)
 - ✔ [70. Climbing Stairs [简单]](src/com/hkllyx/solution/leetcode/ClimbingStairs.java)
 - ✔ [74. Search a 2D Matrix [中等]](src/com/hkllyx/solution/leetcode/SearchA2dMatrix.java)
 - ✔ [79. Word Search [中等]](src/com/hkllyx/solution/leetcode/WordSearch.java)

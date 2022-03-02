@@ -2,7 +2,6 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
-import com.hkllyx.solution.util.info.Status;
 import com.hkllyx.solution.util.test.Assertions;
 import com.hkllyx.solution.util.test.Test;
 
@@ -58,7 +57,8 @@ import com.hkllyx.solution.util.test.Test;
 public class WildcardMatching {
 
     public static void main(String[] args) {
-        Assertions.assertExpect(true, "aab", "a*a*b");
+        Assertions.assertExpect(true, "abcdecd", "a*c*d");
+        Assertions.assertExpect(true, "acadb", "a*a*b");
         Assertions.assertExpect(true, "", "*****");
         Assertions.assertExpect(false, "", "****a");
         Assertions.assertExpect(true, "aba", "a*a");
@@ -119,23 +119,25 @@ public class WildcardMatching {
         return match[len1][len2];
     }
 
-    @Test(value = "DP", mills = 2, status = Status.HELPED)
+    @Test(value = "贪心,'*'每次匹配最少", mills = 2, helped = true)
     public boolean isMatch2(String s, String p) {
-        // 最近遍历的*的位置
+        // 最近遍历的'*'的位置
         int asterisk = -1;
-        // 当前*开始匹配的位置
+        // 当前'*'开始匹配的位置
         int match = -1;
         int i = 0, j = 0;
         while (i < s.length()) {
             if (j < p.length() && (p.charAt(j) == s.charAt(i) || p.charAt(j) == '?')) {
+                // 字符匹配，i、j自增
                 i++;
                 j++;
             } else if (j < p.length() && p.charAt(j) == '*') {
+                // 遇到'*'，假设它匹配0个字符，所以只有j自增
                 match = i;
                 asterisk = j++;
             } else if (asterisk != -1) {
-                match++;
-                i = match;
+                // '*'匹配数+1
+                i = ++match;
                 j = asterisk + 1;
             } else {
                 return false;

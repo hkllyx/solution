@@ -1,7 +1,5 @@
 package com.hkllyx.solution.util.test;
 
-import com.hkllyx.solution.util.info.Status;
-
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -43,5 +41,5 @@ public @interface Test {
      */
     double memory() default -1;
 
-    Status status() default Status.ACCEPTED;
+    boolean helped() default false;
 }
