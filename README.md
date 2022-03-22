@@ -4,10 +4,10 @@
 
 |     | 通过  | 失败  | 帮助  | 合计  |
 |-----|-----|-----|-----|-----|
-| 简单  | 63  | 0   | 1   | 64  |
-| 中等  | 68  | 2   | 7   | 77  |
+| 简单  | 64  | 0   | 1   | 65  |
+| 中等  | 75  | 2   | 7   | 84  |
 | 困难  | 17  | 1   | 3   | 21  |
-| 合计  | 148 | 3   | 11  | 162 |
+| 合计  | 156 | 3   | 11  | 170 |
 
 - ✔ [1. Two Sum [简单]](src/com/hkllyx/solution/leetcode/TwoSum.java)
 - ✔ [2. Add Two Numbers [中等]](src/com/hkllyx/solution/leetcode/AddTwoNumbers.java)
@@ -54,10 +54,18 @@
 - ✔ [43. Multiply Strings [中等]](src/com/hkllyx/solution/leetcode/MultiplyStrings.java)
 - ✔ [44. Wildcard Matching [困难]](src/com/hkllyx/solution/leetcode/WildcardMatching.java)
 - ✔ [45. Jump Game II [中等]](src/com/hkllyx/solution/leetcode/JumpGameII.java)
+- ✔ [46. Permutations [中等]](src/com/hkllyx/solution/leetcode/Permutations.java)
+- ✔ [47. Permutations II [中等]](src/com/hkllyx/solution/leetcode/PermutationsII.java)
+- ✔ [48. Rotate Image [中等]](src/com/hkllyx/solution/leetcode/RotateImage.java)
+- ✔ [49. Group Anagrams [中等]](src/com/hkllyx/solution/leetcode/GroupAnagrams.java)
 - ✔ [50. Pow(x, n) [简单]](src/com/hkllyx/solution/leetcode/PowXN.java)
 - ✔ [53. Maximum Subarray [简单]](src/com/hkllyx/solution/leetcode/MaximumSubarray.java)
 - ✔ [54. Spiral Matrix [中等]](src/com/hkllyx/solution/leetcode/SpiralMatrix.java)
 - ✔ [55. Jump Game [中等]](src/com/hkllyx/solution/leetcode/JumpGame.java)
+- ✔ [56. Merge Intervals [中等]](src/com/hkllyx/solution/leetcode/MergeIntervals.java)
+- ✔ [57. Insert Interval [中等]](src/com/hkllyx/solution/leetcode/InsertInterval.java)
+- ✔ [58. Length of Last Word [简单]](src/com/hkllyx/solution/leetcode/LengthOfLastWord.java)
+- ✔ [59. Spiral Matrix II [中等]](src/com/hkllyx/solution/leetcode/SpiralMatrixII.java)
 - ✔ [70. Climbing Stairs [简单]](src/com/hkllyx/solution/leetcode/ClimbingStairs.java)
 - ✔ [74. Search a 2D Matrix [中等]](src/com/hkllyx/solution/leetcode/SearchA2dMatrix.java)
 - ✔ [79. Word Search [中等]](src/com/hkllyx/solution/leetcode/WordSearch.java)
