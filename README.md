@@ -4,10 +4,10 @@
 
 |     | 通过  | 失败  | 帮助  | 合计  |
 |-----|-----|-----|-----|-----|
-| 简单  | 64  | 0   | 1   | 65  |
-| 中等  | 75  | 2   | 7   | 84  |
-| 困难  | 17  | 1   | 3   | 21  |
-| 合计  | 156 | 3   | 11  | 170 |
+| 简单  | 66  | 0   | 1   | 67  |
+| 中等  | 79  | 2   | 7   | 88  |
+| 困难  | 19  | 1   | 3   | 23  |
+| 合计  | 164 | 3   | 11  | 178 |
 
 - ✔ [1. Two Sum [简单]](src/com/hkllyx/solution/leetcode/TwoSum.java)
 - ✔ [2. Add Two Numbers [中等]](src/com/hkllyx/solution/leetcode/AddTwoNumbers.java)
@@ -66,6 +66,14 @@
 - ✔ [57. Insert Interval [中等]](src/com/hkllyx/solution/leetcode/InsertInterval.java)
 - ✔ [58. Length of Last Word [简单]](src/com/hkllyx/solution/leetcode/LengthOfLastWord.java)
 - ✔ [59. Spiral Matrix II [中等]](src/com/hkllyx/solution/leetcode/SpiralMatrixII.java)
+- ✔ [60. Permutation Sequence [困难]](src/com/hkllyx/solution/leetcode/PermutationSequence.java)
+- ✔ [61. Rotate List [中等]](src/com/hkllyx/solution/leetcode/RotateList.java)
+- ✔ [62. Unique Paths [中等]](src/com/hkllyx/solution/leetcode/UniquePaths.java)
+- ✔ [63. Unique Paths II [中等]](src/com/hkllyx/solution/leetcode/UniquePathsII.java)
+- ✔ [64. Minimum Path Sum [中等]](src/com/hkllyx/solution/leetcode/MinimumPathSum.java)
+- ✔ [65. Valid Number [困难]](src/com/hkllyx/solution/leetcode/ValidNumber.java)
+- ✔ [66. Plus One [简单]](src/com/hkllyx/solution/leetcode/PlusOne.java)
+- ✔ [67. Add Binary [简单]](src/com/hkllyx/solution/leetcode/AddBinary.java)
 - ✔ [70. Climbing Stairs [简单]](src/com/hkllyx/solution/leetcode/ClimbingStairs.java)
 - ✔ [74. Search a 2D Matrix [中等]](src/com/hkllyx/solution/leetcode/SearchA2dMatrix.java)
 - ✔ [79. Word Search [中等]](src/com/hkllyx/solution/leetcode/WordSearch.java)
