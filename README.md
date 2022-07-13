@@ -5,9 +5,9 @@
 |     | 通过  | 失败  | 帮助  | 合计  |
 |-----|-----|-----|-----|-----|
 | 简单  | 67  | 0   | 1   | 68  |
-| 中等  | 80  | 2   | 7   | 89  |
+| 中等  | 84  | 2   | 7   | 93  |
 | 困难  | 20  | 1   | 3   | 24  |
-| 合计  | 167 | 3   | 11  | 181 |
+| 合计  | 171 | 3   | 11  | 185 |
 
 - ✔ [1. Two Sum [简单]](src/com/hkllyx/solution/leetcode/TwoSum.java)
 - ✔ [2. Add Two Numbers [中等]](src/com/hkllyx/solution/leetcode/AddTwoNumbers.java)
@@ -77,8 +77,12 @@
 - ✔ [69. Sqrt(x) [简单]](src/com/hkllyx/solution/leetcode/Sqrtx.java)
 - ✔ [70. Climbing Stairs [简单]](src/com/hkllyx/solution/leetcode/ClimbingStairs.java)
 - ✔ [71. Simplify Path [中等]](src/com/hkllyx/solution/leetcode/SimplifyPath.java)
+- ✔ [73. Set Matrix Zeroes [中等]](src/com/hkllyx/solution/leetcode/SetMatrixZeroes.java)
 - ✔ [74. Search a 2D Matrix [中等]](src/com/hkllyx/solution/leetcode/SearchA2dMatrix.java)
+- ✔ [75. Sort Colors [中等]](src/com/hkllyx/solution/leetcode/SortColors.java)
 - ✔ [76. Minimum Window Substring [困难]](src/com/hkllyx/solution/leetcode/MinimumWindowSubstring.java)
+- ✔ [77. Combinations [中等]](src/com/hkllyx/solution/leetcode/Combinations.java)
+- ✔ [78. Subsets [中等]](src/com/hkllyx/solution/leetcode/Subsets.java)
 - ✔ [79. Word Search [中等]](src/com/hkllyx/solution/leetcode/WordSearch.java)
 - ✔ [83. Remove Duplicates from Sorted List [简单]](src/com/hkllyx/solution/leetcode/RemoveDuplicatesFromSortedList.java)
 - ✔ [91. Decode Ways [中等]](src/com/hkllyx/solution/leetcode/DecodeWays.java)
