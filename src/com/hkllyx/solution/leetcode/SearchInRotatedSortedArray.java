@@ -44,25 +44,60 @@ import com.hkllyx.solution.util.test.Test;
 public class SearchInRotatedSortedArray {
 
     public static void main(String[] args) {
-        Assertions.assertExpect(-1, new int[]{4, 5, 6, 7, 0, 1, 2}, 3);
+        Assertions.assertExpect(1, new int[]{1, 3}, 3);
         Assertions.assertExpect(4, new int[]{4, 5, 6, 7, 0, 1, 2}, 0);
+        Assertions.assertExpect(-1, new int[]{4, 5, 6, 7, 0, 1, 2}, 3);
     }
 
-    @Test
+    @Test(active = false)
     public int search(int[] nums, int target) {
-        int pivot = 1;
-        while (pivot < nums.length && nums[pivot] > nums[pivot - 1]) {
-            pivot++;
+        int start = 0, pivot = nums.length - 1;
+        // 查找pivot
+        while (start < pivot - 1) {
+            int m = (start + pivot) >> 1;
+            if (nums[start] <= nums[m]) {
+                start = m;
+            } else {
+                pivot = m;
+            }
         }
-        int res = binarySearch(nums, target, 0, pivot);
+        int res = binarySearch(nums, target, 0, pivot - 1);
         if (res == -1) {
-            res = binarySearch(nums, target, pivot, nums.length);
+            return binarySearch(nums, target, pivot, nums.length - 1);
         }
         return res;
     }
 
+    @Test
+    public int search1(int[] nums, int target) {
+        int l = 0, r = nums.length - 1;
+        while (l <= r) {
+            int m = (l + r) >> 1;
+            if (nums[m] == target) {
+                return m;
+            } else if (nums[m] > target) {
+                if (nums[r] == target) {
+                    return r;
+                } else if (nums[m] <= nums[r] || nums[r] < target) {
+                    // 前者pivot在m之前（m ~ r递增），后者pivot在m ~ r之间
+                    r = m - 1;
+                } else {
+                    l = m + 1;
+                }
+            } else {
+                if (nums[l] == target) {
+                    return l;
+                } else if (nums[l] <= nums[m] || nums[l] > target) {
+                    l = m + 1;
+                } else {
+                    r = m - 1;
+                }
+            }
+        }
+        return -1;
+    }
+
     private int binarySearch(int[] nums, int target, int begin, int end) {
-        end--;
         while (begin <= end) {
             int medium = (begin + end) >> 1;
             if (nums[medium] == target) {

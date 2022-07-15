@@ -5,9 +5,9 @@
 |     | 通过  | 失败  | 帮助  | 合计  |
 |-----|-----|-----|-----|-----|
 | 简单  | 67  | 0   | 1   | 68  |
-| 中等  | 84  | 2   | 7   | 93  |
+| 中等  | 86  | 2   | 7   | 95  |
 | 困难  | 20  | 1   | 3   | 24  |
-| 合计  | 171 | 3   | 11  | 185 |
+| 合计  | 173 | 3   | 11  | 187 |
 
 - ✔ [1. Two Sum [简单]](src/com/hkllyx/solution/leetcode/TwoSum.java)
 - ✔ [2. Add Two Numbers [中等]](src/com/hkllyx/solution/leetcode/AddTwoNumbers.java)
@@ -84,6 +84,8 @@
 - ✔ [77. Combinations [中等]](src/com/hkllyx/solution/leetcode/Combinations.java)
 - ✔ [78. Subsets [中等]](src/com/hkllyx/solution/leetcode/Subsets.java)
 - ✔ [79. Word Search [中等]](src/com/hkllyx/solution/leetcode/WordSearch.java)
+- ✔ [80. Remove Duplicates from Sorted Array II [中等]](src/com/hkllyx/solution/leetcode/RemoveDuplicatesFromSortedArrayII.java)
+- ✔ [81. Search in Rotated Sorted Array II [中等]](src/com/hkllyx/solution/leetcode/SearchInRotatedSortedArrayII.java)
 - ✔ [83. Remove Duplicates from Sorted List [简单]](src/com/hkllyx/solution/leetcode/RemoveDuplicatesFromSortedList.java)
 - ✔ [91. Decode Ways [中等]](src/com/hkllyx/solution/leetcode/DecodeWays.java)
 - ✔ [101. Symmetric Tree [简单]](src/com/hkllyx/solution/leetcode/SymmetricTree.java)
