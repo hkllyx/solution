@@ -3,6 +3,8 @@ package com.hkllyx.solution.leetcode;
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
 import com.hkllyx.solution.util.struct.TreeNode;
+import com.hkllyx.solution.util.test.Assertions;
+import com.hkllyx.solution.util.test.Test;
 
 /**
  * <p>从上到下打印出二叉树的每个节点，同一层的节点按照从左到右的顺序打印。</p>
@@ -12,7 +14,8 @@ import com.hkllyx.solution.util.struct.TreeNode;
  * <p>例如:<br>
  * 给定二叉树:&nbsp;<code>[3,9,20,null,null,15,7]</code>,</p>
  *
- * <pre>    3
+ * <pre>
+ *     3
  *    / \
  *   9  20
  *     /  \
@@ -39,23 +42,29 @@ import com.hkllyx.solution.util.struct.TreeNode;
 @Solution(no = "剑指 Offer 32 - I", title = "从上到下打印二叉树", difficulty = Difficulty.EASY, url = "https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/")
 public class 从上到下打印二叉树 {
 
+    public static void main(String[] args) {
+        Assertions.assertExpect(new int[]{3, 9, 20, 15, 7}, TreeNode.of(3, 9, 20, null, null, 15, 7));
+    }
+
+    @Test
     public int[] levelOrder(TreeNode root) {
         if (root == null) {
             return new int[0];
         }
-        ListNode sentinel = new ListNode(null);
-        sentinel.next = new ListNode(root);
-        ListNode lp = sentinel.next;
-        ListNode rp = sentinel.next;
+        ListTreeNode sentinel = new ListTreeNode(null);
+        sentinel.next = new ListTreeNode(root);
+        ListTreeNode lp = sentinel.next;
+        ListTreeNode rp = sentinel.next;
         int size = 0;
+        // rp先走，lp后走，类似Queue
         while (lp != null) {
             size++;
             TreeNode node;
             if ((node = lp.val.left) != null) {
-                rp = rp.next = new ListNode(node);
+                rp = rp.next = new ListTreeNode(node);
             }
             if ((node = lp.val.right) != null) {
-                rp = rp.next = new ListNode(node);
+                rp = rp.next = new ListTreeNode(node);
             }
             lp = lp.next;
         }
@@ -67,11 +76,11 @@ public class 从上到下打印二叉树 {
         return res;
     }
 
-    public static class ListNode {
+    public static class ListTreeNode {
         TreeNode val;
-        ListNode next;
+        ListTreeNode next;
 
-        public ListNode(TreeNode val) {
+        public ListTreeNode(TreeNode val) {
             this.val = val;
         }
     }
