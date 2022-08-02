@@ -38,7 +38,7 @@ import com.hkllyx.solution.util.test.Test;
  * @date 2022/07/19
  */
 @Solution(no = "82", title = "Remove Duplicates from Sorted List II", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/")
-public class RemoveDuplicatesFromSortedListIi {
+public class RemoveDuplicatesFromSortedListII {
 
     public static void main(String[] args) {
         Assertions.assertExpect(ListNode.of(2, 3, 5), ListNode.of(1, 1, 1, 2, 3, 4, 4, 4, 5));

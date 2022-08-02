@@ -4,10 +4,10 @@
 
 |     | 通过  | 失败  | 帮助  | 合计  |
 |-----|-----|-----|-----|-----|
-| 简单  | 67  | 0   | 1   | 68  |
-| 中等  | 87  | 2   | 7   | 96  |
+| 简单  | 68  | 0   | 1   | 69  |
+| 中等  | 91  | 2   | 7   | 100 |
 | 困难  | 20  | 1   | 3   | 24  |
-| 合计  | 174 | 3   | 11  | 188 |
+| 合计  | 179 | 3   | 11  | 193 |
 
 - ✔ [1. Two Sum [简单]](src/com/hkllyx/solution/leetcode/TwoSum.java)
 - ✔ [2. Add Two Numbers [中等]](src/com/hkllyx/solution/leetcode/AddTwoNumbers.java)
@@ -86,9 +86,14 @@
 - ✔ [79. Word Search [中等]](src/com/hkllyx/solution/leetcode/WordSearch.java)
 - ✔ [80. Remove Duplicates from Sorted Array II [中等]](src/com/hkllyx/solution/leetcode/RemoveDuplicatesFromSortedArrayII.java)
 - ✔ [81. Search in Rotated Sorted Array II [中等]](src/com/hkllyx/solution/leetcode/SearchInRotatedSortedArrayII.java)
-- ✔ [82. Remove Duplicates from Sorted List II [中等]](src/com/hkllyx/solution/leetcode/RemoveDuplicatesFromSortedListIi.java)
+- ✔ [82. Remove Duplicates from Sorted List II [中等]](src/com/hkllyx/solution/leetcode/RemoveDuplicatesFromSortedListII.java)
 - ✔ [83. Remove Duplicates from Sorted List [简单]](src/com/hkllyx/solution/leetcode/RemoveDuplicatesFromSortedList.java)
+- ✔ [86. Partition List [中等]](src/com/hkllyx/solution/leetcode/PartitionList.java)
+- ✔ [88. Merge Sorted Array [简单]](src/com/hkllyx/solution/leetcode/MergeSortedArray.java)
+- ✔ [89. Gray Code [中等]](src/com/hkllyx/solution/leetcode/GrayCode.java)
+- ✔ [90. Subsets II [中等]](src/com/hkllyx/solution/leetcode/SubsetsII.java)
 - ✔ [91. Decode Ways [中等]](src/com/hkllyx/solution/leetcode/DecodeWays.java)
+- ✔ [92. Reverse Linked List II [中等]](src/com/hkllyx/solution/leetcode/ReverseLinkedListII.java)
 - ✔ [101. Symmetric Tree [简单]](src/com/hkllyx/solution/leetcode/SymmetricTree.java)
 - ✔ [102. Binary Tree Level Order Traversal [中等]](src/com/hkllyx/solution/leetcode/BinaryTreeLevelOrderTraversal.java)
 - ✔ [104. Maximum Depth of Binary Tree [简单]](src/com/hkllyx/solution/leetcode/MaximumDepthOfBinaryTree.java)
