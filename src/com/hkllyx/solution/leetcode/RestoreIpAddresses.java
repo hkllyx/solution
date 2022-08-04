@@ -2,6 +2,8 @@ package com.hkllyx.solution.leetcode;
 
 import com.hkllyx.solution.util.info.Difficulty;
 import com.hkllyx.solution.util.info.Solution;
+import com.hkllyx.solution.util.test.Assertions;
+import com.hkllyx.solution.util.test.Test;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -53,17 +55,46 @@ import java.util.List;
 @Solution(no = "93", title = "Restore IP Addresses", difficulty = Difficulty.MEDIUM, url = "https://leetcode-cn.com/problems/restore-ip-addresses/")
 public class RestoreIpAddresses {
 
+    public static void main(String[] args) {
+        Assertions.assertExpect("[255.255.11.135, 255.255.111.35]", "25525511135");
+        Assertions.assertExpect("[0.0.0.0]", "0000");
+        Assertions.assertExpect("[1.0.10.23, 1.0.102.3, 10.1.0.23, 10.10.2.3, 101.0.2.3]", "101023");
+    }
+
+    @Test
     public List<String> restoreIpAddresses(String s) {
         List<String> res = new ArrayList<>();
-        int len = s.length();
-        char[] ip = new char[len + 3];
-        dfs(s, res, 0, 0);
+        if (s.length() < 4 || s.length() > 12) {
+            return res;
+        }
+        char[] ip = new char[s.length() + 4];
+        dfs(s, 0, ip, 0, 0, res);
         return res;
     }
 
-    private void dfs(String s, List<String> res, int index, int level) {
-        if (level >= 4) {
-
+    private void dfs(String s, int i, char[] ip, int j, int part, List<String> res) {
+        if (part >= 4) {
+            if (i >= s.length()) {
+                res.add(new String(ip, 1, ip.length - 1));
+            }
+            return;
+        }
+        ip[j++] = '.';
+        // 计算i的最值，最小值假设之后部分都是3位，最大值则假设之后部分都是1位
+        int min = Math.max(s.length() - 3 * (3 - part), i + 1);
+        int max = Math.min(s.length() - (3 - part), i + 3);
+        int num = 0;
+        while (i < max) {
+            char cur = s.charAt(i++);
+            ip[j++] = cur;
+            num = num * 10 + cur - '0';
+            if (i >= min && num <= 255) {
+                dfs(s, i, ip, j, part + 1, res);
+            }
+            // 不能连续0
+            if (num == 0) {
+                break;
+            }
         }
     }
 }
