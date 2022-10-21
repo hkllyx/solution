@@ -4,10 +4,10 @@
 
 |     | 通过  | 失败  | 帮助  | 合计  |
 |-----|-----|-----|-----|-----|
-| 简单  | 71  | 0   | 1   | 72  |
-| 中等  | 97  | 3   | 7   | 107 |
+| 简单  | 72  | 0   | 1   | 73  |
+| 中等  | 98  | 3   | 7   | 108 |
 | 困难  | 20  | 1   | 3   | 24  |
-| 合计  | 188 | 4   | 11  | 203 |
+| 合计  | 190 | 4   | 11  | 205 |
 
 - ✔ [1. Two Sum [简单]](src/com/hkllyx/solution/leetcode/TwoSum.java)
 - ✔ [2. Add Two Numbers [中等]](src/com/hkllyx/solution/leetcode/AddTwoNumbers.java)
@@ -109,8 +109,10 @@
 - ✔ [108. Convert Sorted Array to Binary Search Tree [简单]](src/com/hkllyx/solution/leetcode/ConvertSortedArrayToBinarySearchTree.java)
 - ✔ [109. Convert Sorted List to Binary Search Tree [中等]](src/com/hkllyx/solution/leetcode/ConvertSortedListToBinarySearchTree.java)
 - ✔ [110. Balanced Binary Tree [简单]](src/com/hkllyx/solution/leetcode/BalancedBinaryTree.java)
+- ✔ [111. Minimum Depth of Binary Tree [简单]](src/com/hkllyx/solution/leetcode/MinimumDepthOfBinaryTree.java)
 - ✔ [112. Path Sum [简单]](src/com/hkllyx/solution/leetcode/PathSum.java)
 - ✔ [113. Path Sum II [中等]](src/com/hkllyx/solution/leetcode/PathSumII.java)
+- ✔ [114. Flatten Binary Tree to Linked List [中等]](src/com/hkllyx/solution/leetcode/FlattenBinaryTreeToLinkedList.java)
 - ✔ [121. Best Time to Buy and Sell Stock [简单]](src/com/hkllyx/solution/leetcode/BestTimeToBuyAndSellStock.java)
 - ✔ [148. Sort List [中等]](src/com/hkllyx/solution/leetcode/SortList.java)
 - ✔ [151. Reverse Words in a String [中等]](src/com/hkllyx/solution/leetcode/ReverseWordsInAString.java)
