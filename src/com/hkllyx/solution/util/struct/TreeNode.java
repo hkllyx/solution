@@ -135,6 +135,7 @@ public class TreeNode {
         queue.add(this);
         // 当前层非null节点的数量
         for (int count = 1, nextCount = 0; count > 0; ) {
+            // 最后的几个null不输出
             while (count > 0) {
                 TreeNode node = queue.remove();
                 if (node == null) {
@@ -144,7 +145,7 @@ public class TreeNode {
                     sj.add(String.valueOf(node.val));
                     TreeNode child;
                     if ((child = node.left) != null) {
-                        count++;
+                        nextCount++;
                     }
                     queue.offer(child);
                     if ((child = node.right) != null) {
@@ -157,5 +158,10 @@ public class TreeNode {
             nextCount = 0;
         }
         return sj.toString();
+    }
+
+    public static void main(String[] args) {
+        TreeNode node = TreeNode.of("[3,1,4,null,2,null,null,null,5]");
+        System.out.println(node);
     }
 }

@@ -59,6 +59,7 @@ public class SerializeAndDeserializeBinaryTree {
         queue.add(root);
         // 当前层非null节点的数量
         for (int count = root == null ? 0 : 1, nextCount = 0; count > 0; ) {
+            // 最后的几个null不输出
             while (count > 0) {
                 TreeNode node = queue.remove();
                 if (node == null) {
@@ -68,7 +69,7 @@ public class SerializeAndDeserializeBinaryTree {
                     sj.add(String.valueOf(node.val));
                     TreeNode child;
                     if ((child = node.left) != null) {
-                        count++;
+                        nextCount++;
                     }
                     queue.offer(child);
                     if ((child = node.right) != null) {
